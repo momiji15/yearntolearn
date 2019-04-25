@@ -12,7 +12,7 @@ Beginner. This is a little more difficult from Unit 1 since you will be using TO
 
 <b>blogdown</b>: A [package](https://github.com/rstudio/blogdown) that allows you to create static websites using R Markdown.
 
-<b>TOML</b>: Stands for "Tom's Obvious Minimal Language".[TOML](https://github.com/toml-lang/toml) is an easy to read format that parses(reads) in data structures for a variety of programming languages.
+<b>TOML</b>: Stands for "Tom's Obvious Minimal Language". [TOML](https://github.com/toml-lang/toml) is an easy to read format that parses(reads) in data structures for a variety of programming languages.
 
 <b>Hugo</b>: A fast static website engine that is written in the Go programming language which was created by [bep](https://github.com/bep), [spf13](https://github.com/spf13), and [other contributors](https://github.com/gohugoio/hugo/graphs/contributors).
 
