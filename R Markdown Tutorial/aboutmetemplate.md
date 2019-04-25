@@ -1,13 +1,4 @@
----
-title: "About Me Template"
-author: "Dorris Scott"
-date: "4/23/2019"
-output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Name 
 If you want to insert a picture, I suggest you create an images file where you are storing your R Markdown document and put your image there. You can then refer to the location of your image by 
 adding this code:
