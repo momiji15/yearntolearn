@@ -8,11 +8,11 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Unit Learning Objectives
+## Unit 1 Learning Objectives
 - To become familiar with R Markdown syntax.
 - To be able to generate a simple About Me R Markdown document. 
 
-## Unit Difficulty
+## Unit 1 Difficulty
 Beginner 
 
 ## Terms to Know for Unit 1
