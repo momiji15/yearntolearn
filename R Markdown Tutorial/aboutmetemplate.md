@@ -1,3 +1,4 @@
+# About Me
 
 ## Name 
 If you want to insert a picture, I suggest you create an images file where you are storing your R Markdown document and put your image there. You can then refer to the location of your image by 
