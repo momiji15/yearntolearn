@@ -44,6 +44,7 @@ If you want to see the actual code, you do not need to add `echo = TRUE` because
 
 
 ## Including Plots
+
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
