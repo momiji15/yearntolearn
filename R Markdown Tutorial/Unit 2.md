@@ -16,9 +16,9 @@ Beginner. This is a little more difficult from Unit 1 since you will be using TO
 
 <b>Hugo</b>: A fast static website engine that is written in the Go programming language which was created by [bep](https://github.com/bep), [spf13](https://github.com/spf13), and [other contributors](https://github.com/gohugoio/hugo/graphs/contributors).
 
-<b>static website generator</b>A generator that renders content on a website using flat files as opposed to databases. This results in fast rendering of webpages which takes a fraction of the memory. 
+<b>static website generator</b>: A generator that renders content on a website using flat files as opposed to databases. This results in fast rendering of webpages which takes a fraction of the memory. 
 
-<b>dynamic website generator</b>A generator that renders content on a website using databases and queries. This allows the website to use real-time data or customize to the user.
+<b>dynamic website generator</b>: A generator that renders content on a website using databases and queries. This allows the website to use real-time data or customize to the user.
 
 ### Lesson 1: Introduction to blogdown
 R Markdown is a package in which which you can make static web sites using R Markdown. What are static websites do you ask? I won't get deep into it, but a static website differs from a dynamic website generator is that it doesn't use queries and databases like a dynamic database does. Instead, it uses flat files which allows for your website to be rendered quickly. Static site generators take the content, apply it to a chosen template, and generates HTML pages pretty quickly. Static site generators can be deployed on a variety of servers and allows for version control. If you want more information about static sites, check out the resources below in the bonus section!
