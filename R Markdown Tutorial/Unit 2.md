@@ -1,13 +1,4 @@
----
-title: 'Unit 2: Making a blogdown site'
-author: "Dorris Scott"
-date: "4/23/2019"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Unit 2: Making a blogdown site
 
 ## Unit 2 Learning Objectives
 - To become familiar with blogdown.
