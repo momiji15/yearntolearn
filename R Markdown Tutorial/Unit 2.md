@@ -9,12 +9,12 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Unit Learning Objectives
+## Unit 2 Learning Objectives
 - To become familiar with blogdown.
 - To have a basic understanding of the Hugo static site generator.
 - To understand how to deploy a blogdown site.
 
-## Unit Difficulty
+## Unit 2 Difficulty
 Beginner. This is a little more difficult from Unit 1 since you will be using TOML to configure your site. 
 
 ## Terms to Know for Unit 2
