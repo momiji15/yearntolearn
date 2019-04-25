@@ -58,6 +58,7 @@ library(blogdown)
 1.6. On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser.
 
 **OPTION 2** 
+
 I found this option to have less hassle!
 
 2.1. In the R console, type `blogdown::new_site()`. If you want to apply a theme, make sure to specify it. `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
