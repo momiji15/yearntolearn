@@ -1,7 +1,7 @@
 # Unit 1: Creating an R Markdown document
 
 ## Unit Learning Objectives
-- To become familiar with R Markdown syntax.
+- To become familiar with the R Markdown syntax.
 - To be able to generate a simple About Me R Markdown document. 
 
 ## Unit Difficulty
