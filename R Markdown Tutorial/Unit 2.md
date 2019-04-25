@@ -44,6 +44,7 @@ library(blogdown)
 3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. 
 
 **OPTION 1**
+
 1.1. Go to File -> New Directory -> Website Using Blogdown.
 
 1.2. Give a name for your directory and choose a subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
