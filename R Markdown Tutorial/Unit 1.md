@@ -1,13 +1,5 @@
----
-title: "Unit 1: Creating an R Markdown document"
-author: "Dorris Scott"
-date: "4/26/2019"
-output: html_document
----
+# Unit 1: Creating an R Markdown document
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Unit 1 Learning Objectives
 - To become familiar with R Markdown syntax.
 - To be able to generate a simple About Me R Markdown document. 
