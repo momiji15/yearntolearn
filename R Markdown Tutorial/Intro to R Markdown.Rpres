@@ -1,0 +1,141 @@
+Make Your Mark on the Web! Creating Personal Websites with R Markdown
+========================================================
+author: Dorris Scott
+date: 04/26/2019
+autosize: true
+
+Workshop Objectives
+========================================================
+- To have a basic understanding of the R Markdown framework.
+- To gain familarity with R blogdown to create a personal site.
+- To understand how to deploy your personal site using Netlify.
+
+FYI: This presentation was made with R Markdown!
+
+Difficulty Level
+========================================================
+- Beginner to lower intermediate
+- You should have some experience with R.
+- Having experience with GitHub will be useful!
+
+First things first!
+========================================================
+Install the rmarkdown and blogdown packages and load them:
+
+```{r, chunk-one, echo = TRUE, eval = FALSE}
+install.packages("rmarkdown")
+install.packages("blogdown")
+library(rmarkdown)
+library(blogdown)
+```
+
+If you are getting error messages about packages missing then:
+
+```{r, chunk-one extra, echo = TRUE, eval = FALSE}
+install.packages("rmarkdown", dependencies = TRUE)
+install.packages("blogdown", dependencies = TRUE)
+library(rmarkdown)
+library(blogdown)
+```
+
+Creating an R Markdown Document
+========================================================
+To keep things organized, I would suggest you create a Project.
+File -> New Project -> New Directory (or Existing Directory if you already have a folder)
+
+If you create a new directory, you need to point your information where your folder is at.
+
+
+Creating an R Markdown Document
+========================================================
+File -> New File -> R Markdown
+  - Click on Document.
+  - Add a Title and Author.
+  - Leave the Default Output as it is.
+
+Creating an R Markdown Document 
+========================================================
+![](images/RMarkdown2.JPG)
+
+
+
+Creating an R Markdown Document
+========================================================
+# Exercise 1
+Make a basic R Markdown document with these components:
+- Name
+- Short biography
+- Interests 
+- Education
+- Hobbies
+
+Creating an R Markdown Document
+========================================================
+# Exercise 1
+Make sure to refer to [Unit 1](https://github.com/momiji15/yearntolearn/blob/master/R%20Markdown%20Tutorial/Unit%201.md) and the R Markdown [About Me](https://github.com/momiji15/yearntolearn/blob/master/R%20Markdown%20Tutorial/aboutmetemplate.md) template to help you make your document. Once you are done creating your document, press the **Knit** button!
+
+
+Making a Personal Website with Blogdown
+=========================================================
+# Background
+- Created by [Yihui Xue](https://yihui.name/) and [contributors](https://cran.r-project.org/web/packages/blogdown/index.html)
+- Used to make static websites
+- Uses R Markdown! 
+
+Making a Personal Website with Blogdown
+=========================================================
+# Pros
+- You don't need to know HTML or CSS!
+- Plenty of free static templates to choose from.
+- Deployment doesn't have to cost a thing!
+
+Making a Personal Website with Blogdown
+=========================================================
+# Cons
+- You might need to have some familiarity with GitHub depending on the deployment option.
+- Not all Hugo templates mesh well with blogdown.
+- File structure of the templates can be tricky.
+
+
+Making a Personal Website with Blogdown
+=========================================================
+Basic Steps
+
+1. Find a [Hugo template](https://themes.gohugo.io/) you want to use.
+2. Generate blogdown site using your chosen template in RStudio.
+3. Deploy your site!
+
+Making a Personal Website with Blogdown
+=========================================================
+Blogdown sites I've made
+- [My personal site](https://dscott.netlify.com/) which uses the  [Introduction](https://themes.gohugo.io/hugo-theme-introduction/) template
+- [HER Map](https://hermap.netlify.com/) which uses the [Kubo](https://themes.gohugo.io/kube/) template
+
+
+Making a Personal Website with Blogdown
+=========================================================
+# Exercise 2
+It's time to build your personal website using a template of your choice! 
+
+
+
+
+
+Deploying your site
+=========================================================
+Many options!
+- Netlify
+- Updog
+- GitHub pages
+- Travis + GitHub
+- GitLab pages
+
+
+Deploying your site with Netlify
+=========================================================
+# Exercise 3 
+- If you are finished with Exercise 2, go ahead and deploy your site!
+- If you are using GitHub and are making commits from the command line, make sure to check the 
+  remote and origin so you're not making commits to the wrong repo!!
+- If making commits via the command line is too overwhelming, then just make sure you're log in to 
+  GitHub and go to the netlify site and drag your `public\` folder to the Netlify page.
