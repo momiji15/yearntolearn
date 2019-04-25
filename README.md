@@ -11,4 +11,4 @@ An attempt to add some organization for the R learning resources I created. Here
 I will eventually transfer the R Ready to Map Tutorial and Map to App tutorial to this repo.
 
 ### Viewing the R Presentations
-If you want to download the R Presentations, click on the html file and then click on **View Raw** which will show you the raw code.
+If you want to download the R Presentations, click on the html file and then click on **Raw** which will show you the raw code. Then right-click, click on **Save As** and save the html file. Click on the saved html file from where you saved it and you should be able to see the presentation.
