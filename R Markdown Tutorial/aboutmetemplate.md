@@ -37,9 +37,9 @@ The below information was taken from the default information that pops up when y
 
 ## Embedding Code Chunks
 
-```{r cars}
+`{r cars}
 summary(cars)
-```
+`
 If you want to see the actual code, you do not need to add `echo = TRUE` because it is the default setting.
 
 
