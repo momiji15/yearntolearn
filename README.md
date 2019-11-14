@@ -2,7 +2,7 @@
 
 An attempt to add some organization for the R learning resources I created. Here is a list of tutorials that I have made:
 
-1 GAW2019_Making Web Maps With R: This was made for a workshop on 11/14/19 that occursed during Geography Awareness Week at Washington University - St. Louis.
+1.  GAW2019_Making Web Maps With R: This was made for a workshop on 11/14/19 that occursed during Geography Awareness Week at Washington University - St. Louis.
 
 2. R Markdown Tutorial: This tutorial was made for the R-Ladies Athens meeting on 04/26/19.
 
