@@ -16,6 +16,9 @@ By the end of this workshop, participants will be able to:
   3. Map polygon data in leaflet.
   4. Embed a map in an interactive document using R Markdown.
   5. Publish a your RMarkdown document with the map in RPubs.
+  
+## Final Product
+By the end of this workshop, you will have created a Leaflet map embedded in an R Markdown document. Here is an [example](https://rpubs.com/ds_workshops/534926) to refer to.
 
 ## Difficulty
 It is preferred that participants have basic familiarity with R and the RStudio. If you are completely new to R, then you should be able to follow along. Whether you're a complete beginner to R or experienced in R, but not familiar with using Leaflet, don't be shy and make sure that you ask a question if you have one or 
