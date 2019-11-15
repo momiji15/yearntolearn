@@ -131,7 +131,7 @@ The long term care facilities should  be loaded on the map.
 The long term care facilities should  be loaded on the map.
 
 
-#### Lesson 3. Adding pop-ups and labels to your leafet map.
+#### Lesson 3. Adding pop-ups and labels to your leafet map
 
 All you need to do to add pop-ups and labels to your leaflet map is to add some parameters in the 
 addMarkers() function. There is another method to make your pop-ups specialized by 
