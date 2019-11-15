@@ -63,7 +63,7 @@ See a pattern?
 
 *This is italicized* `*this is italicized*`
 
-**This is bold** `**this is bold`
+**This is bold** `**this is bold**`
 
 
 ## Unit 2: Embedding your Leaflet Map in R Markdown
