@@ -47,7 +47,9 @@ pain in the long run!
 
 3. Go to **File -> New File -> R Script**. 
 
-4. Go to **File -> Save As** and name your newly created R script **leafletmap**.
+4. Go to **File -> Save As** and name your newly created R script **leafletmap**. You will write all of your code in the R script you just created.
+
+![](Pictures/rstudio_ps.png)
 
 5. As mentioned in the Introduction, make sure you install and load these packages:
 
