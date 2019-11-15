@@ -196,21 +196,14 @@ census_variables <- load_variables(2017, "acs5", cache = TRUE)
 You can use the search box on the top-right corner of the data table to look up the variables we need.
 You will be using the variables **name** field to enter in a tidycensus search.
 
-3. Here are the variables that we are interested in:
-```{r eval = TRUE, echo = FALSE}
-library(DT)
+3. Here are the variables that we are interested in. These are all under the concept of *Sex and Age by Disability Status*:
 
-df <- data.frame("name" = c("B18101_00", "B18101_016", "B18101_019", "B18101_035", "B18101_038"),
-                              "label" = c("Total Population", "Estimate- Total Male 65 to 74 years old with a
-                              disability", "Estimate - Totale Male 75 years and older with a disability",
-                              "Estimate - Total Female 65 to 74 years with a disability", "Estimate - Total
-                              Female 75 years and over with a disability"),
-                              "concept" = c("Sex and Age by Disability Status", "Sex and Age by Disability  
-                              Status", "Sex and Age by Disability Status", "Sex and Age by Disability Status",
-                              "Sex and Age by Disability Status"))
+- B18101_00: Total Population
+- B18101_016: Estimate - Total Male 65 to 74 years with a disability
+- B18101_019: Estimate - Total Male 75 years and older with a disability
+- B18101_035: Estimate - Total Female 65 to 75 years with a disability
+- B18101_038: Estimate - Total Female 75 years and older wiht a disability
 
-datatable(df, options = list(dom = 't')) 
-```
 Take note of these, since you will have to use them in your search.
 
 4. Since we are going to need to manipulate the data that we downloaded using the pipe operator, there are going to be two components with this step.  First, we are going to download the data from the US Census API using tidycensus, and then we are going to add some of the variables together to get the total population by adding together the male and female populations.
