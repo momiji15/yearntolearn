@@ -198,7 +198,7 @@ You will be using the variables **name** field to enter in a tidycensus search.
 
 3. Here are the variables that we are interested in. These are all under the concept of *Sex and Age by Disability Status*:
 
-- B18101_00: Total Population
+- B18101_001: Total Population
 - B18101_016: Estimate - Total Male 65 to 74 years with a disability
 - B18101_019: Estimate - Total Male 75 years and older with a disability
 - B18101_035: Estimate - Total Female 65 to 75 years with a disability
