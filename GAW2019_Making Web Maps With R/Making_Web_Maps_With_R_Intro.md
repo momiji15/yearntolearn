@@ -77,4 +77,4 @@ This data was downloaded from the [Missouri Spatial Data Information Service](ht
 
 
 ### For Further Information
-We will not be able to cover everything in this tutorial. If you want to learn how to further customize your map, refer to the Leaflet[https://ugoproto.github.io/ugo_r_doc/pdf/leaflet-cheat-sheet.pdf] and [R Markdown](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) cheatsheets.
+We will not be able to cover everything in this tutorial. If you want to learn how to further customize your map, refer to the [Leaflet](https://ugoproto.github.io/ugo_r_doc/pdf/leaflet-cheat-sheet.pdf) and [R Markdown](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) cheatsheets.
