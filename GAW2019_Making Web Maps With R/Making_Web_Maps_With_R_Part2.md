@@ -216,7 +216,7 @@ map
 ***
 #### Lesson 3: Publishing and RMarkdown document on RPubs.
 Now you're at the final step! It's time to show off what you've done! There are various ways to share
-your map online, but one of the easiest ways of doing so is through RPubs. You can sign up for an account [here](rpubs.com). Once you sign up, you will easily be able to publish your document on RPubs.
+your map online, but one of the easiest ways of doing so is through RPubs. You can sign up for an account [here](https://www.rpubs.com). Once you sign up, you will easily be able to publish your document on RPubs.
 
 1. Knit your document to HTML if you already haven't done so. On the top right of your HTML document, you 
 should see a button that says **Publish** on the top right-hand corner of your document. Click it, and you will be prompted to log in. Before you get the prompt, some additional R packages might automatically download. Once they are finished downloading, you will be able to log in.
