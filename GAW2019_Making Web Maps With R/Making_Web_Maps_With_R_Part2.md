@@ -61,7 +61,7 @@ See a pattern?
 
 ##### Changing Text
 
-*This is italicized* `this is italicized`
+*This is italicized* `*this is italicized*`
 
 **This is bold** `**this is bold`
 
@@ -105,7 +105,7 @@ library(sf)
 library(rmarkdown)
 library(magrittr)
 
-ltc_facilities <- readOGR("./dataprep/SLC_LTC_Facilities/slc_ltc_facilities.shp",
+ltc_facilities <- readOGR("./Data/SLC_LTC_Facilities/slc_ltc_facilities.shp",
                           verbose = FALSE)
 
 census_api_key("e758b8cf88c937a42cd051ff1ecfb2bb0d1fec41")
