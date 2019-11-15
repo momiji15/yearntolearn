@@ -22,7 +22,7 @@ It is preferred that participants have basic familiarity with R and the RStudio.
 let me know if you are lost! In addition, it is preferred that you have a basic idea of vector data for mapping (points, lines, and polygons).
 
 ## Slides
-You can access the slides for this workshop [here](https://momiji15.github.io/wustl_rwebmap/WMWR2019.html)
+You can access the slides for this workshop [here](https://momiji15.github.io/wustl_rwebmap/WMWR2019.html).
 
 ## Set-up
 
