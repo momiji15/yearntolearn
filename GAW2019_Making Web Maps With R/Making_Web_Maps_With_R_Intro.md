@@ -74,7 +74,7 @@ library(magrittr)
 You will have to register for a US Census Bureau API key which allows you to download Census data using tidycensus. You can download the key [here](https://api.census.gov/data/key_signup.html).
 
 ### Points Data
-- [*LTC_Facilities.shp: Long Term Facilities in St. Louis City.*](https://wustl.box.com/s/ge36cnzd4wwdqeklmjqejoq9pkrrqhnt)
+- [*LTC_Facilities.shp: Long Term Facilities in St. Louis City.*](https://wustl.box.com/s/0ajnruisjhor5efi0z3hi1tou47yj6wy)
 
 This data was downloaded from the [Missouri Spatial Data Information Service](http://msdis.missouri.edu/). You will need to download points data from the link provided. This data has been prepped for the tutorial. This data is important to note when you download data, it is not ready to go and you will have to do some data manipulation before using it!
 
