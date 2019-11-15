@@ -92,7 +92,7 @@ Now you're ready to go!
 
 1. Let's load the long-term care facilities into R Studio:
 ```{r eval = FALSE}
-ltc_facilities <- readOGR("Data/SLC_LTC_Facilities/slc_ltc_facilities.shp", verbose = FALSE)
+ltc_facilities <- readOGR("./Data/SLC_LTC_Facilities/slc_ltc_facilities.shp", verbose = FALSE)
 
 ```
 `verbose = FALSE` suppresses any warning messages that would occur when running your code.
@@ -101,7 +101,7 @@ ltc_facilities <- readOGR("Data/SLC_LTC_Facilities/slc_ltc_facilities.shp", verb
 when creating the map. The pipe allows you to focus on the processes as opposed to having to constantly assign variables and constantly call functions with variables. You are essentially getting rid of a lot of redundancy by using pipes. Each pipe passes the information from the previous operation or function to the next operation or function. Let's try adding just the long term care facilities.
 
 ```{r eval= FALSE}
-ltc_facilities <- readOGR("Data/SLC_LTC_Facilities/slc_ltc_facilities.shp",
+ltc_facilities <- readOGR("./Data/SLC_LTC_Facilities/slc_ltc_facilities.shp",
                           verbose = FALSE)
 leaflet() %>%
   addTiles() %>%
@@ -116,7 +116,7 @@ library(rgdal)
 library(sf)
 
 
-ltc_facilities <- readOGR("./dataprep/SLC_LTC_Facilities/slc_ltc_facilities.shp",
+ltc_facilities <- readOGR("./Data/SLC_LTC_Facilities/slc_ltc_facilities.shp",
                           verbose = FALSE)
 leaflet() %>%
   addTiles() %>%
@@ -150,7 +150,7 @@ library(rgdal)
 library(sf)
 
 
-ltc_facilities <- readOGR("./dataprep/SLC_LTC_Facilities/slc_ltc_facilities.shp",
+ltc_facilities <- readOGR("./Data/SLC_LTC_Facilities/slc_ltc_facilities.shp",
                           verbose = FALSE)
 leaflet() %>%
   addTiles() %>%
