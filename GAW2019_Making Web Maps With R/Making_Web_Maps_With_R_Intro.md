@@ -21,6 +21,9 @@ By the end of this workshop, participants will be able to:
 It is preferred that participants have basic familiarity with R and the RStudio. If you are completely new to R, then you should be able to follow along. Whether you're a complete beginner to R or experienced in R, but not familiar with using Leaflet, don't be shy and make sure that you ask a question if you have one or 
 let me know if you are lost! In addition, it is preferred that you have a basic idea of vector data for mapping (points, lines, and polygons).
 
+## Slides
+You can access the slides for this workshop [here](https://momiji15.github.io/wustl_rwebmap/WMWR2019.html)
+
 ## Set-up
 
 ### R and RStudio
