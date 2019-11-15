@@ -266,7 +266,7 @@ library(sf)
 library(rmarkdown)
 library(magrittr)
 
-ltc_facilities <- readOGR("/Users/dorrisscott/Documents/Workshops/Workshops Developed/Geography Awareness Week 2019/Making Web Maps Using R/Data/R_Project/dataprep/SLC_LTC_Facilities/slc_ltc_facilities.shp",
+ltc_facilities <- readOGR("./dataprep/SLC_LTC_Facilities/slc_ltc_facilities.shp",
                           verbose = FALSE)
 
 census_api_key("e758b8cf88c937a42cd051ff1ecfb2bb0d1fec41")
