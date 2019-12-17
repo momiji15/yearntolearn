@@ -29,7 +29,7 @@ This workshop is suitable those who have no experience or are novices in QGIS or
 You can access slides for this workshop here.
 
 ## References
-We will not be able to cover all of the functionalities of QGIS in this workshop. Refer to these references to learn more on how to use QGIS
-[A Gentle Introduction to GIS](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/index.html)
-[QGIS Tutorials and Tips](https://www.qgistutorials.com/en/)
-[Nate's QGIS Tutorial](https://nates-intro-to-qgis.readthedocs.io/en/latest/)
+We will not be able to cover all of the functionalities of QGIS in this workshop. Refer to these references to learn more on how to use QGIS:
+- [A Gentle Introduction to GIS](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/index.html)
+- [QGIS Tutorials and Tips](https://www.qgistutorials.com/en/)
+- [Nate's QGIS Tutorial](https://nates-intro-to-qgis.readthedocs.io/en/latest/)
