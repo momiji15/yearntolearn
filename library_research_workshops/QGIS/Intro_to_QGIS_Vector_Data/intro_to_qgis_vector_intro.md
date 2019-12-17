@@ -6,7 +6,7 @@ The purpose of this workshop is to get you acquainted with the basics of QGIS. Q
 By the end of Part 1 of this workshop, participants will be able to:
 1. Describe the three types of GIS Vector Data.
 2. Find and download GIS data from a variety of data sources.
-3. Prepare GIS dta in a GQIS workspace.
+3. Prepare GIS dta in a QGIS workspace.
 4. Produce basic queries for data discovery.
 5. Join tabular data to vector data.
 6. Compute a value through field calculations.
