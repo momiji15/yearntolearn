@@ -39,4 +39,9 @@ One of the file formats that represent vector data is a shapefile, which is actu
 1. Identifying relevant websites to download GIS data for an area of interest.
 2. Use relevant websites to download GIS data.
 
+### Terms to know
+[Census block group](https://www2.census.gov/geo/pdfs/reference/GARM/Ch11GARM.pdf): The smallest geographic unit in which the Census unit collects census data. 
+
+As mentioned in the [introduction](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/intro_to_qgis_vector_intro.md
+), our final project will be a map that displays schools in St. Louis city and shows the student to teacher ratio by census block group. 
 
