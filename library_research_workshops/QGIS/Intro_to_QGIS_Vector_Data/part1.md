@@ -32,3 +32,11 @@ On the other hand, raster data is a grid of pixels in which each value represent
 One of the file formats that represent vector data is a shapefile, which is actually made of up of various filetypes such as .shp, .shx, .dbf, .prj, and .xml. We will be working with shapefiles for this workshop. The reason that shapefiles are made up of various files is due to the nature of vector data. Vector data is not just visual in nature; a database underlies vector data which in which each point, line, and polygon is represented by a record in a database. In addition, a shapefile might contain metadata, which is data about data. In short, metadata gives you information about how the shapefile was derived.
 
 ![](Pictures/unit1_1.png)
+
+
+## Unit 2: Finding and Downloading GIS Data
+### Unit Objectives
+1. Identifying relevant websites to download GIS data for an area of interest.
+2. Use relevant websites to download GIS data.
+
+
