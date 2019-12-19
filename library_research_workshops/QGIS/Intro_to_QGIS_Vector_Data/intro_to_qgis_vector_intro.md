@@ -1,7 +1,7 @@
 # Introduction to QGIS: Vector Data
 
 ## Workshop Purpose
-The purpose of this workshop is to get you acquainted with the basics of QGIS. QGIS is an open-source software that is both Mac and Windows compatible. You can download the software on the [QGIS homepage](https://qgis.org/en/site/). This workshop is divided in two parts. In the first part, participants will become acquainted with vector data along with basic tasks you can do in QGIS. In the second part, participants will learn basic cartographic principles and learn how to make a map. W
+The purpose of this workshop is to get you acquainted with the basics of QGIS. QGIS is an open-source software that is both Mac and Windows compatible. You can download the software on the [QGIS homepage](https://qgis.org/en/site/). This workshop is divided in two parts. In the first part, participants will become acquainted with vector data along with basic tasks you can do in QGIS. In the second part, participants will learn basic cartographic principles and learn how to make a map. 
 
 By the end of Part 1 of this workshop, participants will be able to:
 1. Describe the three types of GIS Vector Data.
