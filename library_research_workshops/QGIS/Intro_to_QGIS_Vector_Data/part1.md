@@ -53,13 +53,13 @@ So where do we start? Let's work our way down this short list.
 
 ##### Schools data
 [The Missouri Spatial Data Information Service(MSDIS)](http://msdis.missouri.edu/) has a variety of spatial data over the state of Missouri, including our schools data.
-![](Pictures/unit1_2.png)
+![](Pictures/unit2_1.png)
 
 1. Go to the MSDIS website.
 2. Under the **Download Data** dropdown menu, click on **Data Portal**. 
 3. Scroll down on the site and click on the **Education** icon.
 
-![](Pictures/unit1_3.png)
+![](Pictures/unit2_2.png)
 
 4. You will see three results. Scroll down and you will see **MO 2019 Public Schools**. Click on the text and you will be directed to a page that shows you a preview of the data along with the various attributes of the data. On the right side of the page, click on the **Download** button which will display a drop-down menu. Click on shapefile and the file will automatically download. 
 
@@ -68,5 +68,9 @@ So where do we start? Let's work our way down this short list.
 6. After creating your folder, move the **MO_2019_Public_Schools** shapefile to your **GIS_Data** folder.
 
 #### Census Tracts
-Now it's time to download your census tracts. 
+Now it's time to download your census tracts. You can do this from the [Census Bureau TIGER/Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) website.
 
+1. Go to the U.S. Census Bureau TIGER/Line Shapefiles website.
+
+2. On the drop-down menu, in **Select Year**, select **2019** and in **Select a Layer Type** select **Block Groups**.
+![](Pictures/unit2_3.png)
