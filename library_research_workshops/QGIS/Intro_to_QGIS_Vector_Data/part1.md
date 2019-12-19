@@ -52,7 +52,7 @@ So where do we start? Let's work our way down this short list.
 
 ##### Schools data
 [The Missouri Spatial Data Information Service(MSDIS)](http://msdis.missouri.edu/) has a variety of spatial data over the state of Missouri, including our schools data.
-![](Pictures/unit1_2)
+![](Pictures/unit1_2.png)
 
 1. Go to the MSDIS website.
 2. Under the **Download Data** dropdown menu, click on **Data Portal**. 
