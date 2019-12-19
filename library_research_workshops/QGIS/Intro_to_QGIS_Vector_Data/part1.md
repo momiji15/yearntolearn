@@ -16,13 +16,13 @@
   4. Describe the structure of GIS data.
 
 ### Terms to know
-Geographic Information Systems(GIS): A computer system that is used to capture, display, and analyze data that has a spatial reference on Earth.
+- Geographic Information Systems(GIS): A computer system that is used to capture, display, and analyze data that has a spatial reference on Earth.
 
-vector data: GIS data that represents data on the earth through points, lines, and polygons.
+- vector data: GIS data that represents data on the earth through points, lines, and polygons.
 
-raster data: GIS data that represents data on the earth through a grid of pixels.
+- raster data: GIS data that represents data on the earth through a grid of pixels.
 
-shapefile: A file format for vector data, which comprises of at least four different file types.
+- shapefile: A file format for vector data, which comprises of at least four different file types.
 
 #### GIS, Vector and Raster GIS Data
 Geographic Information Systems (GIS) is a very powerful tool when it comes to understanding physical and socio-cultural processes on the earth. There are various types of GIS software out there, however a common thread with the software is the data they deal with. GIS uses vector data and raster data to represent features on the earth. Vector data is made up of points, lines and polygons. An example of point data could be a points representing school locations (which you will see in today's workshop). An example of line data could be lines representing rivers and streams. Finally, an example of polygon data could be school districts.
@@ -40,7 +40,8 @@ One of the file formats that represent vector data is a shapefile, which is actu
 2. Use relevant websites to download GIS data.
 
 ### Terms to know
-[Census block group](https://www2.census.gov/geo/pdfs/reference/GARM/Ch11GARM.pdf): The smallest geographic unit in which the Census unit collects census data. 
+- [Census block group](https://www2.census.gov/geo/pdfs/reference/GARM/Ch11GARM.pdf): The smallest geographic unit in which the Census unit collects census data. 
+- TIGER Lines: Geographic features for all 50 states from the  *Topographically Integrated Geographic Encoding and Referencing* database(thus the acronym TIGER). Examples of TIGER line products are rivers, roads, and administrative boundaries such as counties.
 
 #### GIS Data Sources: Where to go?
 As mentioned in the [introduction](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/intro_to_qgis_vector_intro.md
@@ -60,4 +61,12 @@ So where do we start? Let's work our way down this short list.
 
 ![](Pictures/unit1_3.png)
 
+4. You will see three results. Scroll down and you will see **MO 2019 Public Schools**. Click on the text and you will be directed to a page that shows you a preview of the data along with the various attributes of the data. On the right side of the page, click on the **Download** button which will display a drop-down menu. Click on shapefile and the file will automatically download. 
+
+5. Before we move the data from the Downloads folder, we need to make a folder on your Desktop to store your GIS data. File management is essential to GIS and it is important to implement sound data management skills for GIS project management. You will learn such skills throughout this workshop. Create a folder and name it **GIS_Data**. It is important to not use spaces in naming your folders and files due to readability issues that could occur later on. Make sure to use an underscore in place of a space to prevent any problems down the road. Also, notice that **MO_2019_Public_Schools** also use underscores in place of spaces in the zipped file.
+
+6. After creating your folder, move the **MO_2019_Public_Schools** shapefile to your **GIS_Data** folder.
+
+#### Census Tracts
+Now it's time to download your census tracts. 
 
