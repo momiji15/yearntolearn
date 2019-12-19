@@ -58,4 +58,6 @@ So where do we start? Let's work our way down this short list.
 2. Under the **Download Data** dropdown menu, click on **Data Portal**. 
 3. Scroll down on the site and click on the **Education** icon.
 
+![](Pictures/unit1_3.png)
+
 
