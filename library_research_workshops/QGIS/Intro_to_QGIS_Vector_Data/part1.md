@@ -4,7 +4,7 @@
 ### Unit 1: Introduction to Vector Data
 ### Unit 2: Finding and Downloading GIS Data
 ### Unit 3: Prepare GIS Data in a QGIS Workspace
-### Unit 4: Producing Basic Queries for Data Discovery
+### Unit 4: Producing Basic Queries 
 ### Unit 5: Joining Tabular Data to Vector Data
 ### Unit 6: Computing values with Field Calculator
 
@@ -67,10 +67,33 @@ So where do we start? Let's work our way down this short list.
 
 6. After creating your folder, move the **MO_2019_Public_Schools** shapefile to your **GIS_Data** folder.
 
-#### Census Tracts
+##### Census Tracts
 Now it's time to download your census tracts. You can do this from the [Census Bureau TIGER/Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) website.
 
 1. Go to the U.S. Census Bureau TIGER/Line Shapefiles website.
 
-2. On the drop-down menu, in **Select Year**, select **2019** and in **Select a Layer Type** select **Block Groups**.
+2. On the drop-down menu, in **Select Year**, select **2019** and in **Select a Layer Type** select **Block Groups**. Click **Submit**.
 ![](Pictures/unit2_3.png)
+
+3. You will be prompted to another page in which you will need to choose the state. In the dropdown menu, choose **Missouri** and click the **Download** button. Move your downloaded shapefile to your **GIS_Data folder**.
+
+4. To use the files in QGIS, you will need to unzip the folders. Right-click on **MO_2019_Public_Schools**, and unzip the file. If you are using a Mac, you will go to **Open With** and then **Archive Utility**. For Windows, after right-clicking, go to **Extract All** and follow the instructions. 
+
+## Unit 3: Prepare GIS Data in a QGIS Workspace
+
+### Unit Objectives
+1. Adding vector data to a QGIS workspace.
+2. Adding a csv file to a QGIS workspace.
+3. Adding projections to your vector data.
+
+### Terms to Know
+- projection: A mathematical function that transforms the earth's 3D surface on a 2D surface.
+Now that you have unzipped your data, it is not ready to put your shapefiles in a QGIS workspace.
+
+1. Open up QGIS.
+
+2. On the top menu bar, go to **File > New** to open a new workspace. You can also click on the left-most icon that looks like a blank sheet of paper to open a new workspace.
+
+3. Now, you will add the Missouri public schools and census block group shapefiles to your workspace. 
+
+
