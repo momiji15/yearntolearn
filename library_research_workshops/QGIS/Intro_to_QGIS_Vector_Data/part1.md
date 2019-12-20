@@ -93,9 +93,9 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 1. Open up QGIS.
 
 2. On the top menu bar, go to **File > New** to open a new workspace. You can also click on the left-most icon that looks like a blank sheet of paper to open a new workspace.
-![](unit3_1e.png)
+![](Pictures/unit3_1e.png)
 
 3. Now, you will add the Missouri public schools and census block group shapefiles to your workspace. Press the **Open Data Source Manager** button which is below the **New Project** button.
-![](unit3_2e.png)
+![](Pictures/unit3_2e.png)
 
 
