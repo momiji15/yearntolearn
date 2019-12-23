@@ -136,6 +136,10 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_5e.png)
 
+19. This will display the **Project Coordinate Reference System (CRS)** window. Under **Recently used coordinate reference systems**, you should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is **102696**. Click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
+
+![](Pictures/unit3_6.png)
+
 
 
 
