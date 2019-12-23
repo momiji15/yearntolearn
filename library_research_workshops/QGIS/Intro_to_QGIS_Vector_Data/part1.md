@@ -140,7 +140,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_6.png)
 
-*Troubleshooting Tip*
+*Troubleshooting Tip*: 
 If you are having issues with the shapefiles displaying properly, then create a new project and then add your shapefiles in your new project. The project will change to the projection of the first shapefile that you add. Save your project and continue to do the work from this project.
 
 
