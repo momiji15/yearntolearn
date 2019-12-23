@@ -110,15 +110,8 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 8. We need to project our data. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. 
 
-9. Let's change the projection of the block groups first. Right click on **tl_2019_29_bg** and click on **Properties**. On the left-hand menu bar, click on **Source**. 
 
-10. Under **Geometry and Coordinate Reference System > Set Source coordinate reference system**, click on the button on the right-hand side.
 
-![](Pictures/unit3_4e.png)
-
-11. In the **Filter**, type **Missouri** and under **Coordinate Reference System**, you will see various coordinate reference systems for the state of Missouri. We want. to use **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Scroll down to find that coordinate reference system and highlight it. Then click **OK**. 
-
-![](Pictures/unit3_5.png)
 
 
 
