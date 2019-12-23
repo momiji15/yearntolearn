@@ -102,3 +102,20 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 5. Now we're going to add the schools. Again, click on the ***...*** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then to the **MO_2019_Public_Schools** folder and then select **MO_2019_Public_Schools.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
+6. Your workspace should look similar to this. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **tl_2019_29_bg**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **tl_2019_29_bg**. 
+
+7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
+
+8. We need to project our data. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. 
+
+9. Let's change the projection of the block groups first. Right click on **tl_2019_29_bg** and click on **Properties**. On the left-hand menu bar, click on **Source**. 
+
+10. Under **Geometry and Coordinate Reference System > Set Source coordinate reference system**, click on the button on the right-hand side.
+
+![](Pictures/unit3_4e.png)
+
+
+
+
+![](Pictures/unit3_3.png)
+
