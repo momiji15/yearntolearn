@@ -108,8 +108,29 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
-8. We need to project our data. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. 
+8. We need to project our data. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
+9. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
+
+10. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
+
+11. Click the **Select CRS** button in **CRS**. 
+
+12. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. 
+![](Pictures/unit3_4.png)
+
+
+13. Click **OK** and **OK** in the **Save Vector Layer as...** dialogue box. You will see your newly created shapefile in the Layers section.
+
+14. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
+
+14. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **tl_2019_29_bg** folder. Name your new layer **MO_2019_BG_Project**.
+
+15.  Click the **Select CRS** button in **CRS**. 
+
+16. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
+
+17. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg.** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
 
 
