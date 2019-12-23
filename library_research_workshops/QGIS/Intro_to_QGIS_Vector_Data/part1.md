@@ -132,6 +132,9 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 17. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg.** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
+18. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
+
+![](Pictures/unit3_5e.png)
 
 
 
