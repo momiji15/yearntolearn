@@ -102,7 +102,9 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 5. Now we're going to add the schools. Again, click on the ***...*** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then to the **MO_2019_Public_Schools** folder and then select **MO_2019_Public_Schools.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
-6. Your workspace should look similar to this. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **tl_2019_29_bg**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **tl_2019_29_bg**. 
+6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **tl_2019_29_bg**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **tl_2019_29_bg**. 
+
+![](Pictures/unit3_3.png)
 
 7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
@@ -114,8 +116,11 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_4e.png)
 
+11. In the **Filter**, type **Missouri** and under **Coordinate Reference System**, you will see various coordinate reference systems for the state of Missouri. We want. to use **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Scroll down to find that coordinate reference system and highlight it. Then click **OK**. 
+
+![](Pictures/unit3_5.png)
 
 
 
-![](Pictures/unit3_3.png)
+
 
