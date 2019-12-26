@@ -182,6 +182,27 @@ With QGIS, you can select features either by expression or by location. When you
 
 ![](Pictures/unit4_4.png)
 
+9. Click **Select Features** and 360 features should be selected. Click **Close** to close the Expression box. You might not see the selected features, so click on the **Zoom to Selection** button which is to the left of the **Zoom to Layer** button. You should see all of the city of St. Louis selected.
+
+10. We're going to export those selected block groups which will result in creating a new shapefile. Right-click on **MO_2019_BG_Project** > **Save Selected Features As...**
+
+11. Keep the **Format** as an **ESRI Shapefile** and for **File name**, click on the ellipses(...) and navigate to your GIS_Data folder. Create a new folder called **stl_bg** and navigate to your folder. You will save your shapefile here. Give your shapefile the same name as the folder that you just created. Make sure that the **CRS** is the **Project CRS: EPSG 102696 - NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Keep everything else the same and press **OK**. 
+![](Pictures/unit4_5.png)
+*Note that the file extensions will be different for you than what you see in the picture above*
+
+12. Your newly created shapefile is added to the layers panel. Save your QGIS project.
+
+#### Producing a select by location query
+Now that we have the St. Louis City census tracts, we can use it as a "cookie cutter" of sorts and select schools that are in St. Louis City. We can do this by producing a select by location query. 
+
+1. In the QGIS menu var, click on **Vector** > **Research Tools** > **Select by Location**.
+
+2. Under the drop-down menu in **Select features from**, choose **MO_2019_Public_Schools_Project**. Under **Where the features(geometric predicate)**, only check the box for **intersect**. Under **By comparing to the features from**, choose **stl_bg** from the drop-down menu. Finally, under **Modify current selection by**, make sure **creating new selection** is selected.
+![](Pictures/unit4_6.png)
+
+
+
+
 
 
 
