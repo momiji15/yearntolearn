@@ -149,6 +149,9 @@ If you are having issues with the shapefiles displaying properly, then create a 
 1. Produce a *select features by expression* query.
 2. Produce a *select features by location* query.
 
+### Terms to know
+- FIPS code: A numbers which uniquely identifies a geographic unit such as a county or state. FIPS stands for *Federal Information Processing Standard*. State level FIPS codes have two digits while county level FIPS codes have five digits in which the first two digits are the state FIPS code. 
+
 With QGIS, you can select features either by expression or by location. When you select features by expression, you are selecting a features of vector data based on a particular attribute such as all of the census block groups in a specific county. When you select features by location, you can select features of vector data based on their location, such as selecting all the cenus block groups that are contained within a St. Louis City polygon. Let's give both a try.
 
 #### Producing a select features by expression query 
@@ -168,6 +171,16 @@ With QGIS, you can select features either by expression or by location. When you
     
    Option 2: Click on the **Select by Expression** button on the QGIS toolbar.
    ![](Pictures/unit4_3.png)
+   
+ 5. Using either option in #4, click on **Select by Expression**. We will be selecting St. Louis City block groups by County FIPS codes which is listed as **COUNTYFP** in the attribute table. Since St. Louis City is its own administrative unit separate from St. Louis county, it has it's own FIPS code which is **510**.
+ 
+6. Let's create the query. In the middle box, click on **Fields and Values** and double-click **COUNTYFP**. You should see `COUNTYFP`appear in the Expression box on the left.
+
+7. Click on the `=` button located in the toolbar above the Expression box. You should see `=` appear in the Expression box.
+
+8. In the right box under **Values**, click on **All Unique** which will show all of the values that are in the **COUNTYFP** field. Scroll down until you find **510** and double-click on it. Your expression should look like this:
+
+![](Pictures/unit4_4.png)
 
 
 
