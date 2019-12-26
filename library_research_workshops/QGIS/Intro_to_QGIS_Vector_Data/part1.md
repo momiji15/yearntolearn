@@ -165,6 +165,9 @@ With QGIS, you can select features either by expression or by location. When you
    Option 1: Open the attribute table and click on the **Select features using an expression** button that is on the 
    the attribute table toolbar.
     ![](Pictures/unit4_2e.png)
+    
+   Option 2: Click on the **Select by Expression** button on the QGIS toolbar.
+   ![](Pictures/unit4_3.png)
 
 
 
