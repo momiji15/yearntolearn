@@ -124,15 +124,15 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 14. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
 
-14. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **tl_2019_29_bg** folder. Name your new layer **MO_2019_BG_Project**.
+15. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **tl_2019_29_bg** folder. Name your new layer **MO_2019_BG_Project**.
 
-15.  Click the **Select CRS** button in **CRS**. 
+16.  Click the **Select CRS** button in **CRS**. 
 
-16. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
+17. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
 
-17. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg.** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
+18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg.** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
-18. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
+19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
 
 ![](Pictures/unit3_5e.png)
 
@@ -142,6 +142,23 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 *Troubleshooting Tip*: 
 If you are having issues with the shapefiles displaying properly, then create a new project and then add your shapefiles in your new project. The project will change to the projection of the first shapefile that you add. Save your project and continue to do the work from this project.
+
+## Unit 4: Producing Basic Queries
+
+### Unit Objectives
+1. Produce a *select features by expression* query.
+2. Produce a *select features by location* query.
+
+With QGIS, you can select features either by expression or by location. When you select features by expression, you are selecting a features of vector data based on a particular attribute such as all of the census block groups in a specific county. When you select features by location, you can select features of vector data based on their location, such as selecting all the cenus block groups that are contained within a St. Louis City polygon. Let's give both a try.
+
+#### Producing a select features by expression query 
+1. Right-click on **MO_2019_BG_Project** and click on **Open Attribute Table**.
+2. As you can see, a database underlies this polygon dataset in which there are records for each feature contained in the s
+   dataset. You can see this by clicking on the number for the first record and right-click the value that is in 
+   **STATEFP**. Then click on **Zoom to Feature** which zooms into the feature and highlights it as well. 
+3. To zoom out to see the entire Missouri block groups, click on the **Zoom to Layer** button in the QGIS toolbar.
+![](Pictures/unit4_1e.png)
+
 
 
 
