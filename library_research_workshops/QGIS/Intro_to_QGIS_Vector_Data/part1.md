@@ -136,7 +136,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_5e.png)
 
-19. This will display the **Project Coordinate Reference System (CRS)** window. Under **Recently used coordinate reference systems**, you should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is **102696**. Click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
+20. This will display the **Project Coordinate Reference System (CRS)** window. Under **Recently used coordinate reference systems**, you should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is **102696**. Click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
 
 ![](Pictures/unit3_6.png)
 
@@ -153,11 +153,18 @@ With QGIS, you can select features either by expression or by location. When you
 
 #### Producing a select features by expression query 
 1. Right-click on **MO_2019_BG_Project** and click on **Open Attribute Table**.
+
 2. As you can see, a database underlies this polygon dataset in which there are records for each feature contained in the s
    dataset. You can see this by clicking on the number for the first record and right-click the value that is in 
    **STATEFP**. Then click on **Zoom to Feature** which zooms into the feature and highlights it as well. 
 3. To zoom out to see the entire Missouri block groups, click on the **Zoom to Layer** button in the QGIS toolbar.
 ![](Pictures/unit4_1e.png)
+
+4. Let's select the census block groups that are in St. Louis City by using an expression. There are two ways you can do 
+   this: 
+   Option 1: Open the attribute table and click on the **Select features using an expression** button that is on the 
+   the attribute table toolbar.
+    ![](Pictures/unit4_2e.png)
 
 
 
