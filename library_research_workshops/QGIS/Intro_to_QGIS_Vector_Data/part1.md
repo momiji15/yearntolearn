@@ -82,6 +82,8 @@ An easy way to get the block group shapefiles and the corresponding csv files th
 
 5. Your results should look like this: 
 
+6. We will need to get the appropriate source table and GIS file. Click on 
+
 
 Option 2: US Census Bureau
 Now it's time to download your census block groups. You can do this from the [Census Bureau TIGER/Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) website.
