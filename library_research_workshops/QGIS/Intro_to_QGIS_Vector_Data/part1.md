@@ -68,10 +68,20 @@ So where do we start? Let's work our way down this short list.
 6. After creating your folder, move the **MO_2019_Public_Schools** shapefile to your **GIS_Data** folder.
 
 ##### Census Tracts
+
 Option 1: NHGIS
 An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org)website. The nice thing about NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
 
-1. Navigate to the NHGIS website and click on the **Get Data** button.
+1. Navigate to the NHGIS website and click on the **Get Data**  button.
+
+2. Click on the **Geographic Levels** button. Under **Most Popular**, click the green round button next to **Block Group**. It should turn into a checked checkbox.
+
+3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
+
+4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox.
+
+5. Your results should look like this: 
+
 
 Option 2: US Census Bureau
 Now it's time to download your census block groups. You can do this from the [Census Bureau TIGER/Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) website.
