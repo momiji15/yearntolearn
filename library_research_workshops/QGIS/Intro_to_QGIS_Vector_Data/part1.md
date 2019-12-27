@@ -121,7 +121,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 5. Now we're going to add the schools. Again, click on the ***...*** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then to the **MO_2019_Public_Schools** folder and then select **MO_2019_Public_Schools.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
-6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **tl_2019_29_bg**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **tl_2019_29_bg**. 
+6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **MO_blck_grp_2017**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **MO_blck_grp_2017**. 
 
 ![](Pictures/unit3_3.png)
 
@@ -143,13 +143,13 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 14. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
 
-15. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **tl_2019_29_bg** folder. Name your new layer **MO_2019_BG_Project**.
+15. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **nhgis0013_shapefile_tl2017_290_blck_grp_2017** folder. Name your new layer **MO_2019_BG_Project**.
 
 16.  Click the **Select CRS** button in **CRS**. 
 
 17. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
 
-18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg.** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
+18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
 19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
 
