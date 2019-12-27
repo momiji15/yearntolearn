@@ -156,7 +156,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 17. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
 
-18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017** You might think that your project window looks strange. You might only see the block groups shapefile, but not the schools shapefile. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
+18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017** You might think that your project window looks strange. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
 19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
 
