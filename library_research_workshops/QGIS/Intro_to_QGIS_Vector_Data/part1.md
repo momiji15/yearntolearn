@@ -74,14 +74,17 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 1. Navigate to the NHGIS website and click on the **Get Data**  button.
 
 2. Click on the **Geographic Levels** button. Under **Most Popular**, click the green round button next to **Block Group**. It should turn into a checked checkbox.
+
 ![](Pictures/unit2_4.png)
 
 3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
 
 4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox.
+
 ![](Pictures/unit2_5.png)
 
 5. Your results should look like this: 
+
 ![](Pictures/unit2_6.png)
 
 6. We will need to get the appropriate source table and GIS file. Under **Source Table** click the green round button next to **B01003 Total Population**. In the **Data Cart**, which is located on the top right-hand corner, you will see that your selected source table as added to the cart.
@@ -93,6 +96,7 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 9. In the **Review and Submit** section, keep everything as is, with the exception of **Geographic Extents** under the **Source Table** section. You will need to select a geographic extent for the source table to ensure you just get the total population for Missouri. Click on the **Geographic Extents** button, select **Missouri**, and then click **Submit**.
 
 10. Click **Submit** in the **Review and Submit** section. You will be directed to an **Extracts History** page in which you will be able to see your download history. Since the source table and GIS data retrieval process is automated, it might take some time. You will receive an e-mail when your data extract is ready. You can download it through the link provided in the e-mail or continue to refresh the page until you see a **Complete** status. Click on **tables** to download the data table and click on **gis** to download the GIS data. Make sure to save it to your GIS_Data folder.
+
 ![](Pictures/unit2_7.png)
 
 11. Unzip your downloaded files. If you are using a Mac, you will **right-click > Open With > Archive Utility(default)**.
@@ -112,9 +116,11 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 1. Open up QGIS.
 
 2. On the top menu bar, go to **File > New** to open a new workspace. You can also click on the left-most icon that looks like a blank sheet of paper to open a new workspace.
+
 ![](Pictures/unit3_1e.png)
 
 3. Now, you will add the Missouri public schools and census block group shapefiles to your workspace. Press the **Open Data Source Manager** button which is below the **New Project** button.
+
 ![](Pictures/unit3_2e.png)
 
 4. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to **nhgis0013_shape folder > nhgis0013_shapefile_tl2017_290_blck_grp_2017 folder** , click on **MO_blck_grp_2017.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
@@ -136,6 +142,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 11. Click the **Select CRS** button in **CRS**. 
 
 12. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. 
+
 ![](Pictures/unit3_4.png)
 
 
@@ -180,6 +187,7 @@ With QGIS, you can select features either by expression or by location. When you
    dataset. You can see this by clicking on the number for the first record and right-click the value that is in 
    **STATEFP**. Then click on **Zoom to Feature** which zooms into the feature and highlights it as well. 
 3. To zoom out to see the entire Missouri block groups, click on the **Zoom to Layer** button in the QGIS toolbar.
+
 ![](Pictures/unit4_1e.png)
 
 4. Let's select the census block groups that are in St. Louis City by using an expression. There are two ways you can do 
