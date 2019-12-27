@@ -129,7 +129,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **MO_blck_grp_2017**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **MO_blck_grp_2017**. 
 
-*insert image 3_3*
+![](Pictures/unit3_3.png)
 
 7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
@@ -160,7 +160,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
 
-*insert image 3_5*
+![](Pictures/unit3_5e.png)
 
 20. This will display the **Project Coordinate Reference System (CRS)** window. Under **Recently used coordinate reference systems**, you should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is **102696**. Click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
 
