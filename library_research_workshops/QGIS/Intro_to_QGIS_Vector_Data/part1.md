@@ -69,34 +69,35 @@ So where do we start? Let's work our way down this short list.
 
 ##### Census Tracts
 
-Option 1: NHGIS
-An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org)website. The nice thing about NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
+You can get census data through the [Census' data portal](data.census.gov), but for this workshop, we will be using NHGIS, which uses census data. An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org)website. The advantage of using NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
 
 1. Navigate to the NHGIS website and click on the **Get Data**  button.
 
 2. Click on the **Geographic Levels** button. Under **Most Popular**, click the green round button next to **Block Group**. It should turn into a checked checkbox.
+![](Pictures/unit2_4.png)
 
 3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
 
 4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox.
+![](Pictures/unit2_5.png)
 
 5. Your results should look like this: 
+![](Pictures/unit2_6.png)
 
-6. We will need to get the appropriate source table and GIS file. Click on 
+6. We will need to get the appropriate source table and GIS file. Under **Source Table** click the green round button next to **B01003 Total Population**. In the **Data Cart**, which is located on the top right-hand corner, you will see that your selected source table as added to the cart.
 
+7. Now click on the **53 GIS Tables** tab. Find the GIS table for Missouri and click on it. You will see that your **Data Cart** includes the GIS file that you just selected.
 
-Option 2: US Census Bureau
-Now it's time to download your census block groups. You can do this from the [Census Bureau TIGER/Line Shapefiles](https://www.census.gov/cgi-bin/geo/shapefiles/index.php) website.
+8. In the **Data Cart**, click on the **Continue** button. Confirm that for **Source Tables**, you have 2017 American Community Survey: 5-Year Data \[2013-2017, Block Groups & Larger Areas]	and for **GIS Tables**, you have **block group** for the **Geographic Level**, **Missouri** as the **Extent**, and **2017 TIGER Line/+** as the **Basis**. After confirming, click **Continue**.
 
-1. Go to the U.S. Census Bureau TIGER/Line Shapefiles website.
+9. In the **Review and Submit** section, keep everything as is, with the exception of **Geographic Extents** under the **Source Table** section. You will need to select a geographic extent for the source table to ensure you just get the total population for Missouri. Click on the **Geographic Extents** button, select **Missouri**, and then click **Submit**.
 
-2. On the drop-down menu, in **Select Year**, select **2019** and in **Select a Layer Type** select **Block Groups**. Click **Submit**.
-![](Pictures/unit2_3.png)
+10. Click **Submit** in the **Review and Submit** section. You will be directed to an **Extracts History** page in which you will be able to see your download history. Since the source table and GIS data retrieval process is automated, it might take some time. You will receive an e-mail when your data extract is ready. You can download it through the link provided in the e-mail or continue to refresh the page until you see a **Complete** status. Click on **tables** to download the data table and click on **gis** to download the GIS data. Make sure to save it to your GIS_Data folder.
+![](Pictures/unit2_7.png)
 
-3. You will be prompted to another page in which you will need to choose the state. In the dropdown menu, choose **Missouri** and click the **Download** button. Move your downloaded shapefile to your **GIS_Data folder**.
-
-4. To use the files in QGIS, you will need to unzip the folders. Right-click on **MO_2019_Public_Schools**, and unzip the file. If you are using a Mac, you will go to **Open With** and then **Archive Utility**. For Windows, after right-clicking, go to **Extract All** and follow the instructions. 
-
+11. Unzip your downloaded files. If you are using a Mac, you will **right-click > Open With > Archive Utility(default)**.
+If you are using Windows, you will **right-click > Extract All**. Nhgis0013_csv.zip has the csv file with the total population counts while nhgis0013_shape.shp is the shapefile that contains the Missouri block groups. Double-click on the **nhgis0013_shape.shp** folder and unzip **nhgis0013_shapefile_tl2017_290_blck_grp_2017.zip**. 
+**
 ## Unit 3: Prepare GIS Data in a QGIS Workspace
 
 ### Unit Objectives
@@ -116,7 +117,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 3. Now, you will add the Missouri public schools and census block group shapefiles to your workspace. Press the **Open Data Source Manager** button which is below the **New Project** button.
 ![](Pictures/unit3_2e.png)
 
-4. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Click on the **tl_2019_29_bg** folder, select **tl_2019_29.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
+4. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to **nhgis0013_shape folder > nhgis0013_shapefile_tl2017_290_blck_grp_2017 folder** , click on **MO_blck_grp_2017.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
 
 5. Now we're going to add the schools. Again, click on the ***...*** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then to the **MO_2019_Public_Schools** folder and then select **MO_2019_Public_Schools.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
