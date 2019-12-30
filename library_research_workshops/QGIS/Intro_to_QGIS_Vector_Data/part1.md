@@ -136,11 +136,18 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
-8. We need to project our data. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
-9. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
+8. We need to add a projection to our project. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
-10. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
+9. 19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
+![](Pictures/unit3_3e.png)
+
+10.  This will display the **Project Coordinate Reference System (CRS)** window. In **Filters**, type **102696**. Under **Coordinate Reference Systems of the World** should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is indeed **102696**. Click on the coordinate system and then click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
+![](Pictures/unit3_6.png)
+---------------------------------------------------------------------------------------------------------------------------
+10. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
+
+11. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
 
 11. Click the **Select CRS** button in **CRS**. 
 
@@ -161,13 +168,9 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017** You might think that your project window looks strange. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
 
-19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
 
-![](Pictures/unit3_5e.png)
 
-20. This will display the **Project Coordinate Reference System (CRS)** window. Under **Recently used coordinate reference systems**, you should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is **102696**. Click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
 
-![](Pictures/unit3_6.png)
 
 *Troubleshooting Tip*: 
 If you are having issues with the shapefiles displaying properly, then create a new project and then add your shapefiles in your new project. The project will change to the projection of the first shapefile that you add. Save your project and continue to do the work from this project.
