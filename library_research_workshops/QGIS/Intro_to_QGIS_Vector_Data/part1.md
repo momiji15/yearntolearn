@@ -123,13 +123,14 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_2e.png)
 
-4. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to **nhgis0013_shape folder > nhgis0013_shapefile_tl2017_290_blck_grp_2017 folder** , click on **MO_blck_grp_2017.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
+*Note: It is very important that you add the shapefiles in this order due to projection issues with the Census block group data.*
 
-5. Now we're going to add the schools. Again, click on the ***...*** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then to the **MO_2019_Public_Schools** folder and then select **MO_2019_Public_Schools.shp**, and click **Add**. In the Data Source Manager, click **Add**.
+4. We are going to add the schools first. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
+
+5. Now we're going to add the Census block groups. Again, click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **nhgis0013_shape folder > nhgis0013_shapefile_tl2017_290_blck_grp_2017nhgis** folder and then select **MO_blck_grp_2017.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
 6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. If **MO_2019_Public_Schools** are below **MO_blck_grp_2017**, then you will not be able to see them. In this case, click on **MO_2019_Public_Schools** and drag it on top of **MO_blck_grp_2017**. 
 
-![](Pictures/unit3_3.png)
 
 7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
