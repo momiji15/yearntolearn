@@ -162,18 +162,16 @@ This projection was on-the-fly; while the project's projection changed, the shap
 
 15. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
 
-16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **nhgis0013_shapefile_tl2017_290_blck_grp_2017** folder. Name your new layer **MO_2019_BG_Project**.
+16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to  **nhgis0013_shape > nhgis0013_shapefile_tl2017_290_blck_grp_2017**. Name your new layer **MO_blck_group_2017_Project**.
 
 17. Click the **Select CRS** button in **CRS**.
 
-18. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
----------------------------------------------------------------------------------------------------------------------------
+18. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box. Your newly created layer will show up in the Project window and under the Layers panel. 
+![](Pictures/unit3_9.png)
 
+19. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017**. Right-click on each of these files and click **Remove Layer**.
 
-18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017**. 
-
-
-
+Congratulations! You just finished importing all the data you need into QGIS.
 
 
 ## Unit 4: Producing Basic Queries
