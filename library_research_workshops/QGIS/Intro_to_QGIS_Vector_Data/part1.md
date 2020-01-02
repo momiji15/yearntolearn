@@ -203,7 +203,7 @@ With QGIS, you can select features either by expression or by location. When you
    Option 2: Click on the **Select by Expression** button on the QGIS toolbar.
    ![](Pictures/unit4_3.png)
    
- 5. Using either option in #4, click on **Select by Expression**. We will be selecting St. Louis City block groups by County FIPS codes which is listed as **COUNTYFP** in the attribute table. Since St. Louis City is its own administrative unit separate from St. Louis county, it has it's own FIPS code which is **510**.
+5. Using either option in #4, click on **Select by Expression**. We will be selecting St. Louis City block groups by County FIPS codes which is listed as **COUNTYFP** in the attribute table. Since St. Louis City is its own administrative unit separate from St. Louis county, it has it's own FIPS code which is **510**.
  
 6. Let's create the query. In the middle box, click on **Fields and Values** and double-click **COUNTYFP**. You should see `COUNTYFP`appear in the Expression box on the left.
 
@@ -215,7 +215,7 @@ With QGIS, you can select features either by expression or by location. When you
 
 9. Click **Select Features** and 360 features should be selected. Click **Close** to close the Expression box. You might not see the selected features, so click on the **Zoom to Selection** button which is to the left of the **Zoom to Layer** button. You should see all of the city of St. Louis selected.
 
-10. We're going to export those selected block groups which will result in creating a new shapefile. Right-click on **MO_2019_BG_Project** > **Save Selected Features As...**
+10. We're going to export those selected block groups which will result in creating a new shapefile. Right-click on **MO_blck_group_2017_Project** > **Save Selected Features As...**
 
 11. Keep the **Format** as an **ESRI Shapefile** and for **File name**, click on the ellipses(...) and navigate to your GIS_Data folder. Create a new folder called **stl_bg** and navigate to your folder. You will save your shapefile here. Give your shapefile the same name as the folder that you just created. Make sure that the **CRS** is the **Project CRS: EPSG 102696 - NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Keep everything else the same and press **OK**. 
 ![](Pictures/unit4_5.png)
