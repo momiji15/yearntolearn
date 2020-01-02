@@ -139,11 +139,16 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 8. We need to add a projection to our project. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
-9. 19. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
-![](Pictures/unit3_3e.png)
+9. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
+![](Pictures/unit3_5e.png)
 
-10.  This will display the **Project Coordinate Reference System (CRS)** window. In **Filters**, type **102696**. Under **Coordinate Reference Systems of the World** should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is indeed **102696**. Click on the coordinate system and then click **OK**. As you can see, the shapes have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the EPSG number being **102696**.
+10.  This will display the **Project Coordinate Reference System (CRS)** window. In **Filters**, type **102696**. Under **Coordinate Reference Systems of the World** should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is indeed **102696**. Click on the coordinate system and then click **OK**. 
 ![](Pictures/unit3_6.png)
+
+As you can see, the shapefiles have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the **EPSG: **102696** in the bottom right-hand corner. Save your project.
+![](Pictures/unit3_7.png)
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 10. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
 
