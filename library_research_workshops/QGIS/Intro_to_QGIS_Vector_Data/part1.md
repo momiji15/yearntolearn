@@ -145,7 +145,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 10.  This will display the **Project Coordinate Reference System (CRS)** window. In **Filters**, type **102696**. Under **Coordinate Reference Systems of the World** should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is indeed **102696**. Click on the coordinate system and then click **OK**. 
 ![](Pictures/unit3_6.png)
 
-As you can see, the shapefiles have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the **EPSG: **102696** in the bottom right-hand corner. Save your project.
+As you can see, the shapefiles have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the **EPSG: 102696** in the bottom right-hand corner. Save your project.
 ![](Pictures/unit3_7.png)
 
 This projection was on-the-fly; while the project's projection changed, the shapefiles projection is not the same as the project's projection. Let's change that.
@@ -154,29 +154,27 @@ This projection was on-the-fly; while the project's projection changed, the shap
 
 12. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
 
-13. Click the **Select CRS** button in **CRS**. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. 
+13. Click the **Select CRS** button in **CRS**. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Click **OK**.
 
-![](Pictures/unit3_4.png)
+![](Pictures/unit3_8.png)
+
+14. Click **OK** in the **Save Vector Layer as...** dialogue box. You will see your newly created shapefile in the Layers section.
+
+15. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
+
+16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **nhgis0013_shapefile_tl2017_290_blck_grp_2017** folder. Name your new layer **MO_2019_BG_Project**.
+
+17. Click the **Select CRS** button in **CRS**.
+
+18. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
 ---------------------------------------------------------------------------------------------------------------------------
 
-13. Click **OK** and **OK** in the **Save Vector Layer as...** dialogue box. You will see your newly created shapefile in the Layers section.
 
-14. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
-
-15. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to your **nhgis0013_shapefile_tl2017_290_blck_grp_2017** folder. Name your new layer **MO_2019_BG_Project**.
-
-16.  Click the **Select CRS** button in **CRS**. 
-
-17. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box.
-
-18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017** You might think that your project window looks strange. What's going on here? You're not able to see both of these properly because the projection of the project needs to be changed. Once we change that, all of the data will be displayed correctly. 
+18. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017**. 
 
 
 
 
-
-*Troubleshooting Tip*: 
-If you are having issues with the shapefiles displaying properly, then create a new project and then add your shapefiles in your new project. The project will change to the projection of the first shapefile that you add. Save your project and continue to do the work from this project.
 
 ## Unit 4: Producing Basic Queries
 
