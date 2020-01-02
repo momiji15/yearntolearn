@@ -148,18 +148,16 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 As you can see, the shapefiles have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the **EPSG: **102696** in the bottom right-hand corner. Save your project.
 ![](Pictures/unit3_7.png)
 
+This projection was on-the-fly; while the project's projection changed, the shapefiles projection is not the same as the project's projection. Let's change that.
 
----------------------------------------------------------------------------------------------------------------------------
-10. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
+11. Let's first project the **MO_2019_Public_Schools** shapefile. Right-click on the shapefile and click **Export > Save Features As**.
 
-11. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
+12. Keep the **Format** as an **ESRI Shapefile**. Click the **...** next to the text box under **File Name**, navigate to your **GIS_Data** folder and then **MO_2019_Public_Schools** folder. Name your new layer **MO_2019_Public_Schools_Project**. 
 
-11. Click the **Select CRS** button in **CRS**. 
-
-12. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. 
+13. Click the **Select CRS** button in **CRS**. Under **Filter**, type **Missouri** to get to the projection that we need. Under **Coordinate Reference Systems of the World**, highlight **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. 
 
 ![](Pictures/unit3_4.png)
-
+---------------------------------------------------------------------------------------------------------------------------
 
 13. Click **OK** and **OK** in the **Save Vector Layer as...** dialogue box. You will see your newly created shapefile in the Layers section.
 
