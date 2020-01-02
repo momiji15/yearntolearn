@@ -186,14 +186,13 @@ Congratulations! You just finished importing all the data you need into QGIS.
 With QGIS, you can select features either by expression or by location. When you select features by expression, you are selecting a features of vector data based on a particular attribute such as all of the census block groups in a specific county. When you select features by location, you can select features of vector data based on their location, such as selecting all the cenus block groups that are contained within a St. Louis City polygon. Let's give both a try.
 
 #### Producing a select features by expression query 
-1. Right-click on **MO_2019_BG_Project** and click on **Open Attribute Table**.
+1. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribute Table**.
 
 2. As you can see, a database underlies this polygon dataset in which there are records for each feature contained in the s
    dataset. You can see this by clicking on the number for the first record and right-click the value that is in 
    **STATEFP**. Then click on **Zoom to Feature** which zooms into the feature and highlights it as well. 
 3. To zoom out to see the entire Missouri block groups, click on the **Zoom to Layer** button in the QGIS toolbar.
 
-![](Pictures/unit4_1e.png)
 
 4. Let's select the census block groups that are in St. Louis City by using an expression. There are two ways you can do 
    this: 
