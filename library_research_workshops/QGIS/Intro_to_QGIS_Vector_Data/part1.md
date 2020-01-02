@@ -236,6 +236,12 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 4.Keep the format as **ESRI Shapefile** and make sure to set the CRS to Missouri State Plane East.  For the **file name**, make sure to navigate to the **GIS_Data** folder, create a new folder called **stl_schools** and save your shapefile with the same name in that folder. Press **OK** and you should see **stl_schools** under the Layers pane in your QGIS project.  Save your project.
 
 
+## Unit 5: Joining Tablular Data to Vector Data
+Our shapefile of St. Louis block groups does not have any socio-economic data attached to it. We can join the .csv file that we downloaded from NHGIS based on a field that is common to both data, which is called a key. The key that we will use to join the .csv file to the shapefile is **GISJOIN**. 
+
+1. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
+
+2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgis0013_csv > nhgis0013_ds233_20175_2017_blck_group.csv**.
 
 
 
