@@ -241,7 +241,11 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 1. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
 
-2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgis0013_csv > nhgis0013_ds233_20175_2017_blck_group.csv**.
+2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgis0013_csv > nhgis0013_ds233_20175_2017_blck_group.csv**. 
+
+3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_blck_grp_table**. Keep the rest of the defaults and click **Add**.
+
+![](Pictures/unit5_1.png)
 
 
 
