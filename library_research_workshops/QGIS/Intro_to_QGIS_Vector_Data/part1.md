@@ -247,6 +247,8 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 ![](Pictures/unit5_1.png)
 
+![](Pictures/unit5_2.png)
+
 
 
 
