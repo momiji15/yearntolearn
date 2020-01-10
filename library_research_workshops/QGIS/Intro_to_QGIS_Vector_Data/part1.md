@@ -100,7 +100,7 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 ![](Pictures/unit2_7.png)
 
 11. Unzip your downloaded files. If you are using a Mac, you will **right-click > Open With > Archive Utility(default)**.
-If you are using Windows, you will **right-click > Extract All**. Nhgis0013_csv.zip has the csv file with the total population counts while nhgis0013_shape.shp is the shapefile that contains the Missouri block groups. Double-click on the **nhgis0013_shape.shp** folder and unzip **nhgis0013_shapefile_tl2017_290_blck_grp_2017.zip**. 
+If you are using Windows, you will **right-click > Extract All**.   **NhgisXXXX_csv.zip** has the csv file with the total population counts while **nhgisXXXX_shape.zip** is the shapefile that contains the Missouri block groups. The XXXX in the file name refers to the extract number of the file which you can see on the **Extract History** page.  Double-click on the **nhgisXXXX_shape.shp** folder and unzip **nhgisXXXX_shapefile_tl2017_290_blck_grp_2017.zip**. 
 **
 ## Unit 3: Prepare GIS Data in a QGIS Workspace
 
@@ -127,7 +127,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 4. We are going to add the schools first. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
 
-5. Now we're going to add the Census block groups. Again, click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **nhgis0013_shape folder > nhgis0013_shapefile_tl2017_290_blck_grp_2017nhgis** folder and then select **MO_blck_grp_2017.shp**, and click **Add**. In the Data Source Manager, click **Add**.
+5. Now we're going to add the Census block groups. Again, click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **nhgis0013_shape folder > nhgisXXXX_shapefile_tl2017_290_blck_grp_2017nhgis** folder and then select **MO_blck_grp_2017.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
 ![](Pictures/unit3_3.png)
 
@@ -162,7 +162,7 @@ This projection was on-the-fly; while the project's projection changed, the shap
 
 15. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
 
-16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to  **nhgis0013_shape > nhgis0013_shapefile_tl2017_290_blck_grp_2017**. Name your new layer **MO_blck_group_2017_Project**.
+16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to  **nhgisXXXX_shape > nhgisXXXX_shapefile_tl2017_290_blck_grp_2017**. Name your new layer **MO_blck_group_2017_Project**.
 
 17. Click the **Select CRS** button in **CRS**.
 
@@ -241,7 +241,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 1. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
 
-2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgis0013_csv > nhgis0013_ds233_20175_2017_blck_group.csv**. 
+2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgisXXXX_csv > nhgisXXXX_ds233_20175_2017_blck_group.csv**. 
 
 3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_blck_grp_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_blck_group_table** in the Layers panel.
 
@@ -259,7 +259,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **MO_blck_group_2017**. Click **OK** to exit out of the Layer Properties window.
 
-7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group. You can find out the meaning of each field by looking at the **codebook file(nhgis0013_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgis0013_csv**.
+7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
 
 ## Unit 6: Computing values with Field Calculator
 With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **STLschools** layer. 
