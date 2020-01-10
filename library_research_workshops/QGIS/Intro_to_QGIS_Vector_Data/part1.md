@@ -237,6 +237,13 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 
 
 ## Unit 5: Joining Tablular Data to Vector Data
+### Unit objectives
+1. Identify key fields fields between two different datasets.
+2. Generate a join between a csv file and a shapefile.
+
+### Terms to know
+- key: a field that is common to two different datasets.
+
 Our shapefile of St. Louis block groups does not have any socio-economic data attached to it. We can join the .csv file that we downloaded from NHGIS based on a field that is common to both data, which is called a key. The key that we will use to join the .csv file to the shapefile is **GISJOIN**. 
 
 1. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
@@ -259,10 +266,17 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **MO_blck_group_2017**. Click **OK** to exit out of the Layer Properties window.
 
-7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
+7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
 
 ## Unit 6: Computing values with Field Calculator
-With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **STLschools** layer. 
+### Unit Objectives
+
+1. Produce field calculations with pre-existing fields.
+
+With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **MO_blck_group_2017_Project** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and percentage of people in which the income to poverty ratio is over 2.00 in **MO_block_group_2017_Project**. 
+
+1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button. 
+
 
 
 
