@@ -85,8 +85,9 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 
 5. Your results should look like this: 
 
+![](Pictures/unit2_6e.png)
 
-6. We will need to get the appropriate source table and GIS file. Under **Source Table** click the green round button next to **B01003 Total Population**. In the **Data Cart**, which is located on the top right-hand corner, you will see that your selected source table as added to the cart.
+6. We will need to get the appropriate source table and GIS file. Under **11 Source Tables** click the green round button next to **B01003 Total Population** and **Ratio to Income to Poverty Level in the Past 12 Months**. In the **Data Cart**, which is located on the top right-hand corner, you will see that your selected source table as added to the cart.
 
 7. Now click on the **53 GIS Tables** tab. Find the GIS table for Missouri and click on it. You will see that your **Data Cart** includes the GIS file that you just selected.
 
