@@ -277,9 +277,11 @@ With the field calculator, you are able to make new fields based on doing calcul
 
 1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button which will open the Field Calculator window. 
 
-![](Pictures/unit6_1.png)
+![](Pictures/unit6_1e.png)
 
 2. In the Field Calculator window, make sure that the **Create a new field** box is checked. The **Output field** name should be **ST_Ratio**, the **Output field type** should be **Decimal number(real)** and the **Output field length** should be **10**. Under the **Expressions** box, you want to divide the **Teachers** field by the **Enrollment** field. In order to find the **Teachers** and **Enrollment** values, click on **Fields and Values** in the middle box in which you will see all of the fields in the attribute table. Once you confirmed these parameters, then click **OK**.
+
+![](Pictures/unit6_2.png)
 
 
 
