@@ -275,7 +275,11 @@ You can see in the Layer Properties window that **stl_blck_grp_table** was joine
 
 With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **MO_blck_group_2017_Project** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and percentage of people in which the income to poverty ratio is over 2.00 in **MO_block_group_2017_Project**. 
 
-1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button. 
+1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button which will open the Field Calculator window. 
+
+![](Pictures/unit6_1.png)
+
+2. In the Field Calculator window, make sure that the **Create a new field** box is checked. The **Output field** name should be **ST_Ratio**, the **Output field type** should be **Decimal number(real)** and the **Output field length** should be **10**. Under the **Expressions** box, you want to divide the **Teachers** field by the **Enrollment** field. In order to find the **Teachers** and **Enrollment** values, click on **Fields and Values** in the middle box in which you will see all of the fields in the attribute table. Once you confirmed these parameters, then click **OK**.
 
 
 
