@@ -81,6 +81,7 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 
 4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox. Scroll down and click on the outer-most green round button next to **Poverty (Income Relative to Poverty Level)**. You should see your selected topic filters on the top of the **Topics** window.
 
+![](Pictures/unit2_5e.png)
 
 5. Your results should look like this: 
 
