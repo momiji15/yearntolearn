@@ -79,9 +79,8 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 
 3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
 
-4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox.
+4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox. Scroll down and click on the outer-most green round button next to **Poverty (Income Relative to Poverty Level)**. You should see your selected topic filters on the top of the **Topics** window.
 
-![](Pictures/unit2_5.png)
 
 5. Your results should look like this: 
 
@@ -262,7 +261,7 @@ You can see in the Layer Properties window that **stl_blck_grp_table** was joine
 7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group. You can find out the meaning of each field by looking at the **codebook file(nhgis0013_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgis0013_csv**.
 
 ## Unit 6: Computing values with Field Calculator
-
+With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **STLschools** layer. 
 
 
 
