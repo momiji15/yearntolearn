@@ -283,6 +283,17 @@ With the field calculator, you are able to make new fields based on doing calcul
 
 ![](Pictures/unit6_2.png)
 
+3. Right-click on the **stl_schools** layer and open the attribute table. If you scroll to the end of the attribute table, you should see **ST_Ratio**. Close the attribute table.
+
+4. Let's calculate the percentage of people who have an income to poverty ratio of 2.0 and over by Census block group. Right-click on **stl_bg** and open the attribute table. Click on the **Open Field Calculator** button.
+
+5. In the Field Calculator window, make sure that the **Create a new field** box is checked. The **Output field** should be **pct_gt_two**In the Field Calculator window, the **Output field type** should be **Decimal number(real)** and the **Output field length** should be **10**.
+
+6. Let's create the expression. Open up the code book for your **nhgisXXXX_csv** file. The fields that we are going to be concerned with is **AH1JE008** which is the population of those who has a ratio of income to poverty level over 2 and **AH1JE001** which is the total population of the block groups. You're going ot divide **AH1JE008** by **AH1JE001**. Click on those fields in the **Fields and Values** section to make the expression.
+![](Pictures/unit6_3.png)
+
+Congratulations! You finished Part 1! Proceed to Part 2 to learn how to symbolize and design your map.
+
 
 
 
