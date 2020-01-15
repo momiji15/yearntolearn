@@ -27,7 +27,7 @@ Before we get into map making, it's important to understand basic cartographic e
   intense. For exmaple, adding grey to a hue can make it less intense. If you are having issues differientating value from 
   intensity, you can think of intensity as how different or similar a color is from grey.
 - ordinal data: Data that has an order to it. 
--
+
 
 
 #### Lesson 1: Selecting an Appropriate Color Scheme for Polygon Data
@@ -101,11 +101,15 @@ Now that we have symbology for all of our layers, it's time to create a map!
 Before we move on, it's good to be acquainted with some of the buttons in the left-hand toolbar:
 Here are some useful buttons to know in the left toolbar: 
 
-- **Select/Move item** ![](Pictures/pt2unit3_4.png): Moving the actual data frame.  
-- **Move item content** ![](Pictures/pt2unit3_4.png): Moving the content within the data frame. 
-- **Adds a new Map to the Layout** ![](Pictures/pt2unit3_2.png): Adds a Map to the page layout.
-- **Add a new Label to the Layout**
+- **Select/Move item** ![](Pictures/pt2unit3_4.png)
+- **Move item content** ![](Pictures/pt2unit3_4.png)
+- **Adds a new Map to the layout** ![](Pictures/pt2unit3_2.png)
+- **Adds a new Label to the layout** ![](Pictures/pt2unit3_6.png)
+- **Adds a new Legend to the layout** ![](Pictures/pt2unit3_7.png)
+- **Adds a new Scale Bar to the layout** ![](Pictures/pt2unit3_8.png)
+- **Adds a new North Arrow to the layout** ![](Pictures/pt2unit3_9.png)
 
+ 
 4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button.
 
 Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
