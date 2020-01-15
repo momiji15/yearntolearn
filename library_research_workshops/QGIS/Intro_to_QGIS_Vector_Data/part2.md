@@ -98,6 +98,12 @@ Now that we have symbology for all of our layers, it's time to create a map!
 
 3. Let's change our page to portrait orientation. Right-click anywhere within the page and click on **Page Properties...**. On the right-hand side of the print layout window, you will see an **Item Properties** panel. Under **Orientation** click on **Portrait**. The page layout will then turn to portrait orientation. 
 
-4. Lets add our data frame to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button that is the fifth from the top ![](Pictures/pt2unit3_2.png). Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
+4. Lets add our data frame to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button ![](Pictures/pt2unit3_2.png). 
+
+Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
+
+![](Pictures/pt2unit3_3.png).
+
+If you want to move the actual data frame, click on the **Select/Move item** button in the left toolbar. If you want to move the layers around, then click on the **Move item content** button. 
 
 
