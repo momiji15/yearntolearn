@@ -254,7 +254,6 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 ![](Pictures/unit5_1.png)
 
-![](Pictures/unit5_2.png)
 
 4. We are now going to join **stl_blck_grp_table** to the Census block group polygon. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **MO_blck_group_2017_Project**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
 
