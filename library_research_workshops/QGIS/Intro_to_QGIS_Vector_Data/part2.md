@@ -26,6 +26,9 @@ Before we get into map making, it's important to understand basic cartographic e
 - color intensity: Also known as saturation. This is the brightness of the color. Adding colors can make the hue less
   intense. For exmaple, adding grey to a hue can make it less intense. If you are having issues differientating value from 
   intensity, you can think of intensity as how different or similar a color is from grey.
+- ordinal data: Data that has an order to it. 
+-
+
 
 #### Lesson 1: Selecting an Appropriate Color Scheme for Polygon Data
 Using what we learned in the previous lesson, lets add some symbolization to our point and polygon data. Our final product will be a chloropleth map which shows the relationshop of the student to teacher ratio to the number of individuals in block groups who have an income to poverty ratio over two.  Let's start first with the polygon data. 
@@ -38,7 +41,19 @@ Using what we learned in the previous lesson, lets add some symbolization to our
 
 4. For **Value**, choose **pct_gt_2** from the drop-down menu.
 
+5. Click on the **Classify** button and you will see the data classified into five groups.
+![](Pictures/pt2unit1_1.png)
 
+Take a closer look at the options of **Mode** towards the bottom of the Layer Properties window. You can classify your data in various ways which can be dependent on the distribution of the data, number of values, and the overall goal of the map. Here are some of the common classification schemes:
+
+- [quantile scheme](http://wiki.gis.com/wiki/index.php/Quantile): When each class has the same number of data values. This scheme is recommended for ordinal data like values from a Likert Scale. While the advantage of this scheme is that there is an equal number of values in each class, the disadvantage is that dissimilar values might be put in the same class.
+
+- [equal interval](http://wiki.gis.com/wiki/index.php/Classification) scheme: When each class is broken in regular intervals(for example, 10-20, 20-30, etc). The advantage of this scheme is that this scheme is great to use when comparing a series of maps, but the disadvantage of this scheme is that it does not take in consideration the distribution of the data.
+
+- [natural breaks scheme](http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification): A classification scheme that takes in consideration the distribution of data. This results in classes in which the differences in values are minimized. Class breaks are based on breaks in the data. The advantage of this scheme is that it takes in consideration the data distribution, but using this scheme isn't recommended for data with a low amount of variation.
+
+6. Let's take a look at the distribution of data. Click on the **Histogram** tab, which is located under **Color Ramp**. 
+![](Pictures/pt2unit1_2.png)
 
 ### Unit 3: Creating and Exporting a Map Layout
 1. Generate a print layout for a map.
