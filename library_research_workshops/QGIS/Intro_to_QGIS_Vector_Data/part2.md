@@ -59,7 +59,9 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 
 The data is close to a normal distribution. Let's choose **natural breaks** as the classification scheme.
 
-8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have an income to poverty ratio over two.
+8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have an income to poverty ratio over two. 
+
+9. Make sure to save your document.
 
 #### Lesson 2: Producing a Symbology by Size for Points Data
 Now we're going to adjust the symbology of the points data to adjust the size of the points by the student teacher ratio(**ST_ratio**).
@@ -76,9 +78,24 @@ Now we're going to adjust the symbology of the points data to adjust the size of
 
 ![](Pictures/pt2unit1_3.png)
 
+6. Make sure to save your document.
+
 
 ### Unit 3: Creating and Exporting a Map Layout
 1. Generate a print layout for a map.
 2. Create a map incorporating the basic cartographic elements.
 3. Export a map in an appropriate file format.
+
+#### Lesson 1: Generate a Print Layout for a Map
+
+Now that we have symbology for all of our layers, it's time to create a map! 
+
+1. Click on **Project > New Print Layout**.
+
+2. Give your layout a title. Let's call it **Student teacher Ratio by Block Group**. Click **OK**. Another window will open up. This is the map layout window. 
+
+![](Pictures/pt2unit3_1.png)
+
+3. Lets add our data frame to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button that is the fifth from the top. ![](Pictures/pt2unit3_2.png).
+
 
