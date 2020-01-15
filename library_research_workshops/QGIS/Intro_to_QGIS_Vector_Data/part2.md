@@ -41,7 +41,9 @@ Using what we learned in the previous lesson, lets add some symbolization to our
 
 4. For **Value**, choose **pct_gt_2** from the drop-down menu.
 
-5. Click on the **Classify** button and you will see the data classified into five groups.
+5. You can leave the **Color Ramp** to the default color of **Reds** for now.
+
+6. Click on the **Classify** button and you will see the data classified into five groups.
 ![](Pictures/pt2unit1_1.png)
 
 Take a closer look at the options of **Mode** towards the bottom of the Layer Properties window. You can classify your data in various ways which can be dependent on the distribution of the data, number of values, and the overall goal of the map. Here are some of the common classification schemes:
@@ -52,8 +54,26 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 
 - [natural breaks scheme](http://wiki.gis.com/wiki/index.php/Jenks_Natural_Breaks_Classification): A classification scheme that takes in consideration the distribution of data. This results in classes in which the differences in values are minimized. Class breaks are based on breaks in the data. The advantage of this scheme is that it takes in consideration the data distribution, but using this scheme isn't recommended for data with a low amount of variation.
 
-6. Let's take a look at the distribution of data. Click on the **Histogram** tab, which is located under **Color Ramp**. 
+7. Let's take a look at the distribution of data. Click on the **Histogram** tab, which is located under **Color Ramp**. 
 ![](Pictures/pt2unit1_2.png)
+
+The data is close to a normal distribution. Let's choose **natural breaks** as the classification scheme.
+
+8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have an income to poverty ratio over two.
+
+#### Lesson 2: Producing a Symbology by Size for Points Data
+Now we're going to adjust the symbology of the points data to adjust the size of the points by the student teacher ratio(**ST_ratio**).
+
+1. Right-click on **stl_schools** and click on **Properties**.
+
+2. In the left-hand panel, click on **Symbology**.
+
+3. On the top of the Layer Properties window you will see a drop-down menu in which **Single symbol** is the default. Click on it and choose the **Graduated** option. 
+
+4. Let's change the color and size of the points. Click on the down arrow button in **Symbol** and choose a yellow color for your points. Under **Method** choose **Size**.
+
+5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
+
 
 ### Unit 3: Creating and Exporting a Map Layout
 1. Generate a print layout for a map.
