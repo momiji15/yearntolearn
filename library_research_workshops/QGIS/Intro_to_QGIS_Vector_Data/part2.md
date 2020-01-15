@@ -74,6 +74,8 @@ Now we're going to adjust the symbology of the points data to adjust the size of
 
 5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
 
+![](Pictures/pt2unit1_2.png)
+
 
 ### Unit 3: Creating and Exporting a Map Layout
 1. Generate a print layout for a map.
