@@ -104,6 +104,6 @@ Your pointer will turn into a cross. Left-click and drag a rectangle of appropri
 
 ![](Pictures/pt2unit3_3.png).
 
-If you want to move the actual data frame, click on the **Select/Move item** button in the left toolbar. If you want to move the layers around, then click on the **Move item content** button. 
+If you want to move the actual data frame, click on the **Select/Move item** ![](Pictures/pt2unit3_4.png) button in the left toolbar. If you want to move the layers around, then click on the **Move item content** button ![](Pictures/pt2unit3_4.png). 
 
 
