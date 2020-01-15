@@ -18,17 +18,17 @@ Before we get into map making, it's important to understand basic cartographic e
 1. Selecting an appropriate color scheme for polygon data.
 2. Producing a symbology by size for points data.
 
-Terms to Know:
+### Terms to Know:
 - chloropleth map: A map in which color is used to represent value over a specific area. 
 
 #### Lesson 1: Selecting an Appropriate Color Scheme for Polygon Data
-Using what we learned in the previous lesson, lets add some symbolization to our point and polygon data. Let's start first with the polygon data. We are interested in showing the percentage of individuals that has an income to poverty ratio over two. 
+Using what we learned in the previous lesson, lets add some symbolization to our point and polygon data. Our final product will be a chloropleth map which shows the relationshop of the student to teacher ratio to the number of individuals in block groups who have an income to poverty ratio over two.  Let's start first with the polygon data. 
 
 1. Right-click on **stl_bg** and click on **Properties**.
 
 2. In the left-hand panel, click on **Symbology**.
 
-3. 
+3. On the top of the Layer Properties window you will see a drop-down menu in which **Single symbol** is the default. Click on it and choose the **Graduated** option.
 
 ### Unit 3: Creating and Exporting a Map Layout
 1. Generate a print layout for a map.
