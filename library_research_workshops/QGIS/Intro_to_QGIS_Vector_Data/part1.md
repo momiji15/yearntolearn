@@ -253,26 +253,27 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_blck_grp_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_blck_group_table** in the Layers panel.
 
 ![](Pictures/unit5_1.png)
+![](Pictures/unit5_2e.png)
 
 
-4. We are now going to join **stl_blck_grp_table** to the Census block group polygon. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **MO_blck_group_2017_Project**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
+4. We are now going to join **stl_blck_grp_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
 
-5. Right-click **MO_blck_group_2017_Project** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
+5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
 
 6. In the **Add Vector Join** window, choose on **stl_blck_grp_table**  from the drop-down menu as the **Join Layer**. For the **Join field** and **Target field** drop-down menus, chose **GISJOIN**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
 
 ![](Pictures/unit5_3.png)
 
-You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **MO_blck_group_2017**. Click **OK** to exit out of the Layer Properties window.
+You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **stl_bg**. Click **OK** to exit out of the Layer Properties window.
 
-7. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
+7. Right-click on **stl_bg** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
 
 ## Unit 6: Computing values with Field Calculator
 ### Unit Objectives
 
 1. Produce field calculations with pre-existing fields.
 
-With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **MO_blck_group_2017_Project** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and percentage of people in which the income to poverty ratio is over 2.00 in **MO_block_group_2017_Project**. 
+With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **stl_bg** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and percentage of people in which the income to poverty ratio is over 2.00 in **stl_bg**. 
 
 1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button which will open the Field Calculator window. 
 
