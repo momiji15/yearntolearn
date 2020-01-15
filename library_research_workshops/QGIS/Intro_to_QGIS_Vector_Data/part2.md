@@ -110,12 +110,18 @@ Here are some useful buttons to know in the left toolbar:
 - **Adds a new North Arrow to the layout** ![](Pictures/pt2unit3_9.png)
 
  
-4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button.
-
-Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
+4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button. Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
 
 ![](Pictures/pt2unit3_3.png).
 
+5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Student/Teacher ratio by high income/poverty ratios in St. Louis* under **Label**. 
  
+6. Let's justify the font and alignment of the text. To change the size of the font, click on **Font** which is under **Appearance**. Change the font size to 28.  A little bit below **Font**, you will see the **Horizontal Alignment** option. Click on **Center**.
+
+7. Another neccessary cartographic element is the legend. Click on the **Adds a new Legend to the layout** button. Left-click and drag a rectangle to the right of St. Louis city. We need to clean up the legend items so they can be more clear to those who look at the map.
+
+8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Block Groups**. We need to express each **% of Individuals with an Income/Poverty Ratio over Two** legend item by percentages. Change the legend items to reflect this by double-clicking on each legend item.
+
+9. To get rid of **stl_blck_grp_table**, go back to your QGIS window and right-click on **stl_blck_group_table**. Right-click and select **Remove layer...**. The layer is removed from the legend as a result.
 
 
