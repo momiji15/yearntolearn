@@ -96,6 +96,6 @@ Now that we have symbology for all of our layers, it's time to create a map!
 
 ![](Pictures/pt2unit3_1.png)
 
-3. Lets add our data frame to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button that is the fifth from the top. ![](Pictures/pt2unit3_2.png).
+3. Lets add our data frame to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button that is the fifth from the top ![](Pictures/pt2unit3_2.png).
 
 
