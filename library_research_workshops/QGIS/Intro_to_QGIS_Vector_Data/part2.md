@@ -100,6 +100,7 @@ Now that we have symbology for all of our layers, it's time to create a map!
 
 Before we move on, it's good to be acquainted with some of the buttons in the left-hand toolbar:
 Here are some useful buttons to know in the left toolbar: 
+
 **Select/Move item** ![](Pictures/pt2unit3_4.png): Moving the actual data frame.  
 **Move item content** ![](Pictures/pt2unit3_4.png): Moving the content within the data frame. 
 **Adds a new Map to the Layout** ![](Pictures/pt2unit3_2.png): Adds a Map to the page layout.
