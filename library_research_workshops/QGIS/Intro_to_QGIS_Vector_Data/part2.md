@@ -127,5 +127,5 @@ Here are some useful buttons to know in the left toolbar:
 
 9. To get rid of **stl_blck_grp_table**, go back to your QGIS window and right-click on **stl_blck_group_table**. Right-click and select **Remove layer...**. The layer is removed from the legend as a result.
 
-10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the left of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, 
+10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the left of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, you can find a variety of choices for North arrows. Under **SVG Parameters**, you can change the fill and stroke color of your Norht Arrow.
 
