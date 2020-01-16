@@ -1,9 +1,12 @@
 # Introduction to QGIS - Vector Data: Part 2
 
+The objective of part 2 is to create a map of student to teacher ratios by income to poverty ratios over two by block group. When it comes to creating a map, make sure that your map is suitable to the context. Realistically, this map would probably one out of a series of maps if I was concerned with the relationship of income/poverty ratios to student/teacher ratios. For the sake of this workshop, we will only create one map. Feel free to make more maps to find out more about this relationship with your newly acquired knowledge! 
+
 ## Units
 ### Unit 1: Basic Cartographic Elements
 ### Unit 2: Symbolizing Layers
 ### Unit 3: Creating and Exporting a Map Layout
+
 
 ## Unit 1: Basic Cartographic Elements
 ### Unit Objectives
@@ -114,7 +117,7 @@ Here are some useful buttons to know in the left toolbar:
 
 ![](Pictures/pt2unit3_3.png).
 
-5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Student/Teacher ratio by high income/poverty ratios in St. Louis* under **Label**. 
+5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Student/Teacher ratio by Block Group in St. Louis* under **Label**. If you can come up with a better title, feel free to do so!
  
 6. Let's justify the font and alignment of the text. To change the size of the font, click on **Font** which is under **Appearance**. Change the font size to 28.  A little bit below **Font**, you will see the **Horizontal Alignment** option. Click on **Center**.
 
@@ -124,4 +127,5 @@ Here are some useful buttons to know in the left toolbar:
 
 9. To get rid of **stl_blck_grp_table**, go back to your QGIS window and right-click on **stl_blck_group_table**. Right-click and select **Remove layer...**. The layer is removed from the legend as a result.
 
+10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the left of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, 
 
