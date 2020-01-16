@@ -139,6 +139,8 @@ Click on the **Adds a new Label to the layout** button, left-click and draw a re
 
 12. Feel free to adjust the map to make it more aesthetically pleasing. If you're happy with what you have then you're done!
 
+13. Once you're done with your map, you can export it in a variety of formats. Let's export it as an image. Click on **Layout > Export as Image**. Navigate to your GIS_Data folder and create a folder called **Maps**. Navigate to that folder and name your file **stl_map**. Click save, accept the defaults, and click save again. If your export is successful, you will get a message on the top of the layout window saying that the export was successful. 
+
 
 
 
