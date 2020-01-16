@@ -127,5 +127,18 @@ Here are some useful buttons to know in the left toolbar:
 
 9. To get rid of **stl_blck_grp_table**, go back to your QGIS window and right-click on **stl_blck_group_table**. Right-click and select **Remove layer...**. The layer is removed from the legend as a result.
 
-10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the left of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, you can find a variety of choices for North arrows. Under **SVG Parameters**, you can change the fill and stroke color of your Norht Arrow.
+10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the mid-right of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, you can find a variety of choices for North arrows. Under **SVG Parameters**, you can change the fill and stroke color of your North Arrow.
+
+11. Finally, we need to add reference information about the map such as the name, date, and data source. It should look something like this:
+
+Your Name
+01/01/2020
+Data Sources: NHGIS, MSDIS
+
+Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-right portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
+
+12. Feel free to adjust the map to make it more aesthetically pleasing. If you're happy with what you have then you're done!
+
+
+
 
