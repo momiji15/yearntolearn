@@ -1,5 +1,7 @@
 # Introduction to QGIS - Vector Data: Part 1
 
+There are two classifications of data in GIS; vector data and raster data. This workshop will focus on becoming familiar with vector data.  The main objectives to part one is to identify websites that have geospatial data, downloading geospatial data, and manipulating data with QGIS. 
+
 ## Units
 ### Unit 1: Introduction to Vector Data
 ### Unit 2: Finding and Downloading GIS Data
