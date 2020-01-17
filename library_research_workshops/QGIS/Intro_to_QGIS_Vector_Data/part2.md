@@ -49,6 +49,7 @@ Using what we learned in the previous lesson, lets add some symbolization to our
 6. Click on the **Classify** button and you will see the data classified into five groups.
 ![](Pictures/pt2unit1_1.png)
 
+
 Take a closer look at the options of **Mode** towards the bottom of the Layer Properties window. You can classify your data in various ways which can be dependent on the distribution of the data, number of values, and the overall goal of the map. Here are some of the common classification schemes:
 
 - [quantile scheme](http://wiki.gis.com/wiki/index.php/Quantile): When each class has the same number of data values. This scheme is recommended for ordinal data like values from a Likert Scale. While the advantage of this scheme is that there is an equal number of values in each class, the disadvantage is that dissimilar values might be put in the same class.
@@ -63,6 +64,7 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 The data is close to a normal distribution. Let's choose **natural breaks** as the classification scheme.
 
 8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have an income to poverty ratio over two. 
+![](Pictures/pt2unit1_3.png)
 
 9. Make sure to save your document.
 
@@ -78,9 +80,6 @@ Now we're going to adjust the symbology of the points data to adjust the size of
 4. Let's change the color and size of the points. Click on the down arrow button in **Symbol** and choose a yellow color for your points. Under **Method** choose **Size**.
 
 5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
-
-![](Pictures/pt2unit1_3.png)
-
 6. Make sure to save your document.
 
 
