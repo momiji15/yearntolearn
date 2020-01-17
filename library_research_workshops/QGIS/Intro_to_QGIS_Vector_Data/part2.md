@@ -64,7 +64,6 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 The data is close to a normal distribution. Let's choose **natural breaks** as the classification scheme.
 
 8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have an income to poverty ratio over two. 
-![](Pictures/pt2unit1_3.png)
 
 9. Make sure to save your document.
 
