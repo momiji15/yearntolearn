@@ -43,7 +43,7 @@ Make sure to include all of these elements in your map.
 
 #### Lesson 2: Identify Symbolization Considerations for Symbolizing Data
 
-In addition to including the necessary cartographic elements, it is also important to identify the appropriate symbolization schemes for your data. We are going to focus on some symbolization schemes for the data we are using today. The book, [*Making Maps*](https://www.syndetics.com/index.aspx?client=wuistlul&isbn=9781462509980/summary.html&type=rn12) was used as a reference when establishing these guidelines. In addition, one should also refer to the interactive [*ColorBrewer*](http://colorbrewer2.org/) when choosing a color ramp. 
+In addition to including the necessary cartographic elements, it is also important to identify the appropriate symbolization schemes for your data. We are going to focus on some symbolization schemes for the data we are using today. The book, [*Making Maps*](https://www.syndetics.com/index.aspx?client=wuistlul&isbn=9781462509980/summary.html&type=rn12) was used as a reference when establishing these guidelines. In addition, one should also refer to the interactive [*ColorBrewer tool*](http://colorbrewer2.org/) when choosing a color ramp. 
 
 *Symbolizing by shape*
 Shape is good for showing differences in qualitative data. For example, if one is making a map on the type of schools in St. Louis City(elementary, middle, high school), a different symbol can be used to represent each type of school. 
