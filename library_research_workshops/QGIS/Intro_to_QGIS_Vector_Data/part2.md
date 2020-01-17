@@ -117,7 +117,7 @@ Here are some useful buttons to know in the left toolbar:
 ![](Pictures/pt2unit3_3.png)
 
 
-5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Student/Teacher ratio by Block Group in St. Louis* under **Label**. If you can come up with a better title, feel free to do so!
+5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Exploring Student/Teacher Ratios in St. Louis City* under **Label**. If you can come up with a better title, feel free to do so!
  
 6. Let's justify the font and alignment of the text. To change the size of the font, click on **Font** which is under **Appearance**. Change the font size to 28.  A little bit below **Font**, you will see the **Horizontal Alignment** option. Click on **Center**.
 
@@ -125,7 +125,8 @@ Here are some useful buttons to know in the left toolbar:
 
 8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Block Groups**. We need to express each **% of Individuals with an Income/Poverty Ratio over Two** legend item by percentages. Change the legend items to reflect this by double-clicking on each legend item.
 
-9. To get rid of **stl_blck_grp_table**, go back to your QGIS window and right-click on **stl_blck_group_table**. Right-click and select **Remove layer...**. The layer is removed from the legend as a result.
+9. To get rid of **stl_blck_grp_table**, under **Legend Items**, uncheck the **Auto update** box. Highlight **stl_blck_group_table** and press the minus button at the bottom on the **Legend Items** box.
+The layer is removed from the legend as a result.
 
 10. Next, let's add the North arrow. Click on the **Adds a new North Arrow to the layout** button, left-click and draw a rectangle to the mid-right of the St. Louis city block groups.  In the **Item Properties** panel under the **Search Directories** section, you can find a variety of choices for North arrows. Under **SVG Parameters**, you can change the fill and stroke color of your North Arrow.
 
@@ -133,11 +134,12 @@ Here are some useful buttons to know in the left toolbar:
 
 Your Name
 01/01/2020
-Data Sources: NHGIS, MSDIS
+Data Sources: NHGIS, MSDIS, US Census Bureau
 
-Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-right portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
+Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-left portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
 
 12. Feel free to adjust the map to make it more aesthetically pleasing. If you're happy with what you have then you're done!
+![](Pictures/pt2unit3_10.png)
 
 13. Once you're done with your map, you can export it in a variety of formats. Let's export it as an image. Click on **Layout > Export as Image**. Navigate to your GIS_Data folder and create a folder called **Maps**. Navigate to that folder and name your file **stl_map**. Click save, accept the defaults, and click save again. If your export is successful, you will get a message on the top of the layout window saying that the export was successful. 
 
