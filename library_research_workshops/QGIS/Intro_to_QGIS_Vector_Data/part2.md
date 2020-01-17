@@ -41,9 +41,31 @@ Before we start making our map, it's important to understand basic cartographic 
     
 Make sure to include all of these elements in your map.
 
-#### Lesson 2: Identify Symbolization Considerations for Symbolizing Quantitative Data
+#### Lesson 2: Identify Symbolization Considerations for Symbolizing Data
 
-In addition to including the necessary cartographic elements, it is also important to identify the appropriate color schemes for symbolizing your chloropleth map. 
+In addition to including the necessary cartographic elements, it is also important to identify the appropriate symbolization schemes for your data. We are going to focus on some symbolization schemes for the data we are using today. The book, [*Making Maps*](https://www.syndetics.com/index.aspx?client=wuistlul&isbn=9781462509980/summary.html&type=rn12) was used as a reference when establishing these guidelines. In addition, one should also refer to the interactive [*ColorBrewer*](http://colorbrewer2.org/) when choosing a color ramp. 
+
+*Symbolizing by shape*
+Shape is good for showing differences in qualitative data. For example, if one is making a map on the type of schools in St. Louis City(elementary, middle, high school), a different symbol can be used to represent each type of school. 
+
+*Symbolizing by size*
+Size is good to showing differences in quantitative data. For today's exercise, we will be representing the different student-teacher ratio by circle size.
+
+*Symbolizing by color hue*
+Using different colors is best for qualitative data. One common example of this is looking at election maps. One these maps, blue represents the Democrat party while red represents the Republican party. 
+
+*Symbolizing by color value*
+This is best to show quantitative differences. We will be symbolizing the number of individuals with income/poverty ratios over two by census block group through this scheme.
+
+*Symbolizing by color hue*
+This is best to show slight differences in qualitative data.
+
+*Using color ramps*
+If you are mapping sequential data, it is recommended to use a color ramp in which the lightest value represents the low values and the darkest value represents the high values. If you are wanting to show how values diverage from an average value, it is recommended to use a diverging color ramp. An example of this is a blue yellow red color ramp in which blue values can represent low values, yellow can represent middle values, and blue represents high values. 
+
+
+
+
 
 ## Unit 2: Symbolizing Layers
 ### Unit Objectives
@@ -52,7 +74,7 @@ In addition to including the necessary cartographic elements, it is also importa
 
 
 #### Lesson 1: Selecting an Appropriate Color Scheme for Polygon Data
-Using what we learned in the previous lesson, lets add some symbolization to our point and polygon data. Our final product will be a chloropleth map which shows the relationshop of the student to teacher ratio to the number of individuals in block groups who have an income to poverty ratio over two.  Let's start first with the polygon data. 
+Using what we learned in the previous lesson, lets add some symbolization to our point and polygon data. Our final product will be a chloropleth map which shows the relationshop of the student to teacher ratio to the number of individuals in block groups who have an income to poverty ratio over two. As mentioned before, we will be symbolizing by *color hue*. Let's start first with the polygon data. 
 
 1. Right-click on **stl_bg** and click on **Properties**.
 
@@ -87,7 +109,7 @@ The data is close to a normal distribution. Let's choose **natural breaks** as t
 9. Make sure to save your document.
 
 #### Lesson 2: Producing a Symbology by Size for Points Data
-Now we're going to adjust the symbology of the points data to adjust the size of the points by the student teacher ratio(**ST_ratio**).
+Now we're going to adjust the symbology of the points data to adjust the *size* of the points by the student teacher ratio(**ST_ratio**).
 
 1. Right-click on **stl_schools** and click on **Properties**.
 
