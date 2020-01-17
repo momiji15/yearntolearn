@@ -1,6 +1,6 @@
 # Introduction to QGIS - Vector Data: Part 2
 
-The objective of part 2 is to create a map of student to teacher ratios by income to poverty ratios over two by block group. When it comes to creating a map, make sure that your map is suitable to the context. Realistically, this map would probably one out of a series of maps if I was concerned with the relationship of income/poverty ratios to student/teacher ratios. For the sake of this workshop, we will only create one map. Feel free to make more maps to find out more about this relationship with your newly acquired knowledge! 
+The objective of part 2 is to create a map of student to teacher ratios by income to poverty ratios over two by block group. When it comes to creating a map, make sure that your map is suitable to the context. Realistically, this map would probably one out of a series of maps if I was concerned with the relationship of overall income/poverty ratios to student/teacher ratios. For the sake of this workshop, we will only create one map. Feel free to make more maps to find out more about this relationship with your newly acquired knowledge! 
 
 ## Units
 ### Unit 1: Basic Cartographic Elements
@@ -143,6 +143,7 @@ Click on the **Adds a new Label to the layout** button, left-click and draw a re
 
 13. Once you're done with your map, you can export it in a variety of formats. Let's export it as an image. Click on **Layout > Export as Image**. Navigate to your GIS_Data folder and create a folder called **Maps**. Navigate to that folder and name your file **stl_map**. Click save, accept the defaults, and click save again. If your export is successful, you will get a message on the top of the layout window saying that the export was successful. 
 
+![](Pictures/stl_map.png)
 
 
 
