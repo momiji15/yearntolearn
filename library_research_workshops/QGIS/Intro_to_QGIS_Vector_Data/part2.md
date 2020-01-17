@@ -114,7 +114,6 @@ Here are some useful buttons to know in the left toolbar:
  
 4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button. Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
 
-![](Pictures/pt2unit3_3.png).
 
 5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Student/Teacher ratio by Block Group in St. Louis* under **Label**. If you can come up with a better title, feel free to do so!
  
