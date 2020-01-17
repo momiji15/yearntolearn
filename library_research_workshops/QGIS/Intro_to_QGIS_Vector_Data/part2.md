@@ -7,20 +7,6 @@ The objective of part 2 is to create a map of student to teacher ratios by incom
 ### Unit 2: Symbolizing Layers
 ### Unit 3: Creating and Exporting a Map Layout
 
-
-## Unit 1: Basic Cartographic Elements
-### Unit Objectives
-1. Identify basic cartographic elements of a map.
-2. Identify symbolization considerations for symbolizing quantitative data.
-
-Before we get into map making, it's important to understand basic cartographic elements of a map. 
-
-
-## Unit 2: Symbolizing Layers
-### Unit Objectives
-1. Selecting an appropriate color scheme for polygon data.
-2. Producing a symbology by size for points data.
-
 ### Terms to Know:
 - chloropleth map: A map in which color is used to represent value over a specific area. 
 - color hue: Refers to different colors, such as blue and green.
@@ -31,6 +17,38 @@ Before we get into map making, it's important to understand basic cartographic e
   intensity, you can think of intensity as how different or similar a color is from grey.
 - ordinal data: Data that has an order to it. 
 
+
+## Unit 1: Basic Cartographic Elements
+### Unit Objectives
+1. Identify basic cartographic elements of a map.
+2. Identify symbolization considerations for symbolizing quantitative data.
+
+#### Lesson 1: Identifying Basic Cartographic Elements of a Map
+
+Before we start making our map, it's important to understand basic cartographic elements of a map. Most maps have these common cartographic elements:
+
+  - data frame: In QGIS, this is called a **Map**. It is the space in which your layers are located.
+  - title: It's important to have a title for your map. It sets the context of which your map was made. This is especially
+    important if you are creating a series of maps.
+  - north arrow: The north arrow is added for orientation purposes. While most maps are orientated north, there are 
+    exceptions to this.
+  - legend: This is a reference to the layers and indicates what each layer is along with the representation of any color
+    schemes that are applied to the layer.
+  - Citation: It is very important to include your information along with citing the sources of your data. You want to 
+    include your information for various reasons. Examples are knowing who to contact when there are questions about the
+    map and giving credit where credit is due if the map is used in another person's presentation or report. You must also
+    give proper attribution to the data sources that you used by citing them. 
+    
+Make sure to include all of these elements in your map.
+
+#### Lesson 2: Identify Symbolization Considerations for Symbolizing Quantitative Data
+
+In addition to including the necessary cartographic elements, it is also important to identify the appropriate color schemes for symbolizing your chloropleth map. 
+
+## Unit 2: Symbolizing Layers
+### Unit Objectives
+1. Selecting an appropriate color scheme for polygon data.
+2. Producing a symbology by size for points data.
 
 
 #### Lesson 1: Selecting an Appropriate Color Scheme for Polygon Data
