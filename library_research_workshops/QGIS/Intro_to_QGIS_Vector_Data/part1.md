@@ -291,7 +291,7 @@ With the field calculator, you are able to make new fields based on doing calcul
 
 5. In the Field Calculator window, make sure that the **Create a new field** box is checked. The **Output field** should be **pct_gt_t2**. In the Field Calculator window, the **Output field type** should be **Decimal number(real)** and the **Output field length** should be **10**.
 
-6. Let's create the expression. Open up the code book for your **nhgisXXXX_csv** file. The fields that we are going to be concerned with is **AH1JE008** which is the population of those who has a ratio of income to poverty level over 2 and **AH1JE001** which is the total population of the block groups. You're going ot divide **AH1JE008** by **AH1JE001**. Click on those fields in the **Fields and Values** section to make the expression. Once you confirmed these parameters, then click **OK**
+6. Let's create the expression. Open up the code book for your **nhgisXXXX_csv** file. The fields that we are going to be concerned with is **AH1JE008** which is the population of those who has a ratio of income to poverty level over 2 and **AH1JE001** which is the total population of the block groups. You're going ot divide **AH1JE008** by **AH1JE001**. Click on those fields in the **Fields and Values** section to make the expression. Once you confirmed these parameters, then click **OK**.
 ![](Pictures/unit6_3.png)
 
 7. Confirm that your newly created field is in the attribute table by right-clicking on **stl_bg** and opening the attribute table.
