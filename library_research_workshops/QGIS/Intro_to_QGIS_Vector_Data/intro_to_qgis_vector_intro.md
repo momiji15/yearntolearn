@@ -1,7 +1,7 @@
 # Introduction to QGIS: Vector Data
 
 ## Workshop Purpose
-The purpose of this workshop is to get you acquainted with the basics of QGIS. QGIS is an open-source software that is both Mac and Windows compatible. If you are using your personal computer, you can download the software on the [QGIS homepage](https://qgis.org/en/site/). This workshop is divided in two parts. In the first part, participants will become acquainted with vector data along with basic tasks you can do in QGIS. In the second part, participants will learn basic cartographic principles and learn how to make a map. Even if you are not able to come to the workshop, these materials are designed in a way in which you can go through it in your own time! Feel free to use these materials if you want to do a QGIS workshop of your own, but please provide proper attribution when doing so! :grin:
+The purpose of this workshop is to get you acquainted with the basics of QGIS. QGIS is an open-source software that is both Mac and Windows compatible. If you are using your personal computer, you can download the software on the [QGIS homepage](https://qgis.org/en/site/). This workshop is divided in two parts. In the first part, participants will become acquainted with vector data along with basic tasks you can do in QGIS. In the second part, participants will learn about basic cartographic elements and learn how to make a map. Even if you are not able to come to the workshop, these materials are designed in a way in which you can go through them on your own time! Feel free to use these materials if you want to do a QGIS workshop of your own, but please provide proper attribution when doing so! :grin:
 
 By the end of Part 1 of this workshop, participants will be able to:
 1. Describe the three types of GIS Vector Data.
@@ -12,9 +12,9 @@ By the end of Part 1 of this workshop, participants will be able to:
 6. Compute a value through field calculations.
 
 By the end of Part 2 of this workshop, participants will be able to:
-1. Describe basic cartographic concepts in map making.
-2. Identify required cartographic elements in maps.
-3. Create a cloropleth map.
+1. Describe basic cartographic elements in map making.
+2. Use proper symbolization for layers.
+3. Creating and Exporting a Map Layout.
 
 
 ## Final Product
@@ -22,13 +22,10 @@ The final product will be a map that will the locations of schools in St. Louis 
 ![](Pictures/stl_map.png)
 
 ## Things to Do Before the Workshop
-You will need an [NHGIS](https://www.nhgis.org/) account access the data you need before the workshop. 
+You will need an [NHGIS](https://www.nhgis.org/) account to access the data you need before the workshop. 
 
 ## Difficulty Level
 This workshop is suitable those who have no experience or are novices in QGIS or any other GIS software.
-
-## Slides
-You can access slides for this workshop here.
 
 ## References
 We will not be able to cover all of the functionalities of QGIS in this workshop. Refer to these references to learn more on how to use QGIS:
