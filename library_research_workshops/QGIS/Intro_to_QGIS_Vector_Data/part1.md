@@ -93,7 +93,7 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 
 7. Now click on the **53 GIS Tables** tab. Find the GIS table for Missouri and click on it. You will see that your **Data Cart** includes the GIS file that you just selected.
 
-8. In the **Data Cart**, click on the **Continue** button. Confirm that for **Source Tables**, you have 2017 American Community Survey: 5-Year Data \[2013-2017, Block Groups & Larger Areas]	and for **GIS Tables**, you have **block group** for the **Geographic Level**, **Missouri** as the **Extent**, and **2017 TIGER Line/+** as the **Basis**. After confirming, click **Continue**.
+8. In the **Data Cart**, click on the **Continue** button. Confirm that for **Source Tables**, you have **2017 American Community Survey: 5-Year Data \[2013-2017, Block Groups & Larger Areas]**	and for **GIS Tables**, you have **block group** for the **Geographic Level**, **Missouri** as the **Extent**, and **2017 TIGER Line/+** as the **Basis**. After confirming, click **Continue**.
 
 9. In the **Review and Submit** section, keep everything as is, with the exception of **Geographic Extents** under the **Source Table** section. You will need to select a geographic extent for the source table to ensure you just get the total population for Missouri. Click on the **Geographic Extents** button, select **Missouri**, and then click **Submit**.
 
