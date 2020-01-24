@@ -228,7 +228,7 @@ With QGIS, you can select features either by expression or by location. When you
 #### Producing a select by location query
 Now that we have the St. Louis City census tracts, we can use it as a "cookie cutter" of sorts and select schools that are in St. Louis City. We can do this by producing a select by location query. 
 
-1. In the QGIS menu var, click on **Vector** > **Research Tools** > **Select by Location**.
+1. In the QGIS menu bar, click on **Vector** > **Research Tools** > **Select by Location**.
 
 2. Under the drop-down menu in **Select features from**, choose **MO_2019_Public_Schools_Project**. Under **Where the features(geometric predicate)**, only check the box for **intersect**. Under **By comparing to the features from**, choose **stl_bg** from the drop-down menu. Finally, under **Modify current selection by**, make sure **creating new selection** is selected. Click **Run** to run the query. All of the schools within stl_bg should be selected.
 ![](Pictures/unit4_6.png)
