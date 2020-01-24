@@ -12,10 +12,10 @@ There are two classifications of data in GIS; vector data and raster data. This 
 
 ## Unit 1: Introduction to Vector Data
 ### Unit Objectives
-  1. Define Geographic Information Systems (GIS) 
-  2. Describe the two types of GIS data
-  3. List three types of GIS vector data
-  4. Describe the structure of GIS data
+  1. Define Geographic Information Systems (GIS). 
+  2. Describe the two types of GIS data.
+  3. List three types of GIS vector data.
+  4. Describe the structure of GIS data.
 
 ### Terms to know
 - Geographic Information Systems(GIS): A computer system that is used to capture, display, and analyze data that has a spatial reference on Earth.
