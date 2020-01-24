@@ -19,7 +19,7 @@ By the end of Part 2 of this workshop, participants will be able to:
 
 ## Final Product
 The final product will be a map that will the locations of schools in St. Louis City and of the student/teacher ratio by Census block group. You will be creating a map that is similar to this:
-*put in image of map*
+![](Pictures/stl_map.png)
 
 
 ## Difficulty Level
