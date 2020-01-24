@@ -45,22 +45,21 @@ Make sure to include all of these elements in your map.
 
 In addition to including the necessary cartographic elements, it is also important to identify the appropriate symbolization schemes for your data. We are going to focus on some symbolization schemes for the data we are using today. The book, [*Making Maps*](https://www.syndetics.com/index.aspx?client=wuistlul&isbn=9781462509980/summary.html&type=rn12), was used as a reference when establishing these guidelines. In addition, one should also refer to the interactive [*ColorBrewer tool*](http://colorbrewer2.org/) when choosing a color ramp. 
 
-*Symbolizing by shape*
-Shape is good for showing differences in qualitative data. For example, if one is making a map on the type of schools in St. Louis City(elementary, middle, high school), a different symbol can be used to represent each type of school. 
+*Symbolizing by shape*: Shape is good for showing differences in qualitative data. For example, if one is making a map on the type of schools in St. Louis City(elementary, middle, high school), a different symbol can be used to represent each type of school. 
 
-*Symbolizing by size*
+*Symbolizing by size*\
 Size is good to showing differences in quantitative data. For today's exercise, we will be representing the different student-teacher ratio by circle size.
 
-*Symbolizing by color hue*
+*Symbolizing by color hue*\
 Using different colors is best for qualitative data. One common example of this is looking at election maps. One these maps, blue represents the Democrat party while red represents the Republican party. 
 
-*Symbolizing by color value*
+*Symbolizing by color value*\
 This is best to show quantitative differences. We will be symbolizing the number of individuals with income/poverty ratios over two by census block group through this scheme.
 
-*Symbolizing by color hue*
+*Symbolizing by color hue*\
 This is best to show slight differences in qualitative data.
 
-*Using color ramps*
+*Using color ramps*\
 If you are mapping sequential data, it is recommended to use a color ramp in which the lightest value represents the low values and the darkest value represents the high values. If you are wanting to show how values diverage from an average value, it is recommended to use a diverging color ramp. An example of this is a blue yellow red color ramp in which blue values can represent low values, yellow can represent middle values, and blue represents high values. 
 
 
@@ -172,9 +171,9 @@ The layer is removed from the legend as a result.
 
 11. Finally, we need to add reference information about the map such as the name, date, and data source. It should look something like this:
 
-Your Name
-01/01/2020
-Data Sources: NHGIS, MSDIS, US Census Bureau
+Your Name\
+01/01/2020\
+Data Sources: NHGIS, MSDIS, US Census Bureau 
 
 Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-left portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
 
