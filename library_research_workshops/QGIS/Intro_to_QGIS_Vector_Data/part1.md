@@ -268,7 +268,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **stl_bg**. Click **OK** to exit out of the Layer Properties window.
 
-7. Right-click on **stl_bg** and click on **Open Attribue Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
+7. Right-click on **stl_bg** and click on **Open Attribute Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **codebook file(nhgisXXXX_ds233_20175_2017_blck_grp_codebook.txt)** that is located in **nhgisXXXX_csv**.
 
 ## Unit 6: Computing values with Field Calculator
 ### Unit Objectives
