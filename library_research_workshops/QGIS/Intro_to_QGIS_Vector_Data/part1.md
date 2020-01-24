@@ -49,7 +49,7 @@ One of the file formats that represent vector data is a shapefile, which is actu
 As mentioned in the [introduction](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/intro_to_qgis_vector_intro.md
 ), our final project will be a map that displays schools in St. Louis city and shows the student to teacher ratio by census block group. So the GIS data we will need are as follows:
 1. public schools in St. Louis city.
-2. Census block group data for St. city.
+2. Census block group data for St. Louis city.
 
 So where do we start? Let's work our way down this short list.
 
