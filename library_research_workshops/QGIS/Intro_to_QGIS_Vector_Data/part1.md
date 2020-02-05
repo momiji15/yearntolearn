@@ -75,7 +75,7 @@ You will need to get the census tract shapefile for Missouri along with the pert
 
 1. Go to the [US Census Bureau TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) website and under **2019**, click **Web Interface**. Keep **2019** selected for **Year** and select **Block Groups** in the **Select a layer type** section. Press **Submit** when you're done.
 
-2. Under **Select a State**, select **Missouri**, and click **Download**. Move the downloaded folder to your **GIS_Data** folder. Rename the folder of your block groups to **MO_Block_Groups*.
+2. Under **Select a State**, select **Missouri**, and click **Download**. Move the downloaded folder to your **GIS_Data** folder. Rename the folder of your block groups to **MO_Block_Group_2019*.
 
 3. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
 If you are using Windows, you will **right-click > Extract All**.
@@ -123,9 +123,16 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_2e.png)
 
-4. We are going to add the schools first. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
+4. We are going to a add the Census block groups first. Click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **MO_Block_Group_2019 folder > and then select **tl_2019-29_BG.shp**, and click **Add**. In the Data Source Manager, click **Add**.
+
+5. We are going to add the schools next. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Open**.  In the Data Source Manager, click **Add**.
+
+6. Go to **Project > Save** and save your project as **stl_schools**.
+
+![](Pictures/unit3_3e.png)
+
 ---------------------------------------------------------------------------------------------------------------------
-5. Now we're going to add the Census block groups. Again, click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **nhgis0013_shape folder > nhgisXXXX_shapefile_tl2017_290_blck_grp_2017nhgis** folder and then select **MO_blck_grp_2017.shp**, and click **Add**. In the Data Source Manager, click **Add**.
+
 
 ![](Pictures/unit3_3.png)
 
