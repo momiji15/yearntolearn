@@ -139,7 +139,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 8. We need to add a projection to our project. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
 9. On the bottom right-hand corner of the QGIS project window, you will see a button that says **EPSG: 4326**. Click the button.
-![](Pictures/unit3_5e.png)
+![](Pictures/unit3_5g.png)
 
 10.  This will display the **Project Coordinate Reference System (CRS)** window. In **Filters**, type **102696**. Under **Coordinate Reference Systems of the World** should see **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** which you can confirm for the EPSG is indeed **102696**. Click on the coordinate system and then click **OK**. 
 ![](Pictures/unit3_6.png)
