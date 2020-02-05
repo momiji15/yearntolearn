@@ -131,15 +131,9 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_3e.png)
 
+7. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. 
+
 ---------------------------------------------------------------------------------------------------------------------
-
-
-![](Pictures/unit3_3.png)
-
-6. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. If you don't see the schools, then they are probably below your block groups.  You can see the drawing order of your shapefiles in the **Layers** section. Since **MO_2019_Public_Schools** is below **MO_blck_grp_2017**, then you will not be able to see this shapefile. Click on **MO_2019_Public_Schools** and drag it on top of **MO_blck_grp_2017**. 
-
-
-7. Before we proceed, we need to save the document. On the top menu bar, click on **Project > Save** and navigate to your **GIS_Data** folder. In **Save as**, name the workspace **stl_schools** and click **Save**. On the top of the Window, you should see the name of your workspace.
 
 
 8. We need to add a projection to our project. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
@@ -151,7 +145,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 ![](Pictures/unit3_6.png)
 
 As you can see, the shapefiles have changed and are no longer distorted. You can also see that the projection of the QGIS project is in the correct projection indicated by the **EPSG: 102696** in the bottom right-hand corner. Save your project.
-![](Pictures/unit3_7.png)
+![](Pictures/unit3_7e.png)
 
 This projection was on-the-fly; while the project's projection changed, the shapefiles projection is not the same as the project's projection. Let's change that.
 
@@ -167,14 +161,14 @@ This projection was on-the-fly; while the project's projection changed, the shap
 
 15. Now we will do the same with the Missouri census tracts. Right-click on the shapefile and click **Export > Save Features As**.
 
-16. As with **MO_2019_Public Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to  **nhgisXXXX_shape > nhgisXXXX_shapefile_tl2017_290_blck_grp_2017**. Name your new layer **MO_blck_group_2017_Project**.
+16. As with **MO_2019_Public_Schools**, you will keep the format to **ESRI Shapefile**. Navigate to your **GIS_Data** folder and then to  **MO_Block_Group_2019**. Name your new layer **MO_Block_Group_2019_Project**.
 
 17. Click the **Select CRS** button in **CRS**.
 
 18. Under **Recently Used Coordinate Systems**, you should see the projection that you just used. Click on **NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet** and click on **OK** and then **OK** in the **Save Vector Layer as...** dialogue box. Your newly created layer will show up in the Project window and under the Layers panel. 
-![](Pictures/unit3_9.png)
+![](Pictures/unit3_9e.png)
 
-19. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **MO_blck_grp_2017**. Right-click on each of these files and click **Remove Layer**.
+19. In the **Layers** panel, uncheck **MO_2019_Public_Schools** and **tl_2019_29_bg**. Right-click on each of these files and click **Remove Layer**. Save your project.
 
 Congratulations! You just finished importing all the data you need into QGIS.
 
