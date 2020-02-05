@@ -43,7 +43,7 @@ One of the file formats that represent vector data is a shapefile, which is actu
 
 ### Terms to know
 - [Census block group](https://www2.census.gov/geo/pdfs/reference/GARM/Ch11GARM.pdf): The smallest geographic unit in which the Census unit collects census data. 
-- TIGER Lines: Geographic features for all 50 states from the  *Topographically Integrated Geographic Encoding and Referencing* database(thus the acronym TIGER). Examples of TIGER line products are rivers, roads, and administrative boundaries such as counties.
+- [TIGER Lines](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html): Geographic features for all 50 states from the  *Topographically Integrated Geographic Encoding and Referencing* database(thus the acronym TIGER). Examples of TIGER line products are rivers, roads, and administrative boundaries such as counties.
 
 #### GIS Data Sources: Where to go?
 As mentioned in the [introduction](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/intro_to_qgis_vector_intro.md
@@ -71,7 +71,22 @@ So where do we start? Let's work our way down this short list.
 
 ##### Census Tracts
 
-You can get census data through the [Census' data portal](data.census.gov), but for this workshop, we will be using NHGIS, which uses census data. An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org) website. The advantage of using NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
+You will need to get the census tract shapefile for Missouri along with the pertinent demographic information we want per census tract. This demographic information is stored in a table in **.csv** format. Let's first get the census tract informaton. 
+
+1. Go to the [US Census Bureau TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) website and under **2019**, click **Web Interface**. Keep **2019** selected for **Year** and select **Block Groups** in the **Select a layer type** section. Press **Submit** when you're done.
+
+2. Under **Select a State**, select **Missouri**, and click **Download**. Move the downloaded folder to your **GIS_Data** folder. Rename the folder of your block groups to **MO_Block_Groups*.
+
+3. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
+If you are using Windows, you will **right-click > Extract All**.
+
+#### Tabular Data
+
+
+You can get census data through the [Census' data portal](data.census.gov), but for this workshop, we will be using NHGIS, which uses census data. 
+
+-------------------------------------------------------------------------------------------------------------------------
+An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org) website. The advantage of using NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
 
 1. Navigate to the NHGIS website and click on the **Get Data**  button.
 
@@ -101,7 +116,7 @@ You can get census data through the [Census' data portal](data.census.gov), but 
 
 ![](Pictures/unit2_7.png)
 
-11. Unzip your downloaded files. If you are using a Mac, you will **right-click > Open With > Archive Utility(default)**.
+11. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
 If you are using Windows, you will **right-click > Extract All**.   **NhgisXXXX_csv.zip** has the csv file with the total population counts while **nhgisXXXX_shape.zip** is the shapefile that contains the Missouri block groups. The XXXX in the file name refers to the extract number of the file which you can see on the **Extract History** page.  Double-click on the **nhgisXXXX_shape.shp** folder and unzip **nhgisXXXX_shapefile_tl2017_290_blck_grp_2017.zip**. 
 **
 ## Unit 3: Prepare GIS Data in a QGIS Workspace
