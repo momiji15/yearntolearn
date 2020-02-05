@@ -71,7 +71,7 @@ So where do we start? Let's work our way down this short list.
 
 ##### Census Tracts
 
-You will need to get the census tract shapefile for Missouri along with the pertinent demographic information we want per census tract. This demographic information is stored in a table in **.csv** format. Let's first get the census tract informaton. 
+You will need to get the census tract shapefile for Missouri along with the pertinent demographic information we want per census tract. TLet's first get the census tract informaton. 
 
 1. Go to the [US Census Bureau TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) website and under **2019**, click **Web Interface**. Keep **2019** selected for **Year** and select **Block Groups** in the **Select a layer type** section. Press **Submit** when you're done.
 
@@ -80,10 +80,21 @@ You will need to get the census tract shapefile for Missouri along with the pert
 3. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
 If you are using Windows, you will **right-click > Extract All**.
 
-#### Tabular Data
+##### Tabular Data
+The demographic information that we need is stored in a table in **.csv** format. You can get census data through the [Census' data portal](data.census.gov).
 
+1. Go to the Census data portal website.
 
-You can get census data through the [Census' data portal](data.census.gov), but for this workshop, we will be using NHGIS, which uses census data. 
+2. Click on **Advanced Search**.
+
+3. Click on **Geography >** **Block Group**(under Geography)**> Missouri**(under Within State) **> St. Louis City**(under Within County)**>All Block Groups within St. Louis city,Missouri**(under St. Louis City, Missouri). On the bottom of the page, you should see a **Selected Filters** bar and **All Block Groups within St. Louis city, Missouri** should be displayed. 
+
+4. Now click on **Topics** > **Income and Poverty**(Under Topics) **Income and Earnings >**(Under Income and Poverty) **Income and Earnings**. Click **Search** in the **Selected Filters** bar to view the filtered tables. 
+
+5. Scroll down until you see **MEDIAN HOUSEHOLD IN THE PAST 12 MONTHS(IN 2018 INFLATION-ADJUSTED DOLLARS)** and click on it. This should be Table B19013. 
+
+6. You should see a preview of the table. Press **DOWNLOAD** on the left-hand panel of the page.
+![](Pictures/unit2_4e.png)
 
 -------------------------------------------------------------------------------------------------------------------------
 An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org) website. The advantage of using NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
@@ -92,7 +103,6 @@ An easy way to get the block group shapefiles and the corresponding csv files th
 
 2. Click on the **Geographic Levels** button. Under **Most Popular**, click the green round button next to **Block Group**. It should turn into a checked checkbox.
 
-![](Pictures/unit2_4.png)
 
 3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
 
