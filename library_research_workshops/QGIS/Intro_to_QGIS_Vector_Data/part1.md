@@ -93,42 +93,15 @@ The demographic information that we need is stored in a table in **.csv** format
 
 5. Scroll down until you see **MEDIAN HOUSEHOLD IN THE PAST 12 MONTHS(IN 2018 INFLATION-ADJUSTED DOLLARS)** and click on it. This should be Table B19013. 
 
-6. You should see a preview of the table. Press **DOWNLOAD** on the left-hand panel of the page.
+6. You should see a preview of the table. Press **Download** on the left-hand panel of the page. Click on the checkbox next to the **MEDIAN HOUSEHOLD IN THE PAST 12 MONTHS(IN 2018 INFLATION-ADJUSTED DOLLARS)** table and click on **Download Selected**. 
 ![](Pictures/unit2_4e.png)
 
--------------------------------------------------------------------------------------------------------------------------
-An easy way to get the block group shapefiles and the corresponding csv files that you need for this workshop is through the [IPUMS NHGIS](https://www.nhgis.org) website. The advantage of using NHGIS data is that it is already formatted so you can easily join the csv files to your shapefiles which you will be doing later on in this workshop. You should have registered for an NHGIS account before the workshop, but if not, please do it now. 
+7. Keep the defaults in the **Download** section. Everything should look like the image below. click **Download**. 
+![](Pictures/unit2_5f.png) Once your files finished preparing, click **Download Now**.
 
-1. Navigate to the NHGIS website and click on the **Get Data**  button.
-
-2. Click on the **Geographic Levels** button. Under **Most Popular**, click the green round button next to **Block Group**. It should turn into a checked checkbox.
+8. Move your downloaded data to your **GIS_Data** folder. Rename the folder **STL_Income** and unzip the folder.
 
 
-3. Click on the **Years** button. Under **5 Year Ranges** click **2013-2017**.
-
-4. Click on the **Topics** button. In the **Table Topic Filter** section, click on the green round button next to **Total Population**. It should turn into a checked checkbox. Scroll down and click on the outer-most green round button next to **Poverty (Income Relative to Poverty Level)**. You should see your selected topic filters on the top of the **Topics** window under **Selected Topic Filters**.
-
-![](Pictures/unit2_5e.png)
-
-5. Your results should look like this: 
-
-![](Pictures/unit2_6e.png)
-
-6. We will need to get the appropriate source table and GIS file. Under **11 Source Tables** click the green round button next to **B01003 Total Population** and **Ratio to Income to Poverty Level in the Past 12 Months**. In the **Data Cart**, which is located on the top right-hand corner, you will see that your selected source table as added to the cart.
-
-7. Now click on the **53 GIS Tables** tab. Find the GIS table for Missouri and click on it. You will see that your **Data Cart** includes the GIS file that you just selected.
-
-8. In the **Data Cart**, click on the **Continue** button. Confirm that for **Source Tables**, you have **2017 American Community Survey: 5-Year Data \[2013-2017, Block Groups & Larger Areas]**	and for **GIS Tables**, you have **block group** for the **Geographic Level**, **Missouri** as the **Extent**, and **2017 TIGER Line/+** as the **Basis**. After confirming, click **Continue**.
-
-9. In the **Review and Submit** section, keep everything as is, with the exception of **Geographic Extents** under the **Source Table** section. You will need to select a geographic extent for the source table to ensure you just get the total population for Missouri. Click on the **Geographic Extents** button, select **Missouri**, and then click **Submit**.
-
-10. Click **Submit** in the **Review and Submit** section. You will be directed to an **Extracts History** page in which you will be able to see your download history. Since the source table and GIS data retrieval process is automated, it might take some time. You will receive an e-mail when your data extract is ready. You can download it through the link provided in the e-mail or continue to refresh the page until you see a **Complete** status. Click on **tables** to download the data table and click on **gis** to download the GIS data. Make sure to save it to your GIS_Data folder.
-
-![](Pictures/unit2_7.png)
-
-11. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
-If you are using Windows, you will **right-click > Extract All**.   **NhgisXXXX_csv.zip** has the csv file with the total population counts while **nhgisXXXX_shape.zip** is the shapefile that contains the Missouri block groups. The XXXX in the file name refers to the extract number of the file which you can see on the **Extract History** page.  Double-click on the **nhgisXXXX_shape.shp** folder and unzip **nhgisXXXX_shapefile_tl2017_290_blck_grp_2017.zip**. 
-**
 ## Unit 3: Prepare GIS Data in a QGIS Workspace
 
 ### Unit Objectives
@@ -150,10 +123,8 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_2e.png)
 
-*Note: It is very important that you add the shapefiles in this order due to projection issues with the Census block group data.*
-
 4. We are going to add the schools first. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Add**.  In the Data Source Manager, click **Add**.
-
+---------------------------------------------------------------------------------------------------------------------
 5. Now we're going to add the Census block groups. Again, click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **nhgis0013_shape folder > nhgisXXXX_shapefile_tl2017_290_blck_grp_2017nhgis** folder and then select **MO_blck_grp_2017.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
 ![](Pictures/unit3_3.png)
