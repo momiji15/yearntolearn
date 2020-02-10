@@ -185,7 +185,7 @@ Congratulations! You just finished importing all the data you need into QGIS.
 With QGIS, you can select features either by expression or by location. When you select features by expression, you are selecting a features of vector data based on a particular attribute such as all of the census block groups in a specific county. When you select features by location, you can select features of vector data based on their location, such as selecting all the cenus block groups that are contained within a St. Louis City polygon. Let's give both a try.
 
 #### Producing a select features by expression query 
-1. Right-click on **MO_blck_group_2017_Project** and click on **Open Attribute Table**.
+1. Right-click on **MO_Block_Group_2019_Project** and click on **Open Attribute Table**.
 
 2. As you can see, a database underlies this polygon dataset in which there are records for each feature contained in the s
    dataset. You can see this by clicking on the number for the first record and right-click the value that is in 
@@ -197,8 +197,7 @@ With QGIS, you can select features either by expression or by location. When you
    this: 
    Option 1: Open the attribute table and click on the **Select features using an expression** button that is on the 
    the attribute table toolbar.
-    ![](Pictures/unit4_2e.png)
-    
+   ![](Pictures/unit4_2.png)    
    Option 2: Click on the **Select by Expression** button on the QGIS toolbar.
    ![](Pictures/unit4_3.png)
    
@@ -210,7 +209,7 @@ With QGIS, you can select features either by expression or by location. When you
 
 8. In the right box under **Values**, click on **All Unique** which will show all of the values that are in the **COUNTYFP** field. Scroll down until you find **510** and double-click on it. Your expression should look like this:
 
-![](Pictures/unit4_4.png)
+![](Pictures/unit4_4e.png)
 
 9. Click **Select Features** and 360 features should be selected. Click **Close** to close the Expression box. You might not see the selected features, so click on the **Zoom to Selection** button which is to the left of the **Zoom to Layer** button. You should see all of the city of St. Louis selected.
 
