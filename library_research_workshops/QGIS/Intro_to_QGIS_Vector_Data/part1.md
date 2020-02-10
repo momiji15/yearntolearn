@@ -254,9 +254,20 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_income_bg_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_income_bg_table** in the Layers panel.
 
+  ![](Pictures/unit5_1.png)
+  
+  
+  ![](Pictures/unit5_2.png)
+
+
+4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_income_bg_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GEOID** might be the common field in these datasets. Or is it?
+
+5. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button.
+
+6. Name the new field GEOID2
 
 ----------------------------------------------------------------------------------------------------------------------------
-4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
+
 
 5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
 
