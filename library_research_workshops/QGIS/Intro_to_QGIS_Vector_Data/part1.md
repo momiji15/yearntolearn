@@ -254,8 +254,6 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_income_bg_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_income_bg_table** in the Layers panel.
 
-![](Pictures/unit5_1.png)
-![](Pictures/unit5_2e.png)
 
 ----------------------------------------------------------------------------------------------------------------------------
 4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
