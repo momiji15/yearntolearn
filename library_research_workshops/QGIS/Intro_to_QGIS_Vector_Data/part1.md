@@ -133,8 +133,6 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 7. Your workspace should look similar to this. Don't be concerned about the colors of the shapefiles in your workspace being different than what you see here. 
 
----------------------------------------------------------------------------------------------------------------------
-
 
 8. We need to add a projection to our project. At times, you can easily tell that the data is not projected for the boundaries look distorted and the edges of the boundaries are straight lines. To project our data, we will export each shapefile and create a new layer with our new projection.
 
@@ -241,20 +239,26 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 
 ### Terms to know
 - key: a field that is common to two different datasets.
+- metadata: data about data. It gives you information about the data source.
 
 Our shapefile of St. Louis block groups does not have any socio-economic data attached to it. We can join the .csv file that we downloaded from NHGIS based on a field that is common to both data, which is called a key. The key that we will use to join the .csv file to the shapefile is **GISJOIN**. 
 
-1. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
+1. Go into your GIS_Data folder and unzip **STL_Income**. In the **STL_Income** folder, you will see three files:
+  - **ACSDT5Y2018.B19013_data_with_overlays_...csv**: Shows the median income per census block group.
+  - **ACSDT5Y2018.B19013_metadata_....csv**: Gives the metadata information about the csv file such as the column names.
+  - **ACSDT5Y2018.B19013_table_title_...txt**: Gives information about the data table downloaded. 
 
-2. Click on the **...** button next to File Name and navigate to **GIS_Data > nhgisXXXX_csv > nhgisXXXX_ds233_20175_2017_blck_group.csv**. 
+2. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
 
-3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_blck_grp_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_blck_group_table** in the Layers panel.
+2. Click on the **...** button next to File Name and navigate to **GIS_Data > STL_Income > ACSDT5Y2018.B19013_data_with_overlays_...csv**. 
+
+3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_income_bg_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_income_bg_table** in the Layers panel.
 
 ![](Pictures/unit5_1.png)
 ![](Pictures/unit5_2e.png)
 
-
-4. We are now going to join **stl_blck_grp_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
+----------------------------------------------------------------------------------------------------------------------------
+4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_blck_grp_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GISJOIN** is the common field in these datasets. Close both attribute tables.
 
 5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
 
