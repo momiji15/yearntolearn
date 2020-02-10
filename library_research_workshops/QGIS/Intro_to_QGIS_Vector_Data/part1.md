@@ -202,6 +202,7 @@ With QGIS, you can select features either by expression or by location. When you
    ![](Pictures/unit4_3.png)
    
 5. Using either option in #4, click on **Select by Expression**. We will be selecting St. Louis City block groups by County FIPS codes which is listed as **COUNTYFP** in the attribute table. Since St. Louis City is its own administrative unit separate from St. Louis county, it has it's own FIPS code which is **510**.
+   ![](Pictures/unit4_4.png)
  
 6. Let's create the query. In the middle box, click on **Fields and Values** and double-click **COUNTYFP**. You should see `COUNTYFP`appear in the Expression box on the left.
 
