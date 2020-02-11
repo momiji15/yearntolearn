@@ -269,7 +269,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 6. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button. In the **Output field name**, name this new field **GEOID2**. In the **Output field type**, select **Text(string)**. In the middle box, click on **String** and click on **right**. Click on **Fields and Values** and click on **GEOID**. Then type **, 12)**. Confirm that everything in expression box the field calculator looks like below.
 
-![](Pictures/unit5_4.png)
+<enter picture 5_3>
 
 #### Generate a join between a csv file and a shapefile
 
@@ -278,7 +278,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 6. In the **Add Vector Join** window, choose on **stl_bg_table**  from the drop-down menu as the **Join Layer**. For the **Join field** drop-down menu, choose **GEOID2** and for the **Target field** drop-down menu, chose **GEOID**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
 
-![](Pictures/unit5_3.png)
+<insert picture 5_4>
 
 
 ----------------------------------------------------------------------------------------------------------------------------
