@@ -268,10 +268,9 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 5. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. We are going to extract the numbers after this code through the right() function. You will need to enter the **right("GEOID", 12)** in the field calculator which will get all the characters twelve characters from the right of GEOID.
 
 6. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button. In the **Output field name**, name this new field **GEOID2**. In the **Output field type**, select **Text(string)**. In the middle box, click on **String** and click on **right**. Click on **Fields and Values** and click on **GEOID**. Then type **, 12)**. Confirm that everything in expression box the field calculator looks like below.
-![](Pictures/unit5_4.png)
 
 ----------------------------------------------------------------------------------------------------------------------------
-#### Generate a join between a csv file and a shapefile.
+#### Generate a join between a csv file and a shapefile
 
 
 5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
