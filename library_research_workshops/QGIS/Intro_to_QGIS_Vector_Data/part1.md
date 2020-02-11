@@ -235,7 +235,8 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 ## Unit 5: Joining Tablular Data to Vector Data
 ### Unit objectives
 1. Identify key fields fields between two different datasets.
-2. Generate a join between a csv file and a shapefile.
+2. Generate formatted key fields.
+3. Generate a join between a csv file and a shapefile.
 
 ### Terms to know
 - key: a field that is common to two different datasets.
@@ -262,11 +263,15 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_income_bg_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GEOID** might be the common field in these datasets. Or is it?
 
-5. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button.
+#### Generating formatted key fields
 
-6. Name the new field GEOID2
+5. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. We are going to extract the numbers after this code through the right() function. You will need to enter the **right("GEOID", 12)** in the field calculator which will get all the characters twelve characters from the right of GEOID.
+
+6. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button. In the **Output field name**, name this new field **GEOID2**. In the **Output field type**, select **Text(string)**. In the middle box, click on **String** and click on **right**. Click on **Fields and Values** and click on **GEOID**. Then type **, 12)**. Confirm that everything in expression box the field calculator looks like below.
+![](Pictures/unit5_4.png)
 
 ----------------------------------------------------------------------------------------------------------------------------
+#### Generate a join between a csv file and a shapefile.
 
 
 5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
