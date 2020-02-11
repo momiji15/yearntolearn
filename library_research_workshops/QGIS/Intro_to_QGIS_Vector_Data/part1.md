@@ -269,7 +269,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 6. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button. In the **Output field name**, name this new field **GEOID2**. In the **Output field type**, select **Text(string)**. In the middle box, click on **String** and click on **right**. Click on **Fields and Values** and click on **GEOID**. Then type **, 12)**. Confirm that everything in expression box the field calculator looks like below.
 
-![](Picture/unit5_3.png)
+![](Pictures/unit5_3.png)
 
 #### Generate a join between a csv file and a shapefile
 
