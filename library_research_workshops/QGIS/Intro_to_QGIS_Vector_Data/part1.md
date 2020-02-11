@@ -278,6 +278,7 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 6. In the **Add Vector Join** window, choose on **stl_bg_table**  from the drop-down menu as the **Join Layer**. For the **Join field** drop-down menu, choose **GEOID2** and for the **Target field** drop-down menu, chose **GEOID**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
 
+![](Pictures/unit5_3.png)
 
 
 ----------------------------------------------------------------------------------------------------------------------------
