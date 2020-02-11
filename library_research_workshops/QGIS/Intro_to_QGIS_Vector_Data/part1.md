@@ -277,9 +277,8 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
 
-6. In the **Add Vector Join** window, choose on **stl_blck_grp_table**  from the drop-down menu as the **Join Layer**. For the **Join field** and **Target field** drop-down menus, chose **GISJOIN**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
+6. In the **Add Vector Join** window, choose on **stl_bg_table**  from the drop-down menu as the **Join Layer**. For the **Join field** drop-down menu, choose **GEOID2** and for the **Target field** drop-down menu, chose **GEOID**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
 
-![](Pictures/unit5_3.png)
 
 You can see in the Layer Properties window that **stl_blck_grp_table** was joined to **stl_bg**. Click **OK** to exit out of the Layer Properties window.
 
