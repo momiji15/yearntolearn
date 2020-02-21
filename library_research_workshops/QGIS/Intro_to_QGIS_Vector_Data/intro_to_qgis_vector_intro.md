@@ -18,11 +18,11 @@ By the end of Part 2 of this workshop, participants will be able to:
 
 
 ## Final Product
-The final product will be a map that will the locations of schools in St. Louis City and of the student/teacher ratio by Census block group. You will be creating a map that is similar to this:
-![](Pictures/stl_map.png)
+The final product will be a map that will contain the locations of schools in St. Louis City, the student/teacher ratio, and the median household income by census block group. You will be creating a map that is similar to this:
+<put in map>
 
 ## Things to Do Before the Workshop
-You will need an [NHGIS](https://www.nhgis.org/) account to access the data you need before the workshop. 
+If you are not using the instruction lab computers, then you will need to install QGIS on your computer beforehand.
 
 ## Difficulty Level
 This workshop is suitable those who have no experience or are novices in QGIS or any other GIS software.
