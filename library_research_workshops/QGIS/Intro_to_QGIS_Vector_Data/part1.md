@@ -81,7 +81,7 @@ You will need to get the census tract shapefile for Missouri along with the pert
 If you are using Windows, you will **right-click > Extract All**.
 
 ##### Tabular Data
-The demographic information that we need is stored in a table in **.csv** format. You can get census data through the [Census' data portal](data.census.gov).
+The demographic information that we need is stored in a table in **.csv** format. You can get census data through the [Census' data portal](https://data.census.gov).
 
 1. Go to the Census data portal website.
 
