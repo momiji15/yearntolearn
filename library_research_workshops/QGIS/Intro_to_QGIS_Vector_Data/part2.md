@@ -112,9 +112,9 @@ The data is skewed right. Let's choose **natural breaks** as the classification 
 
 11. Click the **Else** button under **Label**. Keep all of the defaults and press **OK**. We will change the colors later. As you can see the missing areas show up.
 
-![](Pictures/pt2unit3_11.png)
+![](Pictures/pt2unit3_11e.png)
 
-![](Pictures/pt2unit3_12e.png)
+![](Pictures/pt2unit3_12e2.png)
 
 
 
