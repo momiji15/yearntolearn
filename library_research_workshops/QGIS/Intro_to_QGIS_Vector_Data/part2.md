@@ -204,11 +204,12 @@ Data Sources: NHGIS, MSDIS, US Census Bureau
 Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-left portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
 
 12. Feel free to adjust the map to make it more aesthetically pleasing. If you're happy with what you have then you're done!
-![](Pictures/pt2unit3_10e.png)
+![](Pictures/pt2unit3_10e2.png)
 
 13. Once you're done with your map, you can export it in a variety of formats. Let's export it as an image. Click on **Layout > Export as Image**. Navigate to your GIS_Data folder and create a folder called **Maps**. Navigate to that folder and name your file **stl_map**. Click save, accept the defaults, and click save again. If your export is successful, you will get a message on the top of the layout window saying that the export was successful. 
 
-![](Pictures/stl_map.png)
+![](Pictures/stl_map2.png)
+
 
 
 
