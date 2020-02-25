@@ -103,7 +103,29 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 The data is skewed right. Let's choose **natural breaks** as the classification scheme to classify the data based on the breaks in the distribution.
 
 8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have a higher median household income. 
-![](Pictures/pt2unit1_3e_v2.png)
+
+![](Pictures/pt2unit3_3e.png)
+
+9. There seems to be a problem. some of the polygons are not showing up. This is because some of them have no data. We need to make sure they're included in map. Right click on **stl_bg** and click on **Properties > Symbology**. You will see the symbology you just made. Change the classification from **Graduated** to **Rule-based**. You can see that your symbology was carried over. You need to add a rule for NULL values.
+
+10. Click the **+** button on the bottom-left corner of the layer properties bar.
+
+11. Click the **Else** button under **Label**. Keep all of the defaults and press **OK**. We will change the colors later. As you can see the missing areas show up.
+
+![](Pictures/pt2unit3_11.png)
+
+![](Pictures/pt2unit3_12e.png)
+
+
+
+12.Double click on the color that has no data and the Symbol Selector will pop up. Under favorites, you should see **hashed black /**. If you don't see it, then search for it in the **Favorites** search bar. Select the color and click **OK**.
+
+![](Pictures/pt2unit3_13.png)
+
+13. You will see that any census block groups with no data will have a hashed black line fill.
+
+![](Pictures/pt2unit3_14.png)
+
 
 9. Make sure to save your document.
 
