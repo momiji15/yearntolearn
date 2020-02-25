@@ -124,8 +124,7 @@ The data is skewed right. Let's choose **natural breaks** as the classification 
 
 13. You will see that any census block groups with no data will have a hashed black line fill.
 
-![](Pictures/pt2unit3_14.png)
-
+![](Pictures/pt2unit3_15.png)
 
 9. Make sure to save your document.
 
@@ -142,7 +141,8 @@ Now we're going to adjust the symbology of the points data to adjust the *size* 
 
 5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
 
-![](Pictures/pt2unit1_4.png)	
+
+![](Pictures/pt2unit3_14.png)
 
 
 6. Make sure to save your document.
