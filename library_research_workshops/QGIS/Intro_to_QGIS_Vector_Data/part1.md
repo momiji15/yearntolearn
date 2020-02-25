@@ -295,7 +295,7 @@ You can see in the Layer Properties window that **stl_bg_table** was joined to *
 
 1. Produce field calculations with pre-existing fields.
 
-With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **stl_bg** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and percentage of people in which the income to poverty ratio is over 2.00 in **stl_bg**. 
+With the field calculator, you are able to make new fields based on doing calculations with already existing fields. Let's perform a field calculation with the **stl_schools** and the **stl_bg** layers.  We're going to calculate the student and teacher ratio in the **stl_schools** layer and we need to create a new field for the median income variable since it is currently is a string. We need the median income to be recognized as a number in order to use symbology which we will do in part two. 
 
 1. Right-click on **stl_schools** and click on **Open Attribute Table**. In the top attribute table toolbar, click on the **Open Field Calculator** button. 
 
@@ -306,6 +306,9 @@ With the field calculator, you are able to make new fields based on doing calcul
 
 3. Right-click on the **stl_schools** layer and open the attribute table. If you scroll to the end of the attribute table, you should see **ST_Ratio**. Close the attribute table.
 
+4. Right-click on **stl_bg** and open attribute table, and click on the **Open field calculator** button. Name the new field **med_income** in **Output field name** and select **Whole number(integer)** for the **Output field type**. Under **Fields and Values** click **B19013_001E** to add the field in the expression box. Keep everything the same and click **OK**.
+
+![](Pictures/unit6_3.png)
 
 Now we have everything we need to create our map. Congratulations! You finished Part 1! Proceed to Part 2 to learn how to symbolize and design your map.
 
