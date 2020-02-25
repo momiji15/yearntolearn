@@ -104,7 +104,7 @@ The data is skewed right. Let's choose **natural breaks** as the classification 
 
 8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have a higher median household income. 
 
-![](Pictures/pt2unit3_3e.png)
+![](Pictures/pt2unit3_3e2.png)
 
 9. There seems to be a problem. some of the polygons are not showing up. This is because some of them have no data. We need to make sure they're included in map. Right click on **stl_bg** and click on **Properties > Symbology**. You will see the symbology you just made. Change the classification from **Graduated** to **Rule-based**. You can see that your symbology was carried over. You need to add a rule for NULL values.
 
