@@ -308,6 +308,7 @@ With the field calculator, you are able to make new fields based on doing calcul
 
 4. Right-click on **stl_bg** and open attribute table, and click on the **Open field calculator** button. Name the new field **med_income** in **Output field name** and select **Whole number(integer)** for the **Output field type**. Under **Fields and Values** click **B19013_001E** to add the field in the expression box. Keep everything the same and click **OK**.
 
+![](Pictures/unit6_3e.png)
 
 Now we have everything we need to create our map. Congratulations! You finished Part 1! Proceed to Part 2 to learn how to symbolize and design your map.
 
