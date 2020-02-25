@@ -81,7 +81,7 @@ Using what we learned in the previous lesson, lets add some symbolization to our
 
 3. On the top of the Layer Properties window you will see a drop-down menu in which **Single symbol** is the default. Click on it and choose the **Graduated** option.
 
-4. For **Value**, choose **pct_gt_2** from the drop-down menu.
+4. For **Value**, choose **Median_Income** from the drop-down menu.
 
 5. You can leave the **Color Ramp** to the default color of **Reds** for now.
 
