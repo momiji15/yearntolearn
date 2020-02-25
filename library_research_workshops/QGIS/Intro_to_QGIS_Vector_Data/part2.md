@@ -103,7 +103,7 @@ Take a closer look at the options of **Mode** towards the bottom of the Layer Pr
 The data is skewed right. Let's choose **natural breaks** as the classification scheme to classify the data based on the breaks in the distribution.
 
 8. Click on the **Classes** tab and in the drop-down menu for **Mode**, choose **Natural Breaks(Jenks)** and click **OK**. You will now see the block group polygons classified by color. The darker color signifies block groups with a high number of individuals who have a higher median household income. 
-![](Pictures/pt2unit1_3e.png)
+![](Pictures/pt2unit1_3e_v2.png)
 
 9. Make sure to save your document.
 
@@ -119,6 +119,9 @@ Now we're going to adjust the symbology of the points data to adjust the *size* 
 4. Let's change the color and size of the points. Click on the down arrow button in **Symbol** and choose a yellow color for your points. Under **Method** choose **Size**.
 
 5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
+
+![](Pictures/pt2unit1_4.png)	
+
 
 6. Make sure to save your document.
 
@@ -152,9 +155,9 @@ Here are some useful buttons to know in the left toolbar:
 - **Adds a new North Arrow to the layout** ![](Pictures/pt2unit3_9.png)
 
  
-4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button. Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**.
+4. Let's add our Map to the map layout. On the left toolbar, click on the **Adds a new Map to the Layout** button. Your pointer will turn into a cross. Left-click and drag a rectangle of appropriate size within your page layout. Make sure to leave enough room in your page for a **title** and **created by/data source** section, but make sure your rectangle is big enough to contain cartographic elements such as the **scale bar, north arrow, and legend**. If you press the **Move item content** button you can move your map content around. If you are using a mouse and your mouse has a scroll wheel, you are able to zoom in and out of your content to change the scale of your map. You can also change the scale of the map by changing it in **Scale** under **Main Properties**. A scale of 125,000 was chosen for this map.
 
-![](Pictures/pt2unit3_3.png)
+![](Pictures/pt2unit3_3e.png)
 
 
 5. To add a title for your map, click on the **Adds a new Label to the layout** button. Left-click and drag a rectangle above your Map location. On the right-hand side in **Item Properties panel**, type *Exploring Student/Teacher Ratios in St. Louis City* under **Label**. If you can come up with a better title, feel free to do so!
@@ -163,7 +166,7 @@ Here are some useful buttons to know in the left toolbar:
 
 7. Another neccessary cartographic element is the legend. Click on the **Adds a new Legend to the layout** button. Left-click and drag a rectangle to the right of St. Louis city. We need to clean up the legend items so they can be more clear to those who look at the map.
 
-8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Block Groups**. We need to express each **% of Individuals with an Income/Poverty Ratio over Two** legend item by percentages. Change the legend items to reflect this by double-clicking on each legend item.
+8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Median Household Income by Block Group**. Double click on each legend item and add **$** and **,** in each item as needed.
 
 9. To get rid of **stl_blck_grp_table**, under **Legend Items**, uncheck the **Auto update** box. Highlight **stl_blck_group_table** and press the minus button at the bottom on the **Legend Items** box.
 The layer is removed from the legend as a result.
