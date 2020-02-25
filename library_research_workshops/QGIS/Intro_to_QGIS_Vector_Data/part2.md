@@ -119,6 +119,7 @@ Now we're going to adjust the symbology of the points data to adjust the *size* 
 4. Let's change the color and size of the points. Click on the down arrow button in **Symbol** and choose a yellow color for your points. Under **Method** choose **Size**.
 
 5. Click **Classify** on the bottom of the Layer Properties window. Keep the classification to **Natural Breaks (Jenks)** then click OK. Notice how the points data changed. Which parts of St. Louis has a high student to teacher ratio and a low student teacher ratio?
+
 6. Make sure to save your document.
 
 
