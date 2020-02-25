@@ -188,7 +188,7 @@ Here are some useful buttons to know in the left toolbar:
 
 7. Another neccessary cartographic element is the legend. Click on the **Adds a new Legend to the layout** button. Left-click and drag a rectangle to the right of St. Louis city. We need to clean up the legend items so they can be more clear to those who look at the map.
 
-8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Median Household Income by Block Group**. Double click on each legend item and add **$** and **,** in each item as needed.
+8. In the **Item Properties** panel, scroll to the **Legend Items** section.  Double-click on **stl_schools** and rename the Layer **Student-to-Teacher Ratio**. Double-click on **stl_bg** and rename it **Median Household Income by Block Group**. Double click on each legend item and add **$** and **,** in each item as needed. Double-click on the hashed black line fill color box and type **No Data** in the **Item Text** box.
 
 9. To get rid of **stl_blck_grp_table**, under **Legend Items**, uncheck the **Auto update** box. Highlight **stl_blck_group_table** and press the minus button at the bottom on the **Legend Items** box.
 The layer is removed from the legend as a result.
@@ -204,7 +204,7 @@ Data Sources: NHGIS, MSDIS, US Census Bureau
 Click on the **Adds a new Label to the layout** button, left-click and draw a rectangle on the bottom-left portion of your map. Enter your reference information in **Main Properties** under **Label** in the the **Item Properties** panel. Feel free to change the size or type of the font by clicking on the **Font** button under **Appearance**.
 
 12. Feel free to adjust the map to make it more aesthetically pleasing. If you're happy with what you have then you're done!
-![](Pictures/pt2unit3_10.png)
+![](Pictures/pt2unit3_10e.png)
 
 13. Once you're done with your map, you can export it in a variety of formats. Let's export it as an image. Click on **Layout > Export as Image**. Navigate to your GIS_Data folder and create a folder called **Maps**. Navigate to that folder and name your file **stl_map**. Click save, accept the defaults, and click save again. If your export is successful, you will get a message on the top of the layout window saying that the export was successful. 
 
