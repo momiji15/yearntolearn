@@ -19,8 +19,7 @@ By the end of Part 2 of this workshop, participants will be able to:
 
 ## Final Product
 The final product will be a map that will contain the locations of schools in St. Louis City, the student/teacher ratio, and the median household income by census block group. You will be creating a map that is similar to this:
-<put in map>
-
+![](Pictures/stl_map2.png)
 ## Things to Do Before the Workshop
 If you are not using the instruction lab computers, then you will need to install QGIS on your computer beforehand.
 
