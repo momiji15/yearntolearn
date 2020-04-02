@@ -1,3 +1,11 @@
 You can access the slides for the presentation [here](https://momiji15.github.io/rladiesstl_rmarkdown/RLadiesSTL_Markdown040220#1).
 
-It is recommended that you do the Unit1 and Unit2 tutorials as opposed to solely relying on the slides. The slides only gives an overview of each concept, while the Unit1 and Unit2 are tutorials that provide specific information on how to do each process.
+There are two units for this workshop:
+
+Unit 1: Creating an R Markdown Document
+
+Unit 2: Making a Blogdown Site
+
+If you have no experience with R Markdown, it is recommended that you do both units. If you do have experience with R Markdown, you can go on to Unit 2.
+
+If you are doing this on your own, it is recommended that you first look at the slides to give you a general idea of R Markdown and follow Unit 1 and Unit 2 to make your website.
