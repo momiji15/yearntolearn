@@ -76,7 +76,7 @@ To make text **bold**, you add an `**` before and after the sentence.
 `**This is bold.**`
 
 #### Exercise 2: Creating an R Markdown Document About You: Changing Text
-Fill in the information under each section. Under the **Biography** section, make your text italicized and under **Education** make your text italicized.
+Fill in the information under each section. Under the **Biography** section, make your text italicized and under **Education** make your text bold.
 
 ### Inserting Images
 If you want to insert images, I suggest you create an images file where you are storing your R Markdown document and put your image there. You can then refer to the location of your image by 
