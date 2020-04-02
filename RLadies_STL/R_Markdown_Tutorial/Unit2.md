@@ -1,4 +1,4 @@
-# Unit 2: Making a blogdown site
+# Unit 2: Making a Blogdown Site
 
 ## Unit Learning Objectives
 - To become familiar with blogdown.
