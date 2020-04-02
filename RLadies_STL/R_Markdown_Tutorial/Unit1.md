@@ -15,7 +15,7 @@ Beginner
 
 
 ### Lesson 1: Introduction to R Markdown
-R Markdown is a framework which you can make dynamic documents and make your research reproducible. R Markdown documents have three parts which are composed of the text that make up the documents, the code chunks that either static, automatic, or run based on a user prompt. Finally, there's the YAML metadata which gives you information about the document. The YAML is optional, so feel free to not add it if you don't need it. 
+R Markdown is a framework which you can make dynamic documents and make your research reproducible. R Markdown documents have three parts which are composed of the text that make up the documents, the code chunks that either static, automatic, or run based on a user prompt. Finally, there's the YAML metadata which gives you information about the document. 
 
 You have many options when it comes to creating R Markdown documents such as creating websites, slides, and dashboards. For today's lesson, we will just create a simple R Markdown document that will give basic information about yourself. Having a CV/Resume or anything that you have previously submitted as a bio will be helpful! It might be weird talking about yourself, but you've done a lot so it's time to let others know what you're doing!
 
