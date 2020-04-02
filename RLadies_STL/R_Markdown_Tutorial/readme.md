@@ -2,7 +2,7 @@ You can access the slides for the presentation [here](https://momiji15.github.io
 
 There are two units for this workshop:
 
-Unit 1: Creating an R Markdown Document
+Unit 1: [Creating an R Markdown Document](https://github.com/momiji15/yearntolearn/blob/master/RLadies_STL/R_Markdown_Tutorial/Unit1.md)
 
 Unit 2: Making a Blogdown Site
 
