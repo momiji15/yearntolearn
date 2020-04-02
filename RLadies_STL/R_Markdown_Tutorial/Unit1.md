@@ -35,7 +35,6 @@ Let's make an R Markdown Document! Let's start out making a document which have 
 
 Go to File -> New File -> R Markdown to open an R Markdown document. Keep the option to **Document**. Fill in the information in the **Title:** and **Author:** fields and keep the default output format to HTML. Click **OK**.
 
-![](images/rmarkdown_u1_1.png){width = 50%}
 Clear everything in the document with two exceptions:
 
   - The code chunk which includes: `knitr::opts_chunk$set(echo = FALSE)`.
