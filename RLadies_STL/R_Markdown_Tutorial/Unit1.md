@@ -79,16 +79,18 @@ To make text **bold**, you add an `**` before and after the sentence.
 Fill in the information under each section. Under the **Biography** section, make your text italicized and under **Education** make your text bold.
 
 ### Inserting Images
-If you want to insert images, I suggest you create an images file where you are storing your R Markdown document and put your image there. You can then refer to the location of your image by 
+If you want to insert images, you should create an images folder where you are storing your R Markdown document and put your image in that folder. You can then refer to the location of your image by 
 adding this code:
 `![](images\myimages.jpg)`
 
+*Note: myimages.jpg is being used as an example image. You should use the file name of the image you want to use.*
+
 #### Exercise 3: Creating an R Markdown Document About You: Adding an Image
-Create an image link in the same location of where your R-Markdown document is located.
+Above the **Name** header, create an image link in the same location of where your R Markdown document is located.
 
 ### Knitting Your Document
 
-Click the Knit button and see the result. In the preview window, click on the "Open in Browser" button to see what it looks like in a web browser.
+Click the Knit button and **Knit to HTML**. In the preview window, click on the "Open in Browser" button to see what it looks like in a web browser.
 
 ### Bonus
 One great thing about R Markdown is that you can run your plots or other visualizations within the document! Create a new R Markdown document and read the default information that comes with the template. It gives information on how to embed R code chunks in which the code chunk is visible and when the code chunk is invisible. You might want to have the code chunk be visible if you are explaining a process in the code itself so you will want to set `echo = TRUE` when your R Markdown document is generated. However, if you are just interested in showing the result of the code, then you just need to set `echo = FALSE`. Go ahead and run the plots in the R Markdown document that you just opened!
