@@ -42,7 +42,6 @@ Clear everything in the document with two exceptions:
   - The code chunk which includes: `knitr::opts_chunk$set(echo = FALSE)`.
   - The YAML data which is delinated by an `---`.
 
-![](images/newmarkdown.jpg)
 
 ### Creating Headers 
 R Markdown has different types of headers. Here are some of the headers with the accompanying code for each header. 
