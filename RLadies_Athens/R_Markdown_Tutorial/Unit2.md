@@ -35,7 +35,7 @@ Let's get started with Exercise 2!
 
 
 ## Exercise 2: Creating your blogdown site 
-1. Go to the Hugo website and pick a theme. Make sure to at least pick three themes just in case one theme you choose doesn't mesh well with Hugo. If you are overwhelmed with the number of templates, and you just needed one to go with I would recommend [Academic](https://themes.gohugo.io/academic/). Click on your template and then click on the download button. Most likely, you will be directed to the GitHub repo or the site. You need to record the username and the name of the template of the GitHub repo. You're going to need it later.
+1. Go to the Hugo website and pick a theme. Make sure to at least pick three themes just in case one theme you choose doesn't mesh well with Hugo. If you are overwhelmed with the number of templates, and you just needed one to go with I would recommend [Academic](https://themes.gohugo.io/academic/). Click on your template and then click on the download button. Most likely, you will be directed to the GitHub repo or the site. You need to record the username and the name of the template of the GitHub repo. For example, for the Academic theme, you are going to need to record **gcushen/hugo-academic** somewhere. Write it on a sticky note or type it in a text document. You're going to need it later.
 
 2. In your **rladiesstl_rmarkdown** folder, create a folder named **aboutme**. You will store all of your information in this folder. 
 
@@ -47,13 +47,15 @@ install.packages("blogdown", dependencies = TRUE)
 library(blogdown)
 ```
 
-3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. :rotating_light:Please read through the two options before you proceed and choose the option you are most comfortable with.:rotating_light:
+3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this.
+
+:rotating_light:Please read through the two options before you proceed and choose the option you are most comfortable with.:rotating_light:
 
 **OPTION 1**
 
-1.1. Go to File -> New Directory -> Website Using Blogdown.
+1.1. From the New Project prompt, click on **New Directory -> Website Using Blogdown.**
 
-1.2. Give a name for your directory and choose a subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
+1.2. Name your directory **aboutme** and choose the **my_website** folder as a subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
 
 1.3. Click **Create Project**.
 
@@ -67,7 +69,7 @@ library(blogdown)
 
 I found this option to have less hassle!
 
-2.1. In the R console, type `blogdown::new_site()`. If you want to apply a theme, make sure to specify it. `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
+2.1. In the R console, type  `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
 
 2.2 Open the config.toml file in which you can make configurations to your site.
 
