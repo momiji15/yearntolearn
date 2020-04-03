@@ -23,7 +23,9 @@ For more specific information about R Markdown, consult this very helpful [cheat
 
 ![](images/RMarkdown2.JPG)
 
-Make sure to install R Markdown along with the packages that is needed to R Markdown(known as dependencies) before making your R Markdown document.
+1. Create a folder in your Documents (or any location where you can remember the location) and name it **rladiesstl_rmarkdown**. You will store all of the contents of the workshop in this folder. 
+
+2. Open R-Studio. Make sure to install R Markdown along with the packages that is needed to R Markdown(known as dependencies) before making your R Markdown document.
 
 ```{r chunk-one, echo = TRUE, eval = FALSE}
 install.packages("rmarkdown", dependencies = TRUE)
