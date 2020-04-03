@@ -51,8 +51,7 @@ Let's get started with Exercise 2!
 
 1.2. Name your directory **aboutme** and navigate to the **my_website** folder as the subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
 
-*insert image here*
-
+![](images/blogdownop1_5e.png)
 1.3. Click **Create Project**.
 
 1.4. Your theme should have downloaded and you should see a config.toml file which allows you to configure your site.
