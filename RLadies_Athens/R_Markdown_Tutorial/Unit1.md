@@ -39,7 +39,7 @@ Let's make an R Markdown Document! Let's start out making a document which have 
   1. The code chunk which includes: `knitr::opts_chunk$set(echo = FALSE)`.
   2. The YAML data which is delinated by an `---`.
   
-2. Save your document as **aboutme**. 
+2. Save your document as **aboutme**. Your file will be saved as **aboutme.Rmd** in your **rladiesstl_rmarkdown** folder.
 
 ![](images/newmarkdown.jpg)
 
