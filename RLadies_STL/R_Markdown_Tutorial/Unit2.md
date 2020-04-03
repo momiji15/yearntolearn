@@ -21,33 +21,37 @@ Beginner. This is a little more difficult from Unit 1 since you will be using TO
 <b>dynamic website generator</b>: A generator that renders content on a website using databases and queries. This allows the website to use real-time data or customize to the user.
 
 ### Lesson 1: Introduction to blogdown
-Blogdown is a package in which which you can make static web sites using R Markdown. What are static websites do you ask? I won't get deep into it, but a static website differs from a dynamic website generator is that it doesn't use queries and databases like a dynamic database does. Instead, it uses flat files which allows for your website to be rendered quickly. Static site generators take the content, apply it to a chosen template, and generates HTML pages pretty quickly. Static site generators can be deployed on a variety of servers and allows for version control. If you want more information about static sites, check out the resources below in the bonus section!
+Blogdown is a package in  which you can make static web sites using R Markdown. What are static websites do you ask? I won't get deep into it, but a static website differs from a dynamic website generator is that it doesn't use queries and databases like a dynamic database does. Instead, it uses flat files which allows for your website to be rendered quickly. Static site generators take the content, apply it to a chosen template, and generates HTML pages pretty quickly. Static site generators can be deployed on a variety of servers and allows for version control. If you want more information about static sites, check out the resources below in the bonus section!
 
 There are are various advantages for using blogdown in making websites. One advantage is that you don't need to know HTML or CSS to have a beautiful site! In addition, there are plenty of free static templates to choose from. Finally, if you're a person on a budget like myself, deployment of your website doesn't have to cost a thing! You can even get a customized domain based on the deployment option that you use. 
 
 As with everything, there's disadvantages of using blogdown. You might need to have some familiarity with GitHub depending on the deployment option. If it's not too much to ask, I recommend that you do become a little familiar with GitHub which will increase the type of deployment options you have.
 
 ### Lesson 2: Introduction to Hugo
-Hugo is one of the three static site generators that blogdown can use to generate websites. There are many [Hugo themes](https://themes.gohugo.io/) out there that it can be overwhelming! I would recommend picking a couple of themes before deciding on one. This is because some Hugo templates are more compatible with blogdown than others. If one template does not work, then you can choose from a couple of back ups! If you know HTML and CSS, then you will be able to put those skills to use if you want to customize certain themes. You can find all the information about the Hugo theme on its landing page, which is usually a GitHub repo.
+Hugo is one of the three static site generators that blogdown can use to generate websites. There are many [Hugo themes](https://themes.gohugo.io/) out there that it can be overwhelming! I would recommend picking a couple of themes before deciding on one. This is because some Hugo templates are more compatible with blogdown than others. If one template does not work, then you can choose from a couple of back ups! If you know HTML and CSS, then you will be able to put those skills to use if you want to customize certain themes. You can find all the information about the Hugo theme when you click on the **Homepage** button, which will direct you to the landing page, which is usually a GitHub repo. 
 
 Let's get started with Exercise 2!
 
 ## Exercise 2: Creating your blogdown site 
-1. Go to the Hugo website and pick a theme. Make sure to at least pick three themes just in case one theme you choose doesn't mesh well with Hugo. If you are overwhelmed with the number of templates, and you just needed one to go with I would recommend [Academic](https://themes.gohugo.io/academic/). Click on your template and then click on the download button. Most likely, you will be directed to the GitHub repo or the site. You need to record the username and the name of the template of the GitHub repo. You're going to need it later.
+1. Go to the Hugo website and pick a theme. Make sure to at least pick three themes just in case one theme you choose doesn't mesh well with Hugo. If you are overwhelmed with the number of templates, and you just needed one to go with I would recommend [Academic](https://themes.gohugo.io/academic/). For the purposes of this tutorial, we will create a website using the **Academic** template. Click on your template and then click on the download button. Most likely, you will be directed to the GitHub repo or the site. You need to record the username and the name of the template of the GitHub repo. You're going to need it later. For example, for the Academic template, you will need to record **gcushen/hugo-academic** somewhere. 
 
-2. Make sure that you have installed and loaded the blogdown package.
-```{r, echo = FALSE}
-install.packages(blogdown)
-library(blogdown)
-```
+2. Make a folder in your **rmarkdown_rladiesstl** folder and call it **my_website**. You will store all of your files in this folder and will create an R-Studio Project within this folder.
 
-3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. 
+3. Open up R-Studio.
+
+3. Make sure that you have installed and loaded the blogdown package. In the console type:
+`install.packages("blogdown", dependencies = TRUE)`
+`library(blogdown)`
+
+4. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. 
 
 **OPTION 1**
 
-1.1. Go to File -> New Directory -> Website Using Blogdown.
+1.1. Go to File -> New Project -> New Directory -> Website Using Blogdown.
 
-1.2. Give a name for your directory and choose a subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
+1.2. Name your directory **aboutme** and navigate to the **my_website** folder as the subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
+
+*insert image here*
 
 1.3. Click **Create Project**.
 
