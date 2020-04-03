@@ -65,7 +65,7 @@ library(blogdown)
 
 1.5. Do you just want to see what your site looks like at the moment? On the top of the RStudio interface, you should see an AddIns dropdown menu. Click on it, and then click on **Serve Site**.
 
-1.6. On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser.
+1.6. On the Viewer tab on the right side of the RStudio IDE, click on the **Show in new window** button (third button from the right) in order to see what your site looks like in a web browser.
 
 ![](images/blogdown1_6a.png)
 
@@ -83,7 +83,7 @@ library(blogdown)
 
 2.5 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. Go to **File -> Open File** and navigate to your **aboutme** folder. Select the **config.toml** file and click **Open**. You will be able to make  configurations to your site with the config.toml file.
 
-2.6 On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser. *Refer to the image in 1.6 under Option 1 to confirm.*
+2.6 On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** button (third button from the right) in order to see what your site looks like in a web browser. *Refer to the image in 1.6 under Option 1 to confirm.*
 
 If you are getting a ton of error messages, you might want to check the mimimum version of Hugo needed to build the site on the theme landing page. You can check which version of Hugo you're using by typing `blogdown::hugo_version` and if you need to update Hugo, type `blogdown::update_hugo()`.
 
