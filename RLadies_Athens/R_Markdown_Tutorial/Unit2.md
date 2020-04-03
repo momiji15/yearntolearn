@@ -67,7 +67,7 @@ library(blogdown)
 
 1.6. On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser.
 
-[]!(images/blogdown1_6a.png)
+![](images/blogdown1_6a.png)
 
 1.7 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. A **config.toml** file should have popped up in R-Studio. You will use this file to make configurations to your site. If the config.toml file did not pop up, go to **File -> Open File** and navigate to your **aboutme** folder. Select the **config.toml** file and click **Open**.
 
