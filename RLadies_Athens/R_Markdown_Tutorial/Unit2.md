@@ -32,16 +32,22 @@ Hugo is one of the three static site generators that blogdown can use to generat
 
 Let's get started with Exercise 2!
 
+
+
 ## Exercise 2: Creating your blogdown site 
 1. Go to the Hugo website and pick a theme. Make sure to at least pick three themes just in case one theme you choose doesn't mesh well with Hugo. If you are overwhelmed with the number of templates, and you just needed one to go with I would recommend [Academic](https://themes.gohugo.io/academic/). Click on your template and then click on the download button. Most likely, you will be directed to the GitHub repo or the site. You need to record the username and the name of the template of the GitHub repo. You're going to need it later.
 
-2. Make sure that you have installed and loaded the blogdown package.
+2. In your **rladiesstl_rmarkdown** folder, create a folder named **aboutme**. You will store all of your information in this folder. 
+
+2. Start R-Studio.
+
+2. Make sure that you have installed and loaded the blogdown package. Type this in the console.
 ```{r, echo = FALSE}
-install.packages(blogdown)
+install.packages("blogdown", dependencies = TRUE)
 library(blogdown)
 ```
 
-3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. 
+3. Now it's time to make a blogdown site. Go to File -> New Project and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. :rotating_light:Please read through the two options before you proceed and choose the option you are most comfortable with.:rotating_light:
 
 **OPTION 1**
 
