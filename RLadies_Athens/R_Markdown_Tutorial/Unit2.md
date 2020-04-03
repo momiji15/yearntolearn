@@ -67,13 +67,21 @@ library(blogdown)
 
 1.6. On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser.
 
+[]!(images/blogdown1_6a.png)
+
+1.7 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project.
+
 **OPTION 2** 
 
-I found this option to have less hassle!
+2.1 From the New Project prompt, click on **New Directory -> New Project**.
 
-2.1. In the R console, type  `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
+2.2 Under directory name, type **aboutme** and under **Create project as a subdirectory of:**, click on **Browse** and navigate to your **my_website** folder. Refer to the image in option 1 to confirm.
 
-2.2 Open the config.toml file in which you can make configurations to your site.
+2.3 Click **Create Project.**
+
+2.4. In the R console, type  `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
+
+2.5 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. Open the config.toml file in which you can make configurations to your site.
 
 If you are getting a ton of error messages, you might want to check the mimimum version of Hugo needed to build the site on the theme landing page. You can check which version of Hugo you're using by typing `blogdown::hugo_version` and if you need to update Hugo, type `blogdown::update_hugo()`.
 
