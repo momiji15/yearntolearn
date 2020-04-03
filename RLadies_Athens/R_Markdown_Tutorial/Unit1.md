@@ -25,18 +25,21 @@ For more specific information about R Markdown, consult this very helpful [cheat
 
 1. Create a folder in your Documents (or any location where you can remember the location) and name it **rladiesstl_rmarkdown**. You will store all of the contents of the workshop in this folder. 
 
-2. Open R-Studio. Make sure to install R Markdown along with the packages that is needed to R Markdown(known as dependencies) before making your R Markdown document.
+2. Open R-Studio. Make sure to install R Markdown along with the packages that is needed to R Markdown(known as dependencies) before making your R Markdown document. In the console, type:
 
-```{r chunk-one, echo = TRUE, eval = FALSE}
-install.packages("rmarkdown", dependencies = TRUE)
-library(rmarkdown)
-```
+`install.packages("rmarkdown", dependencies = TRUE)`
+`library(rmarkdown)`
+
 
 ## Lesson 2: Making an R Markdown Document
-Let's make an R Markdown Document! Let's start out making a document which have some headers and italicized text. Before we do that, we need to open up an R Markdown document! Go to File -> New File -> R Markdown to open an R Markdown document. Fill in the information in the "title" and "author" fields and keep the default output format to HTML. Clear everything in the document with two exceptions:
+Let's make an R Markdown Document! Let's start out making a document which have some headers and italicized text. Before we do that, we need to open up an R Markdown document! 
+
+1. Go to **File -> New File -> R Markdown** to open an R Markdown document. Fill in the information in the "title" and "author" fields and keep the default output format to HTML. Clear everything in the document with two exceptions:
 
   1. The code chunk which includes: `knitr::opts_chunk$set(echo = FALSE)`.
   2. The YAML data which is delinated by an `---`.
+  
+2. Save your document as **aboutme*. 
 
 ![](images/newmarkdown.jpg)
 
