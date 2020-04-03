@@ -69,19 +69,21 @@ library(blogdown)
 
 []!(images/blogdown1_6a.png)
 
-1.7 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project.
+1.7 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. A **config.toml** file should have popped up in R-Studio. You will use this file to make configurations to your site. If the config.toml file did not pop up, go to **File -> Open File** and navigate to your **aboutme** folder. Select the **config.toml** file and click **Open**.
 
 **OPTION 2** 
 
 2.1 From the New Project prompt, click on **New Directory -> New Project**.
 
-2.2 Under directory name, type **aboutme** and under **Create project as a subdirectory of:**, click on **Browse** and navigate to your **my_website** folder. Refer to the image in option 1 to confirm.
+2.2 Under directory name, type **aboutme** and under **Create project as a subdirectory of:**, click on **Browse** and navigate to your **my_website** folder. *Refer to the image under 1.2 in Option 1 to confirm.*
 
 2.3 Click **Create Project.**
 
 2.4. In the R console, type  `blogdown::new_site(theme = "gcushen/hugo-academic")`. The files for your theme will download. Sit tight! It might take a while. 
 
-2.5 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. Open the config.toml file in which you can make configurations to your site.
+2.5 All of the files for your website will be loaded to your **aboutme** folder that you created when you created a project. Go to **File -> Open File** and navigate to your **aboutme** folder. Select the **config.toml** file and click **Open**. You will be able to make  configurations to your site with the config.toml file.
+
+2.6 On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** in order to see what your site looks like in a web browser. *Refer to the image in 1.6 under Option 1 to confirm.*
 
 If you are getting a ton of error messages, you might want to check the mimimum version of Hugo needed to build the site on the theme landing page. You can check which version of Hugo you're using by typing `blogdown::hugo_version` and if you need to update Hugo, type `blogdown::update_hugo()`.
 
