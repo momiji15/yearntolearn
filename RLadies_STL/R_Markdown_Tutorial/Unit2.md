@@ -43,13 +43,17 @@ Let's get started with Exercise 2!
 `install.packages("blogdown", dependencies = TRUE)`
 `library(blogdown)`
 
-4. Now it's time to make a blogdown site. Go to **File -> New Project** and create a new project. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. :rotating_light: Please read both options before proceeding! :rotating_light:
+4. Now it's time to make a blogdown site. Now given you have installed and loaded blogdown in the previous step, there are two options for doing this. :rotating_light: Please read both options before proceeding! :rotating_light:
 
 **OPTION 1**
 
 1.1. Go to **File -> New Project -> New Directory -> Website Using Blogdown**.
 
 1.2. Name your directory **aboutme** and navigate to the **my_website** folder as the subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
+
+![](images/blogdownop1_5a.png)
+
+*Note: Your folder structure might be different from mine, but the important thing to note is that I am saving the aboutme directory in a folder called my_website.*
 
 1.3. Click **Create Project**.
 
