@@ -33,7 +33,7 @@ library(rmarkdown)
 ## Lesson 2: Making an R Markdown Document
 Let's make an R Markdown Document! Let's start out making a document which have some headers and italicized text. Before we do that, we need to open up an R Markdown document! 
 
-Create a folder called **rmarkdown_rladiesstl**. I recommend that you save this folder in a convenient location such as your Documents folder.
+If you have not already done so, create a folder called **rmarkdown_rladiesstl**. I recommend that you save this folder in a convenient location such as your Documents folder.
 
 Go to File -> New File -> R Markdown to open an R Markdown document. Keep the option to **Document**. Fill in the information in the **Title:** and **Author:** fields and keep the default output format to HTML. Click **OK**.
 
