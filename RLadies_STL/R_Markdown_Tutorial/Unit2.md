@@ -77,7 +77,7 @@ I found this option to have less hassle!
 
 2.3 All of website files will be loaded in your **aboutme** folder. Click on **File -> Open File -> aboutme -> config.toml** and click **Open**. 
 
-If you are getting a ton of error messages, you might want to check the mimimum version of Hugo needed to build the site on the theme landing page. You can check which version of Hugo you're using by typing `blogdown::hugo_version` and if you need to update Hugo, type `blogdown::update_hugo()`.
+If you are getting a ton of error messages, you might want to check the mimimum version of Hugo needed to build the site on the theme landing page. You can check which version of Hugo you're using by typing `blogdown::hugo_version()` and if you need to update Hugo, type `blogdown::update_hugo()`.
 
 ## Lesson 3: Deploying your site
 There are various options you have when it comes to deploying your site. To keep you from having an information overload, I will not talk about all the various options. Some options such as the one we will use for this tutorial, Netlify, uses GitHub and other options, such as Updog does not. I do recommend you check out [Chapter 3](https://bookdown.org/yihui/blogdown/deployment.html) of Creating Websites with R Markdown by Yihui Xie, Amber Thomas, and Allison Presmanes Hill. Even if you are not the best at GitHub and have the slightest idea about version control, you can skip that step, but you do need a GitHub account to use [Netlify](https://www.netlify.com/).
