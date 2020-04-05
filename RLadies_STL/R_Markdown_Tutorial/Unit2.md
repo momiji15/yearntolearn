@@ -59,7 +59,7 @@ Let's get started with Exercise 2!
 
 1.6. The site shoud have rendered and you can see a preview in the Viewer on the right-hand side. On the Viewer tab on the right side of the RStudio IDE, click on **Show in new window** button on the top left-hand side in order to see what your site looks like in a web browser.
 
-*insert image*
+![](images/blogdown1_6a.png)
 
 **OPTION 2** 
 
