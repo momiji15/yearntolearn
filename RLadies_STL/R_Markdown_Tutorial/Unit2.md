@@ -51,8 +51,6 @@ Let's get started with Exercise 2!
 
 1.2. Name your directory **aboutme** and navigate to the **my_website** folder as the subdirectory for your directory. I would just leave everything at its default and not change anything with the exception of unchecking **convert all data to YAML**. If you do not uncheck this, you might have problems when the theme loads. Having the sample blog posts and example site will be helpful so you can better understand the nooks and crannies of your theme.
 
-![](images/blogdown_u2e3_1.png)
-
 1.3. Click **Create Project**.
 
 1.4. Your theme should have downloaded and you should see a config.toml file which allows you to configure your site.
@@ -85,7 +83,7 @@ There are various options you have when it comes to deploying your site. To keep
 
 Netlify allows you to deploy your site from either your GitHub repo or by dragging and dropping your `public/` folder to Netlify and it will deploy from there. Deploying your site from your GitHub repo allows for continuous deployment which means that every time you push commits to your GitHub repo, the site will automatically be updated. To keep this tutorial beginner friendly, we will only be doing the drag and drop method. This is considered manual deployment and you can update your site by making the neccessary changes, saving them, and then dragging and dropping the `public\` folder into Netlify. This folder was created in your **aboutme** folder after you clicked on **Serve Site**.
 
-*insert photo*
+![](images/blogdown_u2e3_1.png)
 
 If you are interested in deploying your site from your GitHub repo, then check out the recommended reading materials in the Bonus section.
 
