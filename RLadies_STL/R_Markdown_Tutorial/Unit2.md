@@ -53,7 +53,7 @@ Let's get started with Exercise 2!
 
 ![](images/blogdownop1_5a.png)
 
-*Note: Your folder structure might be different from mine, but the important thing to note is that I am saving the aboutme directory in a folder called my_website.*
+*Note: Your folders' hierarchical structure might be different from what you see here and that's no problem! The important thing to note is that I am saving the aboutme directory in a folder called my_website.*
 
 1.3. Click **Create Project**.
 
