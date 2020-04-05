@@ -1,6 +1,6 @@
-# Before you start...
+# Before you start...please read!
 
-You can access the slides for the presentation [here](https://momiji15.github.io/rladiesstl_rmarkdown/RLadiesSTL_Markdown040220#1).
+You can access the slides for the presentation [here](https://momiji15.github.io/rladiesstl_rmarkdown/RLadiesSTL_Markdown040220#1). These slides give you an overview of what will be covered in both Unit 1 and Unit 2. It is highly recommended that if you are doing this on your own, you follow Unit 1 and Unit 2 to make your website.
 
 There are two units for this workshop:
 
