@@ -71,7 +71,7 @@ So where do we start? Let's work our way down this short list.
 
 ##### Census Tracts
 
-You will need to get the census tract shapefile for Missouri along with the pertinent demographic information we want per census tract. TLet's first get the census tract informaton. 
+You will need to get the census tract shapefile for Missouri along with the pertinent demographic information we want per census tract. Let's first get the census tract informaton. 
 
 1. Go to the [US Census Bureau TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) website and under **2019**, click **Web Interface**. Keep **2019** selected for **Year** and select **Block Groups** in the **Select a layer type** section. Press **Submit** when you're done.
 
@@ -111,6 +111,7 @@ The demographic information that we need is stored in a table in **.csv** format
 
 ### Terms to Know
 - projection: A mathematical function that transforms the earth's 3D surface on a 2D surface.
+
 Now that you have unzipped your data, it is not ready to put your shapefiles in a QGIS workspace.
 
 1. Open up QGIS.
@@ -123,7 +124,7 @@ Now that you have unzipped your data, it is not ready to put your shapefiles in 
 
 ![](Pictures/unit3_2e.png)
 
-4. We are going to a add the Census block groups first. Click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **MO_Block_Group_2019 folder > and then select **tl_2019-29_BG.shp**, and click **Add**. In the Data Source Manager, click **Add**.
+4. We are going to a add the Census block groups first. Click on the **...** under **Source and Vector Dataset(s)** and navigate back to your GIS_Data folder and then navigate to the  **MO_Block_Group_2019 folder** > and then select **tl_2019-29_BG.shp**, and click **Add**. In the Data Source Manager, click **Add**.
 
 5. We are going to add the schools next. Make sure that **Vector** is highlighted on the left menu panel on the **Data Source Manager**. Under **Source > Vector Dataset(s)**, click  **...** and navigate to the location of your shapefiles which should be in the **GIS_Data** folder. Navigate to the **MO_2019_Public_Schools** folder, click on **MO_2019_Public_Schools.shp**, and click **Open**.  In the Data Source Manager, click **Add**.
 
