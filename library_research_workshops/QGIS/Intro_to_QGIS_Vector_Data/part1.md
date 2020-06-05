@@ -235,7 +235,7 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 
 ## Unit 5: Joining Tablular Data to Vector Data
 ### Unit objectives
-1. Identify key fields fields between two different datasets.
+1. Identify key fields between two different datasets.
 2. Generate formatted key fields.
 3. Generate a join between a csv file and a shapefile.
 
