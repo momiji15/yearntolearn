@@ -1,6 +1,6 @@
-# Introduction to QGIS - Vector Data: Part 1
+# Introduction to QGIS - Vector Data: Part One
 
-There are two classifications of data in GIS; vector data and raster data. This workshop will focus on becoming familiar with vector data.  The main objectives to part one is to identify websites that have geospatial data, downloading geospatial data, and manipulating data with QGIS. 
+There are two "major" classifications of data in GIS; vector data and raster data. This workshop will focus on becoming familiar with vector data.  The main objectives for part one is identifying websites that have geospatial data, downloading geospatial data, and manipulating data with QGIS. 
 
 ## Units
 ### Unit 1: Introduction to Vector Data
@@ -20,11 +20,11 @@ There are two classifications of data in GIS; vector data and raster data. This 
 ### Terms to know
 - Geographic Information Systems(GIS): A computer system that is used to capture, display, and analyze data that has a spatial reference on Earth.
 
-- vector data: GIS data that represents data on the earth through points, lines, and polygons.
+- vector data: GIS data that represents objects or phenomena on the earth on the earth through points, lines, and polygons.
 
-- raster data: GIS data that represents data on the earth through a grid of pixels.
+- raster data: GIS data that represents objects or phenomena on the earth through a grid of pixels.
 
-- shapefile: A file format for vector data, which comprises of at least four different file types.
+- shapefile: A file format for vector data, which is comprised of at least four different file types.
 
 #### GIS, Vector and Raster GIS Data
 Geographic Information Systems (GIS) is a very powerful tool when it comes to understanding physical and socio-cultural processes on the earth. There are various types of GIS software out there, however a common thread with the software is the data they deal with. GIS uses vector data and raster data to represent features on the earth. Vector data is made up of points, lines and polygons. An example of point data could be a points representing school locations (which you will see in today's workshop). An example of line data could be lines representing rivers and streams. Finally, an example of polygon data could be school districts.
