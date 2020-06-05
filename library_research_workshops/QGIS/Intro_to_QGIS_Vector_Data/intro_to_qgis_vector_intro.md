@@ -3,15 +3,15 @@
 ## Workshop Purpose
 The purpose of this workshop is to get you acquainted with the basics of QGIS. QGIS is an open-source software that is both Mac and Windows compatible. If you are using your personal computer for this workshop, you can download the software on the [QGIS homepage](https://qgis.org/en/site/). This workshop is divided in two parts. In the first part, participants will become acquainted with vector data along with basic tasks you can do in QGIS. In the second part, participants will learn about basic cartographic elements and learn how to make a map. Even if you are not able to come to the workshop, these materials are designed in a way in which you can go through them on your own time! Feel free to use these materials if you want to do a QGIS workshop of your own, but please provide proper attribution when doing so! :grin:
 
-By the end of Part 1 of this workshop, participants will be able to:
+By the end of [part one](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/part1.md) of this workshop, participants will be able to:
 1. Describe the three types of GIS Vector Data.
 2. Find and download GIS data from a variety of data sources.
-3. Prepare GIS dta in a QGIS workspace.
+3. Prepare GIS data in a QGIS workspace.
 4. Produce basic queries for data discovery.
 5. Join tabular data to vector data.
 6. Compute a value through field calculations.
 
-By the end of Part 2 of this workshop, participants will be able to:
+By the end of [part two](https://github.com/momiji15/yearntolearn/blob/master/library_research_workshops/QGIS/Intro_to_QGIS_Vector_Data/part2.md) of this workshop, participants will be able to:
 1. Describe basic cartographic elements in map making.
 2. Use proper symbolization for layers.
 3. Creating and Exporting a Map Layout.
