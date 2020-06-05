@@ -214,7 +214,7 @@ With QGIS, you can select features either by expression or by location. When you
 
 10. We're going to export those selected block groups which will result in creating a new shapefile. Right-click on **MO_blck_group_2017_Project** > **Save Selected Features As...**
 
-11. Keep the **Format** as an **ESRI Shapefile** and for **File name**, click on the ellipses(...) and navigate to your GIS_Data folder. Create a new folder called **stl_bg** and navigate to your folder. You will save your shapefile here. Give your shapefile the same name as the folder that you just created. Make sure that the **CRS** is the **Project CRS: EPSG 102696 - NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Keep everything else the same and press **OK**. 
+11. Keep the **Format** as an **ESRI Shapefile** and for **File name**, click on the ellipsis(...) and navigate to your GIS_Data folder. Create a new folder called **stl_bg** and navigate to your folder. You will save your shapefile here. Give your shapefile the same name as the folder that you just created. Make sure that the **CRS** is the **Project CRS: EPSG 102696 - NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet**. Keep everything else the same and press **OK**. 
 ![](Pictures/unit4_5.png)
 *Note that the file extensions will be different for you than what you see in the picture above*
 
