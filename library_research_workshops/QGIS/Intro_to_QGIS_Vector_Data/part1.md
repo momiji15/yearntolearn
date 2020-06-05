@@ -243,7 +243,7 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 - key: a field that is common to two different datasets.
 - metadata: data about data. It gives you information about the data source.
 
-Our shapefile of St. Louis block groups does not have any socio-economic data attached to it. We can join the .csv file that we downloaded from NHGIS based on a field that is common to both data, which is called a key. The key that we will use to join the .csv file to the shapefile is **GISJOIN**. 
+Our shapefile of St. Louis block groups does not have any socio-economic data attached to it. We can join the .csv file that we downloaded from the U.S. Census website based on a field that is common to both data, which is called a key. The key that we will use to join the .csv file to the shapefile is **GISJOIN**. 
 
 1. Go into your GIS_Data folder and unzip **STL_Income**. In the **STL_Income** folder, you will see three files:
   - **ACSDT5Y2018.B19013_data_with_overlays_...csv**: Shows the median income per census block group.
@@ -252,9 +252,9 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
 
 2. Let's add the csv file to our project. Click on the **Open Data Source Manager** button and on the left-hand panel, click on **Delimited Text**. 
 
-2. Click on the **...** button next to File Name and navigate to **GIS_Data > STL_Income > ACSDT5Y2018.B19013_data_with_overlays_...csv**. 
+3. Click on the **...** button next to File Name and navigate to **GIS_Data > STL_Income > ACSDT5Y2018.B19013_data_with_overlays_...csv**. 
 
-3. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_income_bg_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_income_bg_table** in the Layers panel.
+4. Let's give our csv file a more simplified name when it displays in QGIS. In the **Layer name** type **stl_income_bg_table**. Keep the rest of the defaults and click **Add** then **Close**. You will see **stl_income_bg_table** in the Layers panel.
 
   ![](Pictures/unit5_1.png)
   
@@ -262,13 +262,13 @@ Our shapefile of St. Louis block groups does not have any socio-economic data at
   ![](Pictures/unit5_2.png)
 
 
-4. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_income_bg_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GEOID** might be the common field in these datasets. Or is it?
+5. We are now going to join **stl_bg_table** to **stl_bg**. The way that tabular data is able to be joined to the polygons is through joining them by a field that is located in both attribute tables. This common field is known as a **key**. Let's see which field is both common in both data sources. Right-click on **stl_income_bg_table** and click on **Open Attribute Table**. Do the same for **stl_bg**. From looking at both datasets, **GEOID** might be the common field in these datasets. Or is it?
 
 #### Generating formatted key fields
 
-5. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. We are going to extract the numbers after this code through the right() function. You will need to enter the **right("GEOID", 12)** in the field calculator which will get all the characters twelve characters from the right of GEOID.
+6. At second glance, there is a difference between the **GEOID** field in **stl_income_bg_table** and **stl_bg**. **stl_income_bg_table** has **1500000US** listed before the series of numbers. To properly join the data, we need to do a data transformation in which we have a field that lists the numbers after the above mentioned code. We are going to extract the numbers after this code through the right() function. You will need to enter the **right("GEOID", 12)** in the field calculator which will get all the characters twelve characters from the right of GEOID.
 
-6. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button which will open the field calculator window. 
+7. In the **stl_income_bg_table** attribute table, click the **Open field calculator** button which will open the field calculator window. 
 
 ![](Pictures/unit6_1e.png)
 
@@ -279,9 +279,9 @@ In the **Output field name**, name this new field **GEOID2**. In the **Output fi
 #### Generate a join between a csv file and a shapefile
 
 
-5. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
+8. Right-click **stl_bg** and click on **Properties...**. Click on **Joins** in the side panel of the Layer Properties window. Click the green plus button on the bottom to add a join to the polygon data.
 
-6. In the **Add Vector Join** window, choose on **stl_bg_table**  from the drop-down menu as the **Join Layer**. For the **Join field** drop-down menu, choose **GEOID2** and for the **Target field** drop-down menu, chose **GEOID**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
+9. In the **Add Vector Join** window, choose on **stl_bg_table**  from the drop-down menu as the **Join Layer**. For the **Join field** drop-down menu, choose **GEOID2** and for the **Target field** drop-down menu, chose **GEOID**. Check the the **Custom Field Name Prefix** box and remove the text that is in the text box. Click **OK**. 
 
 ![](Pictures/unit5_4.png)
 
@@ -289,7 +289,7 @@ In the **Output field name**, name this new field **GEOID2**. In the **Output fi
 
 You can see in the Layer Properties window that **stl_bg_table** was joined to **stl_bg**. Click **OK** to exit out of the Layer Properties window.
 
-7. Right-click on **stl_bg** and click on **Open Attribute Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **metadata  file(ACSDT5Y2018.B19013_metadata_...csv)** that is located in the **STL_Income** folder.
+10. Right-click on **stl_bg** and click on **Open Attribute Table**. If you continue to scroll to the right, you will eventually see the joined fields. Don't be too concerned with any blank fields; the field you only need to concern yourself with is AHY1E001 which is the total population of people per Census block group and AH1JE008 which is the ratio of income to poverty level that is 2.00 and over. You can find out the meaning of each field by looking at the **metadata  file(ACSDT5Y2018.B19013_metadata_...csv)** that is located in the **STL_Income** folder.
 
 ## Unit 6: Computing values with Field Calculator
 ### Unit Objectives
