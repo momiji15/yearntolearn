@@ -75,7 +75,7 @@ You will need to get the census tract shapefile for Missouri along with the pert
 
 1. Go to the [US Census Bureau TIGER/Line](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html) website and under **2019**, click **Web Interface**. Keep **2019** selected for **Year** and select **Block Groups** in the **Select a layer type** section. Press **Submit** when you're done.
 
-2. Under **Select a State**, select **Missouri**, and click **Download**. Move the downloaded folder to your **GIS_Data** folder. Rename the folder of your block groups to **MO_Block_Group_2019*.
+2. Under **Select a State**, select **Missouri**, and click **Download**. Move the downloaded folder to your **GIS_Data** folder. Rename the folder of your block groups to **MO_Block_Group_2019**.
 
 3. Unzip your downloaded files. If you are using a Mac, you can just double-click on the zipped folder and it will unzip.
 If you are using Windows, you will **right-click > Extract All**.
