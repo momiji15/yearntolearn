@@ -226,7 +226,7 @@ Now that we have the St. Louis City census tracts, we can use it as a "cookie cu
 
 1. In the QGIS menu bar, click on **Vector** > **Research Tools** > **Select by Location**.
 
-2. Under the drop-down menu in **Select features from**, choose **MO_2019_Public_Schools_Project**. Under **Where the features(geometric predicate)**, only check the box for **intersect**. Under **By comparing to the features from**, choose **stl_bg** from the drop-down menu. Finally, under **Modify current selection by**, make sure **creating new selection** is selected. Click **Run** to run the query. All of the schools within stl_bg should be selected.
+2. Under the drop-down menu in **Select features from**, choose **MO_2019_Public_Schools_Project**. Under **Where the features(geometric predicate)**, only check the box for **intersect**. Under **By comparing to the features from**, choose **stl_bg** from the drop-down menu. Finally, under **Modify current selection by**, make sure **creating new selection** is selected. Click **Run** to run the query. All of the schools within **stl_bg** should be selected.
 ![](Pictures/unit4_6.png)
 
 3. As we did previously, we will export the selected features into a new shapefile. Right-click on **MO_2019_Public_Schools_Project** and click **Export** > **Save Selected Features As...**. 
