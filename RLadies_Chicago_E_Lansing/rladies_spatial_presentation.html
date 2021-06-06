@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>First steps in spatial data handling and visualization with {dplyr} and {tmap}</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dorris Scott" />
+    <link href="rladies_spatial_presentation_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="rladies_spatial_presentation_files/remark-css-0.0.1/rladies.css" rel="stylesheet" />
+    <link href="rladies_spatial_presentation_files/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+    <script src="rladies_spatial_presentation_files/xaringanExtra_fit-screen-0.2.3.9000/fit-screen.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# First steps in spatial data handling and visualization with {dplyr} and {tmap}
+## R-Ladies Chicago &amp; R-Ladies East Lansing June Meeting
+### Dorris Scott
+### 06-15-2021
+
+---
+
+
+
+
+
+
+
+
+# First steps in spatial data handling and visualization with {dplyr} and {tmap}
+
+## Contents of this workshop is based on the workshop conducted by Sébastien Rochette, Dorris Scott, Jakub Nowosad at useR2020!
+## @statnmap, @Dorris_Scott, @jakub_nowosad
+
+### The original material of this course is on [Github](https://github.com/statnmap/user2020_rspatial_tutorial).
+
+### You can access the materials for today's workshop [here](https://rstudio.cloud/project/1563161).
+
+### Do Alt/Option + F to have your slides fit your screen if needed.
+
+---
+
+# Workshop overview
+
+- Basis of Cartography
+
+- Spatial vectors data: read &amp; project
+
+- Drawing maps with R
+
+- Manipulating vector data with dplyr
+
+- Second steps in spatial data handling
+
+---
+
+# Workshop overview
+
+- There will be three exercises to complete.
+
+- People will be assigned to breakout rooms. I will go from one breakout room to another to help people with any issues they have.
+
+- You will have 15 minutes to complete the exercises.
+
+
+
+
+
+
+---
+
+class: center, middle, inverse
+
+
+# Basis of Cartography
+
+## The Earth is not flat...
+
+---
+
+### What is a map ?
+
+A Two-dimensional representation of all or part of our planet  
+
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/Globe3D_rgl.gif" alt="3D globe"  /&gt;
+&lt;p class="caption"&gt;3D globe&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/GamPred-1.jpg" alt="map showing a range in values." width="1792" /&gt;
+&lt;p class="caption"&gt;map showing a range in values.&lt;/p&gt;
+&lt;/div&gt;
+
+_Sorry no..._
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/flat_earth.jpeg" alt="A flat earth." width="70%" /&gt;
+&lt;p class="caption"&gt;A flat earth.&lt;/p&gt;
+&lt;/div&gt;
+
+]
+
+---
+
+### What is a projection?
+
+The source of most of your problems in cartography...
+
+&lt;!-- - In 2D, maps are always represented using a projected reference system --&gt;
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/map_projection.png" alt="Types of map projections." width="60%" /&gt;
+&lt;p class="caption"&gt;Types of map projections.&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; By cmglee, US government, Clindberg, Palosirkka - Globe Atlantic.svg, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=84845850
+
+---
+
+
+### What is a projection?
+
+- In R, you will talk about `CRS` (Coordinates Reference System)
+- You need to know the projection of your datasets
+
+&gt; Use the name of the CRS in the name of your spatial object!
+This will prevent you from making many mistakes...
+
+
+```r
+france_l93
+france_wgs84
+world_wintri
+world_eck
+```
+
+---
+class: slide
+
+### Earth is moving...
+
+- ...Coordinate reference systems is moving too
+  + WKT (Well-Known Text)
+  + Plate tectonics
+  
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/wkt_sf.png" alt="Coordinate Reference System description." width="70%" /&gt;
+&lt;p class="caption"&gt;Coordinate Reference System description.&lt;/p&gt;
+&lt;/div&gt;
+
+&gt; J. Nowosad, R. Lovelace. https://nowosad.github.io/whyr_webinar004/
+
+---
+
+### Geographic objects (entities)
+
+
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/vector_raster.gif" alt="Types of vector and raster data." width="40%" /&gt;
+&lt;p class="caption"&gt;Types of vector and raster data.&lt;/p&gt;
+&lt;/div&gt;
+
+[Image Source](https://www.passaiccountynj.org/government/departments/planning_and_economic_development/gis_services.php)
+
+---
+
+### Vector objects
+
+Geographic objects (entities):
+
+- Points: entities without surface and which cannot be represented by lines
+
+- Lines (arcs) :
+    + Objects too narrow to be described by a surface (street, river -depending on the scale of representation-)
+    + Objects with a length but no surface (coastline, departmental boundaries...)
+    
+- Polygons: Homogeneous surface objects (island, building,...)
+
+Storage is done in a single database or in several files  
+&gt; One layer = one type of entity
+
+---
+
+
+### Raster objects (rasters)
+
+The storage is done in the form of a rectangular matrix of values
+
+.pull-left[
+- Decomposition of regular meshes into grids
+
+- Each mesh (=pixel) has a specific value related to its representation attribute (quality)
+
+- A raster is defined by:
+    + Its geographical extension
+        + Number of rows, columns and geographical position (corner)
+        
+    + Its spatial resolution
+        + Mesh size + Mesh size  
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/raster.png" alt="Raster data representation." width="667" /&gt;
+&lt;p class="caption"&gt;Raster data representation.&lt;/p&gt;
+&lt;/div&gt;
+]  
+
+---
+
+### Packages for reading geographic data in R
+
+- Past: {sp} + {rgdal} + {rgeos} + {raster}
+- Current packages:
+  + {sf} : reading and manipulation of vector type data
+      + {tidyverse} style
+  + {stars} : reading and manipulation of space-time raster data
+      + {tidyverse} style
+  + {terra} : reading, manipulation and processing of rasters
+      + Improved version of {raster}
+
+---
+class: slide
+
+### Quiz: What is the **first** question to ask yourself when you have a problem with your spatial data manipulations?
+
+
++ A: Did I reboot my computer?   
+
++ B: What is the projection?  
+
++ C: What is the format of my spatial data?   
+
++ D: Who taught me this stuff? Doris? Dorris? Whatever her name is. 
+
+
+---
+
+### Summary
+
+- Projections: The main problem to deal with in cartography,
+
+- Projections: Different depending on spatial extent of datasets,  
+
+- Vector data: Points coordinates with attributes table
+  + Lines: points ordered and linked by a line,
+  + Polygons: points ordered and linked by a line that closes on itself.
+
+- Rasters data: regular grid of data.
+
+---
+
+
+
+class: center, middle, inverse
+
+
+# Spatial vectors data: read &amp; project
+
+## Everything is fine with {sf}
+
+---
+
+### {sf} : Read geographical datasets
+
+Read with `read_sf()`:
+
+- All formats handled by GDAL (http://www.gdal.org/)
+    + CSV, Mapinfo, Google Earth, GeoJSON, PostGIS, ...
+- ESRI shapefile
+    + Among most used
+    + Minimum of **four** files (shp, shx, dbf, prj)
+- GeoPackage
+    + New format standard
+    + To be preferred
+
+
+
+```r
+# Map of France departments
+departements_l93 &lt;- read_sf("data/departements/departement.shp")
+# Limits of a study area
+study_area_l93 &lt;- read_sf("data/departements/area_l93.gpkg")
+```
+
+---
+
+### Projections
+
+- Get coordinates reference system: `st_crs()`
+
+
+```r
+st_crs(departements_l93)
+```
+
+```
+Coordinate Reference System:
+  User input: RGF93_Lambert_93 
+  wkt:
+PROJCRS["RGF93_Lambert_93",
+    BASEGEOGCRS["RGF93",
+        DATUM["Reseau Geodesique Francais 1993",
+            ELLIPSOID["GRS 1980",6378137,298.257222101,
+                LENGTHUNIT["metre",1]],
+            ID["EPSG",6171]],
+        PRIMEM["Greenwich",0,
+            ANGLEUNIT["Degree",0.0174532925199433]]],
+    CONVERSION["unnamed",
+        METHOD["Lambert Conic Conformal (2SP)",
+            ID["EPSG",9802]],
+        PARAMETER["Latitude of false origin",46.5,
+            ANGLEUNIT["Degree",0.0174532925199433],
+            ID["EPSG",8821]],
+        PARAMETER["Longitude of false origin",3,
+            ANGLEUNIT["Degree",0.0174532925199433],
+            ID["EPSG",8822]],
+        PARAMETER["Latitude of 1st standard parallel",44,
+            ANGLEUNIT["Degree",0.0174532925199433],
+            ID["EPSG",8823]],
+        PARAMETER["Latitude of 2nd standard parallel",49,
+            ANGLEUNIT["Degree",0.0174532925199433],
+            ID["EPSG",8824]],
+        PARAMETER["Easting at false origin",700000,
+            LENGTHUNIT["metre",1],
+            ID["EPSG",8826]],
+        PARAMETER["Northing at false origin",6600000,
+            LENGTHUNIT["metre",1],
+            ID["EPSG",8827]]],
+    CS[Cartesian,2],
+        AXIS["(E)",east,
+            ORDER[1],
+            LENGTHUNIT["metre",1,
+                ID["EPSG",9001]]],
+        AXIS["(N)",north,
+            ORDER[2],
+            LENGTHUNIT["metre",1,
+                ID["EPSG",9001]]]]
+```
+
+---
+
+### Projections
+
+- Project layer into new coordinates reference system: `st_transform()`
+
+
+```r
+# Transform into geographic coordinates system
+departements_wgs84 &lt;- departements_l93 %&gt;%  
+  st_transform(crs = 4326) # EPSG = 4326
+
+st_crs(departements_wgs84)
+```
+
+```
+Coordinate Reference System:
+  User input: EPSG:4326 
+  wkt:
+GEOGCRS["WGS 84",
+    DATUM["World Geodetic System 1984",
+        ELLIPSOID["WGS 84",6378137,298.257223563,
+            LENGTHUNIT["metre",1]]],
+    PRIMEM["Greenwich",0,
+        ANGLEUNIT["degree",0.0174532925199433]],
+    CS[ellipsoidal,2],
+        AXIS["geodetic latitude (Lat)",north,
+            ORDER[1],
+            ANGLEUNIT["degree",0.0174532925199433]],
+        AXIS["geodetic longitude (Lon)",east,
+            ORDER[2],
+            ANGLEUNIT["degree",0.0174532925199433]],
+    USAGE[
+        SCOPE["unknown"],
+        AREA["World"],
+        BBOX[-90,-180,90,180]],
+    ID["EPSG",4326]]
+```
+
+---
+
+### Read text file with coordinates
+
+- Read a csv, txt, xls, ... with the adapted package 
+    + {readr}, {readxl}, ...
+
+
+```r
+cafes_bars &lt;- read_csv("data/cafes_bars.csv")
+cafes_bars
+```
+
+```
+# A tibble: 13,467 x 6
+   amenity timestamp           user                    id    lng   lat
+   &lt;chr&gt;   &lt;dttm&gt;              &lt;chr&gt;                &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;
+ 1 bar     2014-05-25 15:41:23 Xspirt56        2880087248  0.416  46.8
+ 2 bar     2011-06-05 21:55:41 ndecaris        1313547128 -0.466  46.3
+ 3 bar     2011-02-22 14:19:50 Syl             1166456913  5.71   45.2
+ 4 bar     2013-09-16 12:42:04 Thibaut75011    2460347252  2.37   48.9
+ 5 bar     2012-11-17 05:48:19 Agibi           2017656504  0.129  49.5
+ 6 bar     2015-01-12 19:19:18 woodpeck_repair 2273314756  4.84   45.8
+ 7 bar     2013-08-02 20:51:21 Olivier82       2405180491  1.48   44.2
+ 8 bar     2013-05-08 16:04:23 Benat Iza       2296077080 -1.79   43.4
+ 9 bar     2015-05-09 17:49:03 Weslape         3507311321  7.76   48.6
+10 bar     2012-08-18 12:49:59 lttnono         1871307487 -4.07   48.2
+# … with 13,457 more rows
+```
+
+---
+
+### Read text file with coordinates
+
+- Use `st_as_sf()` to transform into spatial dataset
+
+
+```r
+cafes_bars_wgs84 &lt;- cafes_bars %&gt;% 
+  st_as_sf(coords = c("lng", "lat"), crs = 4326)
+```
+
+&lt;img src="rladies_spatial_presentation_files/figure-html/unnamed-chunk-18-1.png" width="52%" style="display: block; margin: auto;" /&gt;
+
+---
+
+### Write spatial dataset on disk
+
+Write with `write_sf()` :
+
+- All formats handled by GDAL (http://www.gdal.org/)
+    + CSV, Mapinfo, Google Earth, GeoJSON, PostGIS, Shp, ...
+- GPKG format (GeoPackage)
+    + New standard of OGC
+    + Recommended
+
+
+```r
+write_sf(point_wgs84, "new-directory/point_wgs84.gpkg")
+```
+
+---
+class: slide, no-margin
+
+### Quiz: What is the correct way to deal with the following text file with coordinates to be used as a spatial points dataset?
+
+- Let `"data_coords.txt"` be a text file at the root of your project
+- Position of points was taken using a GPS in France
+- Note: `2154`: Lambert 93, France, projected; `4326`: Geographical coordinates 
+
+```
+   lat lng sample
+1 48.5 2.0      A
+2 49.0 2.5      B
+3 47.0 3.0      C
+```
+
+.pull-left[
++ A
+
+```r
+d_text &lt;- read_txt("data_coords.txt")
+pts_wgs84 &lt;- d_text %&gt;% 
+      st_as_sf(coords = c("lng", "lat"),
+               crs = 4326)
+```
++ B
+
+```r
+d_text &lt;- read_txt("data_coords.txt")
+pts_wgs84 &lt;- d_text %&gt;% 
+      st_transform(crs = 4326)
+```
+]
+.pull-right[
++ C 
+
+```r
+d_text &lt;- read_txt("data_coords.txt")
+pts_l93 &lt;- d_text %&gt;% 
+      st_as_sf(coords = c("lat", "lng"),
+               crs = 2154)
+```
++ D
+
+```r
+pts_wgs84 &lt;- read_sf("data_coords.txt")
+```
+]
+
+???
+
+A: Correct answer
+
+B: `st_transform()` applies to data that are already spatial datasets. Here we have a classical text file, a classical dataframe.
+
+C: `st_as_sf()` specifies the crs of the data inside the dataset. Not a targeted crs. If you want to change the crs, then use `st_transform()` afterwards
+
+D: You cannot read the text file with `read_sf()` as is. This is not already a spatial dataset, even if there are some columns somewhere inside with spatial coordinates.
+
+---
+
+### Summary
+
+- Package : {sf}
+- Read : `read_sf()`
+- Write : `write_sf()`
+- Get projection : `st_crs()`
+- Transform, Project : `st_transform()`
+- Text file into spatial : `st_as_sf()`
+
+
+
+---
+
+### Activity
+
+- Do `Exercises: Spatial vectors data: read &amp; project`. 
+
+- Fifteen minutes will be allotted for this exercise.
+
+- Stop once you reach `Exercises: Drawing maps with R`.
+
+
+---
+
+
+
+class: middle, inverse, center
+
+# Drawing maps with R
+
+## "{tmap} and vectors"
+
+---
+
+### Drawing spatial data
+
+- Packages not directly dedicated for making maps
+  + static : {r-base}, {ggplot2}, {rgl}
+  + interactive : {plotly}  
+
+
+- Packages dedicated for making maps
+  + static : {tmap}, {ggspatial}, {cartography}
+  + interactive : {mapview}, {leaflet}, {mapdeck}
+
+
+---
+class: slide
+
+### Do you really want to draw a map?
+
+- What is your question?
+- What message do you want to communicate?
+- Can the map deliver this message in 3 seconds?
+- **Only use maps if the spatial distribution (pattern) is meaningful**
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/nb_par_departement.png" alt="Bar chart on the number of cafes per department in France." width="1501" /&gt;
+&lt;p class="caption"&gt;Bar chart on the number of cafes per department in France.&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="images/nb_par_dept_carte_pasfaire.png" alt="Map of the number of cafes in France represented by point size." width="1501" /&gt;
+&lt;p class="caption"&gt;Map of the number of cafes in France represented by point size.&lt;/p&gt;
+&lt;/div&gt;
+]
+_What is the department with the smallest number of cafés-bars in France?_
+
+---
+class: slide
+
+### Visualisation rules
+
+&lt;img src="images/cartographie-choose-representation.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+*https://comeetie.github.io/satRday/lecture/lecture.html#maps-with-r*
+
+&gt; If you point a to particular place in a polygon, does its representation correspond to what is happening at that particular place? (e.g. forest, number of inhabitants, density)
+
+---
+class: slide
+
+### Read some spatial data
+
+- `read_sf()` from `{sf}` can read shapefiles (`.shp`) and many more file spatial vector formats
+
+
+
+
+
+
+```r
+library(sf)
+# Read included dataset
+# Use the tabulation for auto-completion of path
+europe &lt;- read_sf("data/europe/europe.gpkg")
+departements_l93 &lt;- read_sf("data/departements/departement.shp")
+cafes_bars_l93 &lt;- read_sf("data/cafes_bars/cafes_bars.shp")
+
+getwd()
+```
+
+
+???
+
+There are other packages and other formats, but we do not speak about them right now.
+
+---
+
+### {tmap} for thematic maps
+
+- Which dataset do you want to map?
+  + `tm_shape()`
+- How do you want it to be represented?
+  + `tm_symbols()` : points
+  + `tm_lines()` : lines
+  + `tm_polygons()`, `tm_fill()`, `tm_borders()` : polygons
+  + `tm_text()` : text
+
+
+---
+
+### {tmap} for thematic maps
+
+- Which dataset do you want to map?
+  + `tm_shape()`
+- How do you want it to be represented?
+  + `tm_symbols()` : points
+  + `tm_lines()` : lines
+  + `tm_polygons()`, `tm_fill()`, `tm_borders()` : polygons
+  + `tm_text()` : text
+
+.pull-left[
+
+```r
+tm_shape(europe) +
+  tm_polygons() +
+tm_shape(departements_l93,
+         is.master = TRUE) +
+  tm_fill(col = "NOM_DEPT",
+          palette = "Set1")
+```
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="rladies_spatial_presentation_files/figure-html/carto-tmap-out2-1.png" alt="Map of the various departments in France." width="90%" /&gt;
+&lt;p class="caption"&gt;Map of the various departments in France.&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+class: slide
+
+### {tmap} for thematic maps
+
+- Which dataset do you want to map?
+  + `tm_shape()`
+- How do you want it to be represented?
+  + `tm_symbols()` : points
+  + `tm_lines()` : lines
+  + `tm_polygons()`, `tm_fill()`, `tm_borders()` : polygons
+  + `tm_text()` : text
+
+.pull-left[
+
+```r
+tm_shape(europe) +
+  tm_polygons() +
+tm_shape(departements_l93,
+         is.master = TRUE) +
+  tm_fill(col = "NOM_DEPT",
+          palette = "Set1",
+          legend.show = FALSE) +
+  tm_borders("grey30")
+```
+]
+.pull-right[
+&lt;img src="rladies_spatial_presentation_files/figure-html/carto-tmap-out3-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+class: inverse, middle, center
+
+### {tmap} for thematic maps
+
+---
+
+- Add position information
+  - `tm_scale_bar()`, `tm_compass()`
+- What is the general appearance of the graph?
+  - `tm_layout()`
+
+
+.pull-left[
+
+```r
+tm_shape(europe) +
+  tm_polygons() +
+tm_shape(departements_l93,
+         is.master = TRUE) +
+  tm_fill(col = "NOM_DEPT",
+          legend.show = FALSE,
+          palette = "Set1") +
+  tm_borders("grey30") +
+tm_scale_bar() +
+tm_compass(position = c("right", "top")) + 
+tm_layout(title = "French departments")
+```
+]
+.pull-right[
+&lt;img src="rladies_spatial_presentation_files/figure-html/carto-tmap-out4-1.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+  
+---
+class: slide
+
+### Quiz: What is the correct code to draw `departements_l93` map?
+
+- `departements_l93` is a spatial object of polygons
+
+.pull-left[
++ A
+
+```r
+tm_shape(departements_l93) + 
+    tm_symbols(col = "red") +
+    tm_layout(title = "France")
+```
++ B
+
+```r
+tm_polygons(departements_l93) + 
+    tm_layout(title = "France")
+```
+]
+.pull-right[
++ C 
+
+```r
+tm_shape(departements_l93) + 
+    tm_polygons() +
+    tm_layout(title = "France")
+```
++ D
+
+```r
+tm_shape(departements_l93) +
+    tm_polygons() +
+    labs(title = "France")
+```
+]
+
+???
+
+A: `tm_symbols()` is for point datasets
+B: You need to call data with `tm_shape()`
+C: Correct
+D: `labs()` is a function from {ggplot2}
+
+  
+---
+class: slide
+
+### Summary
+
+- Do you really need a map?  
+
+- Choose the correct spatial representation  
+
+- Read a shapefile with {sf}: `read_sf()`  
+
+- Draw with {tmap}:
+  - `tm_shape()`: Layer to draw
+  - `tm_symbols()`/`tm_lines()`/`tm_polygons()`/`tm_text()`: How to draw
+  - `tm_scale_bar()`, `tm_compass()`: position information
+  - `tm_layout()`: general appearance
+  
+---
+
+
+### Activity
+
+- Do `Exercises: Drawing maps with R`. 
+
+- FIfteen minutes will be allotted for this exercise.
+
+- Stop once you reach `Exercises: Manipulating vector data with dplyr`.
+
+
+---
+
+class: inverse, middle, center
+
+# Manipulating vector data with dplyr
+
+
+---
+
+### Vector data format
+
+- With {sf}, data are rectangular
+
+
+
+```r
+library(sf)
+# Read example data
+# vector
+departements_l93 &lt;- read_sf("data/departements/departement.shp")
+# Text file - number of inhabitants
+dept_inhabitants &lt;- read_csv("data/departements/repartition_dpt_clean_2015.csv")
+```
+
+```r
+departements_l93
+```
+
+```
+Simple feature collection with 96 features and 11 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 99217.1 ymin: 6049646 xmax: 1242417 ymax: 7110480
+projected CRS:  RGF93_Lambert_93
+# A tibble: 96 x 12
+   ID_GEOFLA CODE_DEPT NOM_DEPT CODE_CHF NOM_CHF X_CHF_LIEU Y_CHF_LIEU
+   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;        &lt;int&gt;      &lt;int&gt;
+ 1 DEPARTEM… 39        JURA     300      LONS-L…     895198    6622537
+ 2 DEPARTEM… 42        LOIRE    218      SAINT-…     808646    6482549
+ 3 DEPARTEM… 76        SEINE-M… 540      ROUEN       562355    6928721
+ 4 DEPARTEM… 89        YONNE    024      AUXERRE     742447    6744261
+ 5 DEPARTEM… 68        HAUT-RH… 066      COLMAR     1024125    6784581
+ 6 DEPARTEM… 28        EURE-ET… 085      CHARTR…     588211    6817344
+ 7 DEPARTEM… 10        AUBE     387      TROYES      779954    6800379
+ 8 DEPARTEM… 55        MEUSE    029      BAR-LE…     859261    6854586
+ 9 DEPARTEM… 61        ORNE     001      ALENCON     484935    6818334
+10 DEPARTEM… 67        BAS-RHIN 482      STRASB…    1050377    6840891
+# … with 86 more rows, and 5 more variables: X_CENTROID &lt;int&gt;,
+#   Y_CENTROID &lt;int&gt;, CODE_REG &lt;chr&gt;, NOM_REG &lt;chr&gt;, geometry &lt;MULTIPOLYGON
+#   [m]&gt;
+```
+
+---
+class: slide, no-margin
+
+### Operations on rows and columns
+
+All that you know with {dplyr} works on {sf} objects
++ `%&gt;%`
++ `select`, `mutate` for attributs (= columns)
++ `filter`, `arrange` for entities (= rows)
+
+
+```r
+bretagne_l93 &lt;- 
+  departements_l93 %&gt;% 
+  mutate(NOM_DEPT = str_to_title(NOM_DEPT)) %&gt;% 
+  select(CODE_DEPT, NOM_DEPT, NOM_REG) %&gt;% 
+  filter(NOM_REG == "BRETAGNE")
+```
+
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="rladies_spatial_presentation_files/figure-html/unnamed-chunk-39-1.png" alt="Bretagne region of France." width="55%" /&gt;
+&lt;p class="caption"&gt;Bretagne region of France.&lt;/p&gt;
+&lt;/div&gt;
+
+---
+class: slide, no-margin
+
+### Grouped operations
+
+- Merge entities with `group_by` + `summarize`
+
+
+```r
+region_l93 &lt;- departements_l93 %&gt;% 
+  group_by(NOM_REG) %&gt;% 
+  summarize()
+```
+
+.pull-left[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="rladies_spatial_presentation_files/figure-html/unnamed-chunk-41-1.png" alt="Map of all of the departments of France."  /&gt;
+&lt;p class="caption"&gt;Map of all of the departments of France.&lt;/p&gt;
+&lt;/div&gt;
+]
+.pull-right[
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="rladies_spatial_presentation_files/figure-html/unnamed-chunk-42-1.png" alt="The second map shows the regions of France which was created by a group_by and summarize dplyr verbs."  /&gt;
+&lt;p class="caption"&gt;The second map shows the regions of France which was created by a group_by and summarize dplyr verbs.&lt;/p&gt;
+&lt;/div&gt;
+]
+
+---
+class: slide, no-margin
+
+### Join with classical datasets
+
+- Between shapefile and dataset with `*_join`
+  + `left_join()`, `inner_join()`, `full_join()`, ...
+  + Read external classical dataset
+
+
+```r
+# Text file - number of inhabitants
+dept_inhabitants &lt;- read_csv("data/departements/repartition_dpt_clean_2015.csv")
+```
+  + Content of shapefile: `departements_l93`
+
+```r
+departements_l93
+```
+
+```
+Simple feature collection with 96 features and 11 fields
+geometry type:  MULTIPOLYGON
+dimension:      XY
+bbox:           xmin: 99217.1 ymin: 6049646 xmax: 1242417 ymax: 7110480
+projected CRS:  RGF93_Lambert_93
+# A tibble: 96 x 12
+   ID_GEOFLA CODE_DEPT NOM_DEPT CODE_CHF NOM_CHF X_CHF_LIEU Y_CHF_LIEU
+   &lt;chr&gt;     &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;    &lt;chr&gt;        &lt;int&gt;      &lt;int&gt;
+ 1 DEPARTEM… 39        JURA     300      LONS-L…     895198    6622537
+ 2 DEPARTEM… 42        LOIRE    218      SAINT-…     808646    6482549
+ 3 DEPARTEM… 76        SEINE-M… 540      ROUEN       562355    6928721
+ 4 DEPARTEM… 89        YONNE    024      AUXERRE     742447    6744261
+ 5 DEPARTEM… 68        HAUT-RH… 066      COLMAR     1024125    6784581
+ 6 DEPARTEM… 28        EURE-ET… 085      CHARTR…     588211    6817344
+ 7 DEPARTEM… 10        AUBE     387      TROYES      779954    6800379
+ 8 DEPARTEM… 55        MEUSE    029      BAR-LE…     859261    6854586
+ 9 DEPARTEM… 61        ORNE     001      ALENCON     484935    6818334
+10 DEPARTEM… 67        BAS-RHIN 482      STRASB…    1050377    6840891
+# … with 86 more rows, and 5 more variables: X_CENTROID &lt;int&gt;,
+#   Y_CENTROID &lt;int&gt;, CODE_REG &lt;chr&gt;, NOM_REG &lt;chr&gt;, geometry &lt;MULTIPOLYGON
+#   [m]&gt;
+```
+
+---
+class: slide, no-margin
+
+### Join with classical datasets
+
+- Between shapefile and dataset with `*_join`
+
+.pull-left[
+- Department shapefile `departements_l93`  
+
+
+```r
+# Shapefile of the departments.
+glimpse(departements_l93, width = 30)
+```
+
+```
+Rows: 96
+Columns: 12
+$ ID_GEOFLA  &lt;chr&gt; "DEPARTE…
+$ CODE_DEPT  &lt;chr&gt; "39", "4…
+$ NOM_DEPT   &lt;chr&gt; "JURA", …
+$ CODE_CHF   &lt;chr&gt; "300", "…
+$ NOM_CHF    &lt;chr&gt; "LONS-LE…
+$ X_CHF_LIEU &lt;int&gt; 895198, …
+$ Y_CHF_LIEU &lt;int&gt; 6622537,…
+$ X_CENTROID &lt;int&gt; 886172, …
+$ Y_CENTROID &lt;int&gt; 6641548,…
+$ CODE_REG   &lt;chr&gt; "27", "8…
+$ NOM_REG    &lt;chr&gt; "BOURGOG…
+$ geometry   &lt;MULTIPOLYGON [m]&gt; …
+```
+]
+.pull-right[
+- Number of inhabitants by age by department in `dept_inhabitants`
+
+
+```r
+# CSV with information about inhabitants in each department
+glimpse(dept_inhabitants, width = 30)
+```
+
+```
+Rows: 101
+Columns: 7
+$ ID_DPT            &lt;chr&gt; "…
+$ X1                &lt;chr&gt; "…
+$ `Age_40-59 ans`   &lt;dbl&gt; 1…
+$ `Age_0-19 ans`    &lt;dbl&gt; 1…
+$ `Age_75 ans et +` &lt;dbl&gt; 5…
+$ `Age_20-39 ans`   &lt;dbl&gt; 1…
+$ `Age_60-74 ans`   &lt;dbl&gt; 9…
+```
+]
+
+---
+class: slide, no-margin
+
+### Join with classical datasets
+
+
+```r
+# Join database with shapefile by attributes
+departements_inhabitants_l93 &lt;- departements_l93 %&gt;%
+ inner_join(dept_inhabitants, by = c("CODE_DEPT" = "ID_DPT"))
+
+glimpse(departements_inhabitants_l93, width = 40)
+```
+
+```
+Rows: 96
+Columns: 18
+$ ID_GEOFLA         &lt;chr&gt; "DEPARTEM00…
+$ CODE_DEPT         &lt;chr&gt; "39", "42",…
+$ NOM_DEPT          &lt;chr&gt; "JURA", "LO…
+$ CODE_CHF          &lt;chr&gt; "300", "218…
+$ NOM_CHF           &lt;chr&gt; "LONS-LE-SA…
+$ X_CHF_LIEU        &lt;int&gt; 895198, 808…
+$ Y_CHF_LIEU        &lt;int&gt; 6622537, 64…
+$ X_CENTROID        &lt;int&gt; 886172, 795…
+$ Y_CENTROID        &lt;int&gt; 6641548, 65…
+$ CODE_REG          &lt;chr&gt; "27", "84",…
+$ NOM_REG           &lt;chr&gt; "BOURGOGNE-…
+$ geometry          &lt;MULTIPOLYGON [m]&gt; …
+$ X1                &lt;chr&gt; "D39 Jura",…
+$ `Age_40-59 ans`   &lt;dbl&gt; 71842, 1962…
+$ `Age_0-19 ans`    &lt;dbl&gt; 61505, 1865…
+$ `Age_75 ans et +` &lt;dbl&gt; 28184, 8261…
+$ `Age_20-39 ans`   &lt;dbl&gt; 52945, 1700…
+$ `Age_60-74 ans`   &lt;dbl&gt; 44979, 1259…
+```
+
+
+???
+
+---
+class: slide
+
+### Quiz: What code do you choose to join the external classical dataset `restaurants` with the spatial dataset `france_l93` if you want to keep spatial entities but only where there is a match?
+
+.pull-left[
+*restaurants*
+
+```
+       department restaurants
+1        CALVADOS        1500
+2 ALPES-MARITIMES        3000
+3          CANTAL        2000
+```
+
++ A
+
+```r
+france_l93 %&gt;% 
+  group_by(restaurants)
+```
++ B
+
+```r
+france_l93 %&gt;% 
+  left_join(restaurants)
+```
++ C 
+
+```r
+restaurants %&gt;% 
+  inner_join(france_l93)
+```
+]
+.pull-right[
+*france_l93 (extract)*
+
+```
+# A tibble: 96 x 2
+  department                    geometry
+  &lt;chr&gt;               &lt;MULTIPOLYGON [m]&gt;
+1 JURA       (((886244.2 6641236, 88619…
+2 LOIRE      (((764370.3 6544751, 76438…
+# … with 94 more rows
+```
+
++ D
+
+```r
+france_l93 %&gt;% 
+  inner_join(restaurants)
+```
+]
+
+???
+A: `group_by()` has no direct effect on datasets. Moreover, it is used with a single dataset on itself to realise grouped operations on modalities of one (or more) variables
+
+B: `left_join()` will keep all spatial entities of the original spatial dataset and add `NA` where there is no match. This does not anwser the question to keep them only where there is a match.
+
+C: If you want to keep spatial entities, spatial dataset needs to be the first object, otherwise `inner_join()` will be applied as usual with classical datasets
+
+D: Correct answer
+
+---
+
+### Summary
+
+- {dplyr} grammar on attribute table
+  + `select()`, `mutate()`, `filter()`, ...
+  + `inner_join()`, `left_join()`, `full_join()`, `anti_join()`, ...  
+  
+- {dplyr} grammar on attribute + geometry
+  + `group_by()` + `summarise()`
+
+- Note that there is also compatibility with {tidyr} functions
+
+---
+
+### Activity
+
+- Do `Exercises: Manipulating vector data with dplyr`. 
+
+- Fifteen minutes will be allotted for this exercise.
+
+
+---
+
+class: inverse, middle, center
+
+# Second steps in spatial data handling
+
+
+
+
+---
+
+# Wait there's more! 
+
+--
+
+## There are a variety of spatial functions that you can use to manipulate your data
+
+--
+
+- `st_crs()` : coordinates reference system
+- `st_bbox()` : spatial extent
+- `st_join()` : spatial left join
+- `st_intersection()` : intersection join
+- `st_crop()` : crop
+- `st_union()` : union
+- `st_difference()` : difference
+- `st_area()` : area
+- `st_distance()` : distance
+- `st_length()` : length
+- `st_centroid()` : find centroid
+- `st_buffer()` : buffer area
+
+---
+
+## To learn more about these functions, please refer to the original [useR2020! workshop](https://github.com/statnmap/user2020_rspatial_tutorial)
+
+
+
+---
+
+class: inverse, middle, center
+
+## Thank you!
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
